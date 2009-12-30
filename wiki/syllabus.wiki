@@ -1,0 +1,251 @@
+                  15. INFORMATICS PRACTICES (Code 065)
+Learning Objectives:
+•      To gain working knowledge of a computer system and peripherals
+•      To understand the application development process.
+•      To gain programming skills in front-end development
+•      To gain skills in Database Creation and querying using ANSI SQL.
+•      To design, program and develop database driven web applications using GUI Programming
+       Tool and RDBMS.
+•      To understand and appreciate open source and open standard concepts
+Competencies:
+•      Sound knowledge of computer system
+•      Familiarity with Application Development process using simple IDEs
+•      Ability to use, develop & debug programs independently.
+•      Ability to use ANSI SQL for storing and retrieving data from the RDBMS.
+•      Ability to develop a Web Application using Front end and Back end tools.
+Class XI
+  Unit  Unit Name                                                        Period          Marks
+                                                                   Theory Practical Theory Practical
+  1.    INTRODUCTION TO COMPUTER SYSTEMS                              20          -   10        -
+  2.    INTRODUCTION TO PROGRAMMING                                   40         40   25       16
+  3.    RELATIONAL DATABASE MANAGEMENT SYSTEM                         45         40   30        9
+  4.    IT APPLICATIONS                                                5         20    5        5
+                                                                     110        100   70       30
+UNIT 1: INTRODUCTION TO COMPUTER SYSTEMS
+Hardware Concepts:
+Computer organization (basic concepts): CPU, Memory (RAM and ROM), I/O devices, communication
+bus, ports (serial, parallel, network, phone);
+Input devices: Keyboard, Mouse, Light pen, Touch Screens, Graphics Tablets, Joystick, Microphone,
+OCR, Scanner, Smart Card reader, Barcode reader, Biometric sensor, web camera;
+Output Devices: Monitor/Visual Display Unit (VDU), LCD screen, Television, Printer (Dot Matrix
+Printer, Desk jet/ Inkjet/ Bubble jet Printer, Laser Printer), Plotter, Speaker;
+Secondary Storage Devices: Floppy Disk, Hard Disk, Compact Disk, Magnetic Tape, Digital Versatile
+Disk (DVD), USB Drive, Memory cards - Comparative properties
+Software Concepts:
+
+Operating systems, Need for operating system, major functions of Operating System, Memory
+Management;
+
+
+Security of system: sources of attack and possible damages, virus and related entities - worms,
+propagation of these entities, virus detection using a tool, Desktop security, Digital certificates, Digital
+signature, cookies, firewall, password, file access permissions.
+Types of Software: System Software, Utility Software, Application Software and Developer Tools
+System Software:
+General Purpose Application Software: Word Processor, Presentation Tool, Spreadsheet Package,
+Database Management System;
+Specific Purpose Application software (for example: Inventory Management System, Purchasing System,
+Human Resource Management System, Payroll System, Financial Accounting, Hotel Management
+and Reservation System, etc.);
+Developer Tools: Compilers and Interpreters, Integrated Development Environment
+UNIT 2: INTRODUCTION TO PROGRAMMING
+Getting started with Programming using IDE
+Introduction, Rapid Application Development using IDE - Integrated Development Environment;
+Familiarization of IDE using basic Interface components;
+Basic component handling methods/attributes
+Programming Fundamentals
+Data Types: Concept of data types; Built-in data types - byte, short, int, long, float, double, char,
+String (or any object), Boolean; Concept of a Class and Instance as user-defined datatypes.
+Variables:
+Need to use variable, Declaring Variables, Variable Naming Convention, Assigning value to Variables;
+Control Structures:
+Assignment Statement
+Decision Structure - if, if-else, switch;
+Looping Structure- while, do-while, for;
+Concept of a Method: structure, local variables, return values, types of parameter passing
+Concept of a Class ( simple class only): members, methods, using classes as data types
+Programming Guidelines:
+Choice of Expressions and Names, , Comments, use of Indentation; Documentation and Program
+Maintenance; Debugging programs: Syntax Errors, Run-Time Errors, Logical Errors;
+Problem Solving Methodology and Techniques: Understanding of the problem, Identifying relevant
+information, top-down development approach
+UNIT 3: RELATIONAL DATABASE MANAGEMENT SYSTEM
+Database Management System
+Introduction to database concepts: Relation/Table, attribute/fields, Tuple / Rows;
+Data Types - Number, Character and Date
+
+
+Key - Primary Key, Candidate key, Alternate key;
+Introduction to MySQL
+(ANSI SQL 99 standard commands)
+Classification of SQL Statements:
+DML - SELECT, INSERT, UPDATE, DELETE;
+DDL - CREATE, DROP, ALTER;
+SQL SELECT Statement (working with demo/already existing tables): SELECT statement, Selecting
+All the Columns, Selecting Specific Column, Using Arithmetic Operators, Operator Precedence, Defining
+and using Column Alias, Duplicate rows and their Elimination (DISTINCT keyword), Displaying Table
+Structure (DESC command); SELECT Statement Continued: Limiting Rows during selection (using
+WHERE clause), Working with Character Strings and Dates, Working with NULL values;
+Using Comparison operators - =, <, >, <=, >=, < >, BETWEEN, IN, LIKE(%), Logical Operators
+-AND, OR, NOT; Operator Precedence;
+ORDER BY Clause, Sorting in Ascending/Descending Order, Sorting By Column Alias Name, Sorting
+On Multiple Columns;
+Functions in MySQL:
+String Function - CHAR(), CONCAT(),INSTR(), LCASE(), LEFT(), LOWER(), LENGTH(),
+LTRIM(), MID(), RIGHT(), RTRIM(), SUBSTR(), TRIM(), UCASE(), UPPER().
+Mathematical Functions - POWER(), ROUND(), TRUNCATE().
+Date and Time Functions - CURDATE() , DATE(), MONTH(), YEAR(), DAYNAME(),
+DAYOFMONTH(), DAYOFWEEK(), DAYOFYEAR(), NOW(), SYSDATE().
+Manipulating Data of a Table/Relation: Inserting New Rows, Inserting New Rows with Null Values,
+Inserting NUMBER, CHAR and DATE Values, Update Statement to Change Existing Data of a
+Table, Updating Rows in A Table, Delete statement - removing row/rows from a Table;
+Creating Table using CREATE TABLE, ALTER TABLE for adding a new column, using naming
+conventions for column names;
+UNIT 4: IT APLICATIONS
+•        e - Governance - Definition, e-Governance websites; their salient features and societal impacts
+•        e - Business - Definition, e-Business websites, their salient features and societal impacts
+•        e - Learning - Definition; Benefits to students (Learners), Teachers (Trainers) and School
+            (Institution) Management; e-Learning websites and their salient features and societal impacts
+
+
+
+
+=========================
+
+                               Informatics Practices (Code 065)
+                                         Class XI (Practical)
+Problem Solving using Java                                                                  10 marks
+Student will be given a problem to be solved using Java during practical Examination to be conducted
+at the end of the course
+SQL Queries                                                                                  5 marks
+Student will be asked to write 5 queries based on one or two tables during practical Examination to be
+conducted at the end of the course
+Practical Record File
+A practical record file is required to be created during the entire academic session. It should be duly
+signed by the concerned teacher on regular basis and is to be produced at the time of Final Practical
+Examination for evaluation. It should include the following:
+       •       Solution of at least 10 problems using Java based IDE                         2 marks
+                                                                                             2 marks
+       •       At least 20 SQL queries based on one and/or two tables
+       •       Access and reporting relevant data from e-Governance, e-Business, e-Learning
+                                                                                             1 marks
+               websites
+Project File
+Students in group of 2-3 are required to work collaboratively to develop a project using Programming
+and Database skills learnt during the course. The project should be an application with GUI front-end
+based on any one of the following domains - e-Governance, e-Business and e-Learning
+                                                                                         (3+2) marks
+Viva Voce                                                                              (1+2+2) mrks
+Students will be asked oral questions during practical Examination to be conducted at the end of the
+course. The questions will be from the entire course covered in the academic session
+Class XII
+ Unit    Unit Name                                                      Period            Marks
+                                                                  Theory Practical Theory Practical
+ 1.      NETWORKING AND OPEN STANDARDS                               20          -     10        -
+ 2.      PROGRAMMING                                                 42         40     25       16
+ 3.      RELATIONAL DATABASE MANAGEMENT SYSTEM                       42         40     30        9
+ 4.      IT APPLICATIONS                                              6         20      5        5
+                                                                    110        100     70       30
+UNIT 1: NETWORKING AND OPEN STANDARDS
+Computer Networking: Networking - a brief overview, Identifying computers and users over a
+network (Domain Name, MAC 'Media Access Control' and IP address), domain name resolution,
+Network Topologies, Types of network - LAN, MAN, WAN, PAN; Wired Technologies - Co-
+Axial, Ethernet Cable, Optical Fiber; Wireless Technologies - Blue Tooth, Infrared, Microwave, Radio
+Link, Satellite Link; Network Devices - Hub, Switch, Repeater, Gateway - and their functions;
+Network security - denial of service, intrusion problems, snooping;
+Open Source Concepts:
+Open Source Software (OSI norms), common FOSS examples (Gnu/Linux, Firefox, OpenOffice),
+common open standards (open document format, Ogg Vorbis)
+Indian Language Computing: character encoding, UNICODE and Indian Language, different types of
+fonts (open type vs true type, static vs dynamic), Entering Indian Language Text - phonetic and keymap
+based.
+UNIT 2: PROGRAMMING
+Review of Class XI;
+Programming Fundamentals
+Access specifier for classes, Members and methods, Concept of package
+Inheritance: need and implementation, Method Overloading and Overriding, Abstract Class and
+Interfaces, use of interfaces
+Commonly used libraries: String class and methods: toString(), concat(), length(), toLowerCase(),
+toUpperCase(), trim(), substring()
+Math object: pow(), round()
+Simple GUI Objects: Dialog
+Accessing MySQL database using ODBC to connect with database.
+Web application development: URL, Web Server, Communicating with the web server, concept of
+Client and Server Side.
+HTML based web pages covering basic tags - HTML, TITLE, BODY, H1..H6, Paragraph (P), Line
+Break (BR), Section Separator (HR), FONT, TABLE, LIST (UL, OL), FORM;
+Creating and accessing static pages using HTML and introduction to XML
+UNIT 3: RELATIONAL DATABASE MANAGEMENT SYSTEM
+Review of RDBMS from Class XI
+Database Fundamentals
+Concept of Database Transaction, Committing and revoking a Transaction using COMMIT and
+REVOKE,
+Grouping Records: GROUP BY, Group functions - MAX(), MIN(), AVG(), SUM(), COUNT();
+using COUNT(*), DISTINCT clause with COUNT, Group Functions and Null Values,
+Displaying Data From Multiple Tables: Equi-Join and Cartesian Products; concept of Foreign Key;
+Creating a Table with PRIMARY KEY and NOT NULL constraints, adding a Constraint, enabling
+Constraints, Viewing Constraints, Viewing the Columns Associated with Constraints;
+ALTER TABLE for deleting a column, ALTER TABLE for modifying data types of a column
+DROP Table for deleting a table;
+UNIT 4: IT APPLICATIONS
+Revisiting the features of e-Governance, e-Business and e-Learning
+Front-end Interface - Introduction; content and features; identifying and using appropriate component
+(Text Box, Radio Button, CheckBox, List) for data entry, validation and display;
+Back-end Database - Introduction and its purpose; exploring the requirement of tables and its essential
+attributes;
+Front-End and Database Connectivity - Introduction, requirement and benefits
+                                      Informatics Practices
+                                             (Code 065)
+                                      Class XII (Practical)
+Problem Solving using Java                                                                  10 marks
+Student will be given a problem to be solved using Java during practical Examination to be conducted
+at the end of the course
+SQL Queries                                                                                  5 marks
+Student will be asked to write 5 queries based on one or two tables during practical Examination to be
+conducted at the end of the course
+Practical Record File
+A practical record file is required to be created during the entire academic session. It should be duly
+signed by the concerned teacher on regular basis and is to be produced at the time of Final Practical
+Examination for evaluation. It should include the following:
+       •     Solution of at least 15 problems using Java based IDE                           2 marks
+       •     At least 25 SQL queries based on one and/or two tables                          2 marks
+       •     Solution of at least 2 simple problems incorporating Java Application & Database
+             connectivity                                                                    1 marks
+Project File                                                                             (3+2) marks
+Students in group of 2-3 are required to work collaboratively to develop a project using Programming
+and Database skills learnt during the course. The project should be an application with GUI front-end
+based on any one of the following domains - e-Governance, e-Business and e-Learning
+
+Viva Voce                                                                          (1+2+2) marks
+Students will be asked oral questions during practical Examination to be conducted at the end of the
+course. The questions will be from the entire course covered in the academic session
+References
+Introduction to Computer System:
+V. Rajaraman, Fundamentals of Computers, Prentice Hall India, 2006
+Rustam Shroff, Computer systems and applications, Himalaya, Delhi, 2004
+Introduction to Programming:
+Herbert Schildt , Java : the complete reference, Tata MacGraw Hill, 2005
+Geary David M, Graphic java Mastering the JFC, Addision Wesley, 2006
+Relational Database Management System:
+Lerry Ulman, MYSQL Database, Pearson Education, 2008
+George Reese, Database programming with JDBC and Java, O’Reilly, 2004
+Computer Networking:
+William Stallings, Computer Networking with Internet Protocols and Technology, Prentice Hall India,
+2008
+Open Standard and Multi-Lingual Computing:
+www.w3c.org
+www.bhashaindia.com/Patrons/LanguageTech/InnovationCentre.aspx
+IT Applications:
+e- governance:
+www.Informatics.nic.in
+www.india.gov.in/govt/national_egov_plan.php
+e-Business:
+Eden Remme Watt, Don Denoncourt, Scott Lee, Rick Stevens, Bob Cancilla, Understanding e-
+business application integration, MC Press, 2008
+www.itcportal.com
+www.apdip.net/publications/iespprimers/eprimer-ecom.pdf
+www.portal.unesco.org
+www.comminit.com
+e-Learning:
+www.moodle.org
+www.w3schools.com
