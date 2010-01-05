@@ -1,113 +1,54 @@
-This Page is a tracker on the current status of whole project.
+This Page is a tracker on the current status of whole project
 If you want to contribute the just open a page with is not 100% complete and edit that page.
 
-|| || *Topic* || *Status* || *Page* ||
-|| *Chapter 1* || *COMPUTER SYSTEM AND BUSINESS NETWORKING*|| || ||
-|| || Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||
-|| || *Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link ||
-|| || *Role of Input, Processing and Output Devices in a computer system* To be taught through practicals. Refer to the practicals section || 0% || link ||
-|| || *Secondary Storage Devices* To be taught through practicals. Refer to the practicals section || 0% || link ||
-|| || *Units of Memory* Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte || 0% || link ||
-|| || *Software Concepts* Types of Software: System Software, Utility Software, Application Software and Developer Tools || 0% || link ||
-|| || *System Software* Introduction to Operating Systems, Need of operating systems, Functions of Operating System, Types of operating system, Free/Open Source Operating Systems (GNU Linux, OpenSolaris, OpenBSD, Microsoft Windows, Android,Symbian) || 0% || link ||
-|| || *Utility Software* Compression tools, Anti Virus, SPAM Filters, File Management tools, Archiving, Backups, Time snapshots of disk and Disk Management tools || 0% || link ||
-|| || *Application Software as a tool* Word Processor, Presentation Tool, Spreadsheet Package, Database Management System; Business software (for example: Inventory Management System, Purchasing System, Human Resource Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System);|| 0% || link ||
-|| || *Developer Tools* Compilers, Integrated Development Environment (IDE e.g.Netbeans), Debugging Tools, Bug tracking tools (e.g. Bugzilla) || 0% || link ||
-|| || *Development of programming languages* (History of programming languages) Machine language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP, Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK,pygtk; Scripting Languages – JavaScript || 0% || link ||
-|| || *GUI Operating System* Important: Students/Teachers will find it easier to teach these concepts using any operating system that uses a GNOME desktop environment such as Ubuntu, OpenSolaris, Fedora, etc || 0% || link || 
-|| || *General features of Desktop* Panel, Icon, Links, Trash, System File Browser, Folder To be taught through practicals. Refer to the practicals section. || 0% || link ||
-|| || *Word Processing* To be taught through practicals. Refer to the practicals section || 0% || link || 
-|| || *Spreadsheet* To be taught through practicals. Refer to the practicals section. || 0% || link || 
-|| || *Computer Networking* Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks|| 0% || link ||
-|| || *Business Applications* Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash Management, Order Processing, Human Resource Management Systems, Payroll systems, Customer Relationship Management Systems, ERP, Business Intelligence || 0% || link ||
-|| || *Industries and Business Computing* Examples of Industries (Production, Shipping, Travel, Hotel, Insurance, Construction, Automobile), Applications of Business Computing in Industries, Ethics in Business Computing, Privacy and Security || 0% || link || 
+||   || *Topic* || *Status* || *Page* || || 0% || link ||  
+|| *Chapter 1* || *COMPUTER SYSTEM AND BUSINESS NETWORKING*|| || || 
+||   ||Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||  
+||   ||*Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link ||  
+||   || *Role of Input, Processing and Output Devices in a computer system* To be taught through practicals. Refer to the practicals section || 0% || link ||  
+||   || *Secondary Storage Devices* To be taught through practicals. Refer to the practicals section || 0% || link ||  
+||   || *Units of Memory* Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte || 0% || link ||  
+||   || *Software Concepts* Types of Software: System Software, Utility Software, Application Software and Developer Tools || 0% || link ||  
+||   || *System Software* Introduction to Operating Systems, Need of operating systems, Functions of Operating System, Types of operating system, Free/Open Source Operating Systems (GNU Linux, OpenSolaris, OpenBSD, Microsoft Windows, Android,Symbian) || 0% || link ||  
+||   || *Utility Software* Compression tools, Anti Virus, SPAM Filters, File Management tools, Archiving, Backups, Time snapshots of disk and Disk Management tools || 0% || link ||  
+||   || *Application Software as a tool* Word Processor, Presentation Tool, Spreadsheet Package, Database Management System; Business software (for example: Inventory Management System, Purchasing System, Human Resource Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System);|| 0% || link ||  
+||   || *Developer Tools* Compilers, Integrated Development Environment (IDE e.g.Netbeans), Debugging Tools, Bug tracking tools (e.g. Bugzilla) || 0% || link ||  
+||   || *Development of programming languages* (History of programming languages) Machine language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP, Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK,pygtk; Scripting Languages – JavaScript || 0% || link ||  
+||   || *GUI Operating System* Important: Students/Teachers will find it easier to teach these concepts using any operating system that uses a GNOME desktop environment such as Ubuntu, OpenSolaris, Fedora, etc || 0% || link ||  
+||   || *General features of Desktop* Panel, Icon, Links, Trash, System File Browser, Folder To be taught through practicals. Refer to the practicals section. || 0% || link ||  
+||   || *Word Processing* To be taught through practicals. Refer to the practicals section || 0% || link ||  
+||   || *Spreadsheet* To be taught through practicals. Refer to the practicals section. || 0% || link ||  
+||   || *Computer Networking* Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks|| 0% || link ||  
+||   || *Business Applications* Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash Management, Order Processing, Human Resource Management Systems, Payroll systems, Customer Relationship Management Systems, ERP, Business Intelligence || 0% || link ||  
+||   || *Industries and Business Computing* Examples of Industries (Production, Shipping, Travel, Hotel, Insurance, Construction, Automobile), Applications of Business Computing in Industries, Ethics in Business Computing, Privacy and Security || 0% || link ||  
 || *Chapter 2* || INTRODUCTION TO PROGRAMMING || || ||
-|| || *Introduction to Programming* – Modular Programming, Object Oriented Programming, Event Driven Programming || 0% || link || 
-
-===Programming Tool=== Java using Netbeans Integrated Development Environment (IDE)
-Introduction to Netbeans; How to create a Form, How to use Netbeans Wizards to create an application.
-Rapid Application Development using Netbeans IDE ;
-Familiarization of IDE using basic Java Swing user Interface components- JLabel, JTextField, JTextArea, JButton,
-JCheckBox, JRadioButton,
-Concept of Java Project Options – General Application (Desktop), Web Application, Mobile Application;
-How to create Java Applications, Writing a Hello World Application.
-Creating a Simple Hello World Swing Application
-Developing General Application- Getting Familiar with Java Swing User Interface components.-
-JFrame, JDialog, JOptionPane, JPanel, JScrollPane, JLabel, JTextField, JPasswordField, JTextArea, JButton,
-JCheckBox, JRadioButton, JComboBox, JList, JTable, JFileChooser, JColorChooser, JToolBar, JMenu,
-Understanding JAR
-Event Listener – ActionListener, FocusListener, KeyListener, MouseListener.
-The functionality and the pacakges have been defined in the Appendix (Refer Appendix I)
-===Programming Fundamentals===
-===Data Types===
-byte, short, int, long, float, double char, String (or any object), boolean
-===Variables===
-Need to use variable, Declaring Variables, Variable Naming Convention, Assigning value to Variables, Data Types of
-variable, Scope and lifetime of Variables (Public and Private);
-===Control Structures===
-Decision Structure – IF, IF--ELSE, Switch;
-Looping Structure- WHILE, DO WHILE, FOR;
-Object Oriented Programming using Java: Features of Java, Classes in Java.
-===Programming Methodology===
-General Concepts; Modular approach; Stylistic Guidelines: Clarity and Simplicity of Expressions, Names,
-Comments, Indentation; Documentation and Program Maintenance; Running and Debugging programs, Syntax
-Errors, Run-Time Errors, Logical Errors;
-Problem Solving Methodology and Techniques: Understanding of the problem, Identifying minimum number of inputs
-required for output, Step by step solution for the problem, breaking down solution into simple steps, Identification of
-arithmetic and logical operations required for solution, Using Control Structure: Conditional control and looping (finite
-and infinite);
-  
-== RELATIONAL DATABASE MANAGEMENT SYSTEM ==
-===Database Management System===
-Introduction to database concepts: Relation/Table, attribute, Tuple / Rows, field, Data, Concept of String, Number
-and Date values, Data type and Data Integrity (Domain and Referential Integrity). Candidate key, Alternate key,
-Primary Key, Foreign Keys; Data Normalization-first, second, third, ;
-Examples of Commercially available Database Management System’s (Back-End) – MySQL, Ingres, PostGres,
-Oracle, , DB2, MsSQL, Sybase.
-Examples of Integrated Development Environments: Netbeans
-===RDBMS Tool===
-Introduction to MySQL, Login Prompt, Entering Name and Password;
-(Only ANSI SQL 99 commands to be used for teaching. ANSI SQL 99 standard is supported by most commercial
-and open source databases such as MySQL)
-Classification of SQL Statements: DML (SELECT, INSERT, UPDATE, DELETE), DDL (CREATE, DROP, ALTER,
-RENAME, DCL (GRANT, REVOKE), TCL (START TRANSACTION, COMMIT, ROLLBACK);
-SQL SELECT Statement: SQL SELECT statement, Selecting All the Columns, Selecting Specific Column, Using
-Arithmetic Operators, Operator Precedence,              Working with NULL values, Defining and using Column Alias,
-Duplicate rows and their Elimination (DISTINCT keyword), Displaying Table Structure (DESC command);
-SELECT Statement Continued: Limiting Rows during selection (using WHERE clause), Working with Character
-Strings and Dates, Using Comparison operators, BETWEEN Operator, IN Operator, LIKE Operator (_,%), IS NULL
-Comparison, IFNULL() function, Logical Operators, Use of Logical Operators (AND/OR/NOT Operators),
-Logical Operator Precedence, ORDER BY Clause, Sorting in Ascending/Descending Order, Sorting By Column Alias
-Name, Sorting On Multiple Columns;
-Functions in MySQL:
-String Function- ASCII(), CHAR(), CHAR_LENGTH(), CONCAT(), DECODE(), ENCODE(), INSTR(), LCASE(),
-LEFT(), LOWER(), LENGTH(), LTRIM(), MID() REPLACE(), RIGHT(), RTRIM(), REPEAT(), REVERSE(), SUBSTR(),
-SUBSTRING(), TRIM(), UCASE(), UPPER().
-Mathematical Functions- MOD(), POWER(), ROUND(), SQRT(), TRUNCATE().
-D a t e a n d Ti m e F u n c t i o n s - A D D D AT E ( ) , C U R D AT E ( ) , C U R T I M E ( ) , D AT E _ A D D ( ) , D AT E ( ) ,
-DATEDIFF(),DATE_FORMAT(), DAYNAME(), DAYOFMONTH(), DAYOFWEEK(), DAYOFYEAR(), MONTH(),
-LAST_DAY(), NOW(), SYSDATE(), TIME(), TIMEDIFF(), YEAR().
-Grouping Records: GROUP BY, group functions (MAX(), MIN(), AVG(), SUM(), COUNT()), Using AVG and SUM
-Functions, Using MIN and MAX Functions, Using the COUNT Function, using COUNT(*), DISTINCT clause with
-COUNT, Group Functions and Null Values, Using IFNULL Function with Group Functions
-Displaying Data From Multiple Tables: Concept of Join, Result of Join, Cartesian Product and Generating Cartesian
-Product example using Mathematical Set), Types Of Joins (EQUI, SELF, NON-EQUI, OUTER (LEFT and RIGHT)),
-Equi-join: Retrieving Records with Equi-join, Additional Search Conditions using AND operator, Non-Equi join and its
-Implementation, Outer-Join and Its Usage, Self-Join (Joining a table to Itself); SubQuery using operators ANY, IN,
-ALL and arithmetic operators.
-Manipulating Data of A Table/Relation: Concept of DML (Data Manipulation Language), INSERT Statement, Inserting
-New Rows, Inserting New Rows with Null Values, Inserting Date Values, Use of Substitution Variable to Insert
-Values, Copying Rows From Another Table, Update Statement to Change Existing Data of a Table, Updating Rows
-In A Table, Updating Rows Based on Another Table, Delete statement/ Removing Row/Rows from a Table, Deleting
-Rows Based on condition from another Table; Making Data Manipulation Permanent (COMMIT). Undo Data
-Manipulation Changes (ROLLBACK)
-Database Objects: View, Table, Naming Convention, Creating Views, Retrieving Data From a View, Querying a View,
-Modifying a View,
-Including Constraints: Constraints, Concept of using Constraints, Constraint Guidelines, Defining Constraints, NOT
-NULL, UNIQUE KEY, PRIMARY KEY, FOREIGN KEY, CHECK, Adding a Constraint, Enabling Constraints, Viewing
-Constraints, Viewing The Columns Associated with Constraints;
-Creation of a Table/Relation: CREATE TABLE Statement, Data types (INT, FLOAT, CHAR, VARCHAR, DATE). The
-DEFAULT option, Creating Tables, Referencing Another User’s Tables, Querying the Database Dictionary to view all
-tables in the MySQL Database, Creating a Table by Using a Query;
-Managing Existing Tables and other Database Objects: The ALTER TABLE Statement, Adding a New Column in a
-Table, Modifying Existing Column, Dropping a Column, Renaming an Object, Drop Views, Drop Tables;
+||   || *Introduction to Programming* – Modular Programming, Object Oriented Programming, Event Driven Programming || 0% || link ||  
+||   || *Programming Tool* Java using Netbeans Integrated Development Environment (IDE) Introduction to Netbeans; How to create a Form, How to use Netbeans Wizards to create an application. Rapid Application Development using Netbeans IDE ; Familiarization of IDE using basic Java Swing user Interface components- JLabel, JTextField, JTextArea, JButton, || 0% || link ||  
+||   ||JCheckBox, JRadioButton || 0% || link ||  
+||   || *Concept of Java Project Options* – General Application (Desktop), Web Application, Mobile Application; How to create Java Applications, Writing a Hello World Application. Creating a Simple Hello World Swing Application  || 0% || link ||  
+||   || *Developing General Application*- Getting Familiar with Java Swing User Interface components. JFrame, JDialog, JOptionPane, JPanel, JScrollPane, JLabel, JTextField, JPasswordField, JTextArea, JButton, JCheckBox, JRadioButton, JComboBox, JList, JTable, JFileChooser, JColorChooser, JToolBar, JMenu, Understanding JAR  || 0% || link ||  
+||   || *Event Listener* – ActionListener, FocusListener, KeyListener, MouseListener. The functionality and the pacakges have been defined in the Appendix (Refer Appendix I) || 0% || link ||  
+||   ||*Programming Fundamentals* || 0% || link ||  
+||   ||*Data Types* byte, short, int, long, float, double char, String (or any object), boolean || 0% || link ||  
+||   ||*Variables* Need to use variable, Declaring Variables, Variable Naming Convention, Assigning value to Variables, Data Types of variable, Scope and lifetime of Variables (Public and Private); || 0% || link ||  
+||   ||*Control Structures* Decision Structure – IF, IF--ELSE, Switch; Looping Structure- WHILE, DO WHILE, FOR; Object Oriented Programming using Java: Features of Java, Classes in Java. || 0% || link ||  
+||   ||*Programming Methodology* General Concepts; Modular approach; Stylistic Guidelines: Clarity and Simplicity of Expressions, Names, Comments, Indentation; Documentation and Program Maintenance; Running and Debugging programs, Syntax Errors, Run-Time Errors, Logical Errors; || 0% || link ||  
+||   ||*Problem Solving Methodology and Techniques* Understanding of the problem, Identifying minimum number of inputs required for output, Step by step solution for the problem, breaking down solution into simple steps, Identification of arithmetic and logical operations required for solution, Using Control Structure: Conditional control and looping (finite and infinite); || 0% || link ||  
+|| *Chapter 3* || *RELATIONAL DATABASE MANAGEMENT SYSTEM* || ||  ||  
+||   ||*Database Management System* Introduction to database concepts: Relation/Table, attribute, Tuple / Rows, field, Data, Concept of String, Number and Date values, Data type and Data Integrity (Domain and Referential Integrity). Candidate key, Alternate key, Primary Key, Foreign Keys; Data Normalization-first, second, third, ; Examples of Commercially available Database Management System’s (Back-End) – MySQL, Ingres, PostGres, Oracle, , DB2, MsSQL, Sybase. Examples of Integrated Development Environments: Netbeans || 0% || link ||  
+||   ||*RDBMS Tool* || 0% || link ||  
+||   ||*Introduction to MySQL*, Login Prompt, Entering Name and Password; (Only ANSI SQL 99 commands to be used for teaching. ANSI SQL 99 standard is supported by most commercial and open source databases such as MySQL) || 0% || link ||  
+||   ||*Classification of SQL Statements*: DML (SELECT, INSERT, UPDATE, DELETE), DDL (CREATE, DROP, ALTER, RENAME, DCL (GRANT, REVOKE), TCL (START TRANSACTION, COMMIT, ROLLBACK); || 0% || link ||  
+||   ||*SQL SELECT Statement*: SQL SELECT statement, Selecting All the Columns, Selecting Specific Column, Using Arithmetic Operators, Operator Precedence, Working with NULL values, Defining and using Column Alias, Duplicate rows and their Elimination (DISTINCT keyword), Displaying Table Structure (DESC command); || 0% || link ||  
+||   ||*SELECT Statement Continued*: Limiting Rows during selection (using WHERE clause), Working with Character Strings and Dates, Using Comparison operators, BETWEEN Operator, IN Operator, LIKE Operator (_,%), IS NULL Comparison, IFNULL() function, Logical Operators, Use of Logical Operators (AND/OR/NOT Operators), Logical Operator Precedence, ORDER BY Clause, Sorting in Ascending/Descending Order, Sorting By Column Alias Name, Sorting On Multiple Columns; || 0% || link ||  
+||   ||*Functions in MySQL* || 0% || link ||  
+||   ||*String Function*- ASCII(), CHAR(), CHAR_LENGTH(), CONCAT(), DECODE(), ENCODE(), INSTR(), LCASE(), LEFT(), LOWER(), LENGTH(), LTRIM(), MID() REPLACE(), RIGHT(), RTRIM(), REPEAT(), REVERSE(), SUBSTR(),SUBSTRING(), TRIM(), UCASE(), UPPER(). || 0% || link ||  
+||   ||*Mathematical Functions*- MOD(), POWER(), ROUND(), SQRT(), TRUNCATE(). || 0% || link ||  
+||   ||*Date and Time Functions* - ADDDATE() , CURDATE() , CURTIME() , DATE_ADD() , DATE() , DATEDIFF(),DATE_FORMAT(), DAYNAME(), DAYOFMONTH(), DAYOFWEEK(), DAYOFYEAR(), MONTH(), LAST_DAY(), NOW(), SYSDATE(), TIME(), TIMEDIFF(), YEAR(). || 0% || link ||  
+||   ||*Grouping Records*: GROUP BY, group functions (MAX(), MIN(), AVG(), SUM(), COUNT()), Using AVG and SUM Functions, Using MIN and MAX Functions, Using the COUNT Function, using COUNT(*), DISTINCT clause with COUNT, Group Functions and Null Values, Using IFNULL Function with Group Functions || 0% || link ||  
+||   ||*Displaying Data From Multiple Tables*: Concept of Join, Result of Join, Cartesian Product and Generating Cartesian Product example using Mathematical Set), Types Of Joins (EQUI, SELF, NON-EQUI, OUTER (LEFT and RIGHT)), Equi-join: Retrieving Records with Equi-join, Additional Search Conditions using AND operator, Non-Equi join and its Implementation, Outer-Join and Its Usage, Self-Join (Joining a table to Itself); SubQuery using operators ANY, IN, ALL and arithmetic operators. || 0% || link ||  
+||   ||*Manipulating Data of A Table/Relation*: Concept of DML (Data Manipulation Language), INSERT Statement, Inserting New Rows, Inserting New Rows with Null Values, Inserting Date Values, Use of Substitution Variable to Insert Values, Copying Rows From Another Table, Update Statement to Change Existing Data of a Table, Updating Rows In A Table, Updating Rows Based on Another Table, Delete statement/ Removing Row/Rows from a Table, Deleting Rows Based on condition from another Table; Making Data Manipulation Permanent (COMMIT). Undo Data Manipulation Changes (ROLLBACK)  || 0% || link ||  
+||   ||*Database Objects*: View, Table, Naming Convention, Creating Views, Retrieving Data From a View, Querying a View, Modifying a View || 0% || link ||  
+||   ||*Including Constraints*: Constraints, Concept of using Constraints, Constraint Guidelines, Defining Constraints, NOT NULL, UNIQUE KEY, PRIMARY KEY, FOREIGN KEY, CHECK, Adding a Constraint, Enabling Constraints, Viewing Constraints, Viewing The Columns Associated with Constraints;  || 0% || link ||  
+||   ||*Creation of a Table/Relation*: CREATE TABLE Statement, Data types (INT, FLOAT, CHAR, VARCHAR, DATE). The DEFAULT option, Creating Tables, Referencing Another User’s Tables, Querying the Database Dictionary to view all tables in the MySQL Database, Creating a Table by Using a Query; || 0% || link ||  
+||   ||*Managing Existing Tables and other Database Objects*: The ALTER TABLE Statement, Adding a New Column in a Table, Modifying Existing Column, Dropping a Column, Renaming an Object, Drop Views, Drop Tables; || 0% || link ||
