@@ -1,10 +1,9 @@
-
 == COMPUTER SYSTEM AND BUSINESS NETWORKING ==
 
 Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-
 connections, concept of Booting;
 
-=== Hardware concepts ==:
+=== Hardware concepts ==
 To be taught through practicals. Refer to the practicals section.
 
 === Role of Input, Processing and Output Devices in a computer system ===
@@ -47,23 +46,24 @@ Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net; Sc
 ===GUI Operating System===
 Important: Students/Teachers will find it easier to teach these concepts using any operating system that uses a
 GNOME desktop environment such as Ubuntu, OpenSolaris, Fedora, etc
-===General features of Desktop===: Panel, Icon, Links, Trash, System File Browser, Folder
+===General features of Desktop===
+Panel, Icon, Links, Trash, System File Browser, Folder
 To be taught through practicals. Refer to the practicals section.
 ===Word Processing===
 To be taught through practicals. Refer to the practicals section.
 ===Spreadsheet===
 To be taught through practicals. Refer to the practicals section.
-===Computer Networking===: Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks.
-===Business Applications===: Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash
+===Computer Networking=== Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks.
+===Business Applications=== Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash
 Management, Order Processing, Human Resource Management Systems, Payroll systems, Customer Relationship
 Management Systems, ERP, Business Intelligence
-===Industries and Business Computing===: Examples of Industries (Production, Shipping, Travel, Hotel, Insurance,
+===Industries and Business Computing=== Examples of Industries (Production, Shipping, Travel, Hotel, Insurance,
 Construction, Automobile), Applications of Business Computing in Industries, Ethics in Business Computing, Privacy
 and Security
 
 == INTRODUCTION TO PROGRAMMING ==
 Introduction to Programming – Modular Programming, Object Oriented Programming, Event Driven Programming
-===Programming Tool===: Java using Netbeans Integrated Development Environment (IDE)
+===Programming Tool=== Java using Netbeans Integrated Development Environment (IDE)
 Introduction to Netbeans; How to create a Form, How to use Netbeans Wizards to create an application.
 Rapid Application Development using Netbeans IDE ;
 Familiarization of IDE using basic Java Swing user Interface components- JLabel, JTextField, JTextArea, JButton,
@@ -77,17 +77,17 @@ JCheckBox, JRadioButton, JComboBox, JList, JTable, JFileChooser, JColorChooser, 
 Understanding JAR
 Event Listener – ActionListener, FocusListener, KeyListener, MouseListener.
 The functionality and the pacakges have been defined in the Appendix (Refer Appendix I)
-Programming Fundamentals
-Data Types:
+===Programming Fundamentals===
+===Data Types===
 byte, short, int, long, float, double char, String (or any object), boolean
-Variables:
+===Variables===
 Need to use variable, Declaring Variables, Variable Naming Convention, Assigning value to Variables, Data Types of
 variable, Scope and lifetime of Variables (Public and Private);
-Control Structures:
+===Control Structures===
 Decision Structure – IF, IF--ELSE, Switch;
 Looping Structure- WHILE, DO WHILE, FOR;
 Object Oriented Programming using Java: Features of Java, Classes in Java.
-Programming Methodology:
+===Programming Methodology===
 General Concepts; Modular approach; Stylistic Guidelines: Clarity and Simplicity of Expressions, Names,
 Comments, Indentation; Documentation and Program Maintenance; Running and Debugging programs, Syntax
 Errors, Run-Time Errors, Logical Errors;
@@ -97,14 +97,14 @@ arithmetic and logical operations required for solution, Using Control Structure
 and infinite);
   
 == RELATIONAL DATABASE MANAGEMENT SYSTEM ==
-Database Management System
+===Database Management System===
 Introduction to database concepts: Relation/Table, attribute, Tuple / Rows, field, Data, Concept of String, Number
 and Date values, Data type and Data Integrity (Domain and Referential Integrity). Candidate key, Alternate key,
 Primary Key, Foreign Keys; Data Normalization-first, second, third, ;
 Examples of Commercially available Database Management System’s (Back-End) – MySQL, Ingres, PostGres,
 Oracle, , DB2, MsSQL, Sybase.
 Examples of Integrated Development Environments: Netbeans
-RDBMS Tool :
+===RDBMS Tool===
 Introduction to MySQL, Login Prompt, Entering Name and Password;
 (Only ANSI SQL 99 commands to be used for teaching. ANSI SQL 99 standard is supported by most commercial
 and open source databases such as MySQL)
