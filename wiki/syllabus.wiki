@@ -1,10 +1,16 @@
+This Page is a tracker on the current status of whole project.
+If you want to contribute the just open a page with is not 100% complete and edit that page.
+
+|| *Topic* || *Status* || *Page* ||
+|| Chapter 1 COMPUTER SYSTEM AND BUSINESS NETWORKING || 0 % || link ||
+
+|| Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||
+|| *Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link ||
+
 == COMPUTER SYSTEM AND BUSINESS NETWORKING ==
 
-Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-
-connections, concept of Booting;
 
-=== Hardware concepts ==
-To be taught through practicals. Refer to the practicals section.
+
 
 === Role of Input, Processing and Output Devices in a computer system ===
 
