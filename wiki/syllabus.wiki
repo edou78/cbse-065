@@ -1,4 +1,4 @@
-||   || *Topic* CBSE XI - Informatics Practice Syllabus || *Status* || *Page* ||  Module Number ||
+||   || <center>*CBSE XI - Informatics Practice Syllabus*</center> || *Status* || *Page* ||  Module Number ||
 || *Chapter 1* || *COMPUTER SYSTEM AND BUSINESS NETWORKING*|| ||  || 
 ||   ||Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||  1 || 
 ||   ||*Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link || 2  || 
