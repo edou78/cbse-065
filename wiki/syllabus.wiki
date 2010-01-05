@@ -1,7 +1,7 @@
 This Page is a tracker on the current status of whole project
 If you want to contribute the just open a page with is not 100% complete and edit that page.
 
-||   || *Topic* || *Status* || *Page* || || 0% || link ||  
+||   || *Topic* CBSE XI - Informatics Practice Syllabus || *Status* || *Page* ||
 || *Chapter 1* || *COMPUTER SYSTEM AND BUSINESS NETWORKING*|| || || 
 ||   ||Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||  
 ||   ||*Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link ||  
@@ -36,12 +36,12 @@ If you want to contribute the just open a page with is not 100% complete and edi
 ||   ||*Problem Solving Methodology and Techniques* Understanding of the problem, Identifying minimum number of inputs required for output, Step by step solution for the problem, breaking down solution into simple steps, Identification of arithmetic and logical operations required for solution, Using Control Structure: Conditional control and looping (finite and infinite); || 0% || link ||  
 || *Chapter 3* || *RELATIONAL DATABASE MANAGEMENT SYSTEM* || ||  ||  
 ||   ||*Database Management System* Introduction to database concepts: Relation/Table, attribute, Tuple / Rows, field, Data, Concept of String, Number and Date values, Data type and Data Integrity (Domain and Referential Integrity). Candidate key, Alternate key, Primary Key, Foreign Keys; Data Normalization-first, second, third, ; Examples of Commercially available Database Management System’s (Back-End) – MySQL, Ingres, PostGres, Oracle, , DB2, MsSQL, Sybase. Examples of Integrated Development Environments: Netbeans || 0% || link ||  
-||   ||*RDBMS Tool* || 0% || link ||  
-||   ||*Introduction to MySQL*, Login Prompt, Entering Name and Password; (Only ANSI SQL 99 commands to be used for teaching. ANSI SQL 99 standard is supported by most commercial and open source databases such as MySQL) || 0% || link ||  
+||   || *RDBMS Tool* || ||  ||
+||   || *Introduction to MySQL*, Login Prompt, Entering Name and Password; (Only ANSI SQL 99 commands to be used for teaching. ANSI SQL 99 standard is supported by most commercial and open source databases such as MySQL) || 0% || link ||  
 ||   ||*Classification of SQL Statements*: DML (SELECT, INSERT, UPDATE, DELETE), DDL (CREATE, DROP, ALTER, RENAME, DCL (GRANT, REVOKE), TCL (START TRANSACTION, COMMIT, ROLLBACK); || 0% || link ||  
 ||   ||*SQL SELECT Statement*: SQL SELECT statement, Selecting All the Columns, Selecting Specific Column, Using Arithmetic Operators, Operator Precedence, Working with NULL values, Defining and using Column Alias, Duplicate rows and their Elimination (DISTINCT keyword), Displaying Table Structure (DESC command); || 0% || link ||  
 ||   ||*SELECT Statement Continued*: Limiting Rows during selection (using WHERE clause), Working with Character Strings and Dates, Using Comparison operators, BETWEEN Operator, IN Operator, LIKE Operator (_,%), IS NULL Comparison, IFNULL() function, Logical Operators, Use of Logical Operators (AND/OR/NOT Operators), Logical Operator Precedence, ORDER BY Clause, Sorting in Ascending/Descending Order, Sorting By Column Alias Name, Sorting On Multiple Columns; || 0% || link ||  
-||   ||*Functions in MySQL* || 0% || link ||  
+||   || *Functions in MySQL* ||  ||  ||   
 ||   ||*String Function*- ASCII(), CHAR(), CHAR_LENGTH(), CONCAT(), DECODE(), ENCODE(), INSTR(), LCASE(), LEFT(), LOWER(), LENGTH(), LTRIM(), MID() REPLACE(), RIGHT(), RTRIM(), REPEAT(), REVERSE(), SUBSTR(),SUBSTRING(), TRIM(), UCASE(), UPPER(). || 0% || link ||  
 ||   ||*Mathematical Functions*- MOD(), POWER(), ROUND(), SQRT(), TRUNCATE(). || 0% || link ||  
 ||   ||*Date and Time Functions* - ADDDATE() , CURDATE() , CURTIME() , DATE_ADD() , DATE() , DATEDIFF(),DATE_FORMAT(), DAYNAME(), DAYOFMONTH(), DAYOFWEEK(), DAYOFYEAR(), MONTH(), LAST_DAY(), NOW(), SYSDATE(), TIME(), TIMEDIFF(), YEAR(). || 0% || link ||  
