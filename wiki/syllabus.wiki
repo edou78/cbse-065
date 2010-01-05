@@ -1,74 +1,31 @@
 This Page is a tracker on the current status of whole project.
 If you want to contribute the just open a page with is not 100% complete and edit that page.
 
-|| *Topic* || *Status* || *Page* ||
-|| Chapter 1 COMPUTER SYSTEM AND BUSINESS NETWORKING || 0 % || link ||
+|| || *Topic* || *Status* || *Page* ||
+|| *Chapter 1* || *COMPUTER SYSTEM AND BUSINESS NETWORKING*|| || ||
+|| || Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||
+|| || *Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link ||
+|| || *Role of Input, Processing and Output Devices in a computer system* To be taught through practicals. Refer to the practicals section || 0% || link ||
+|| || *Secondary Storage Devices* To be taught through practicals. Refer to the practicals section || 0% || link ||
+|| || *Units of Memory* Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte || 0% || link ||
+|| || *Software Concepts* Types of Software: System Software, Utility Software, Application Software and Developer Tools || 0% || link ||
+|| || *System Software* Introduction to Operating Systems, Need of operating systems, Functions of Operating System, Types of operating system, Free/Open Source Operating Systems (GNU Linux, OpenSolaris, OpenBSD, Microsoft Windows, Android,Symbian) || 0% || link ||
+|| || *Utility Software* Compression tools, Anti Virus, SPAM Filters, File Management tools, Archiving, Backups, Time snapshots of disk and Disk Management tools || 0% || link ||
+|| || *Application Software as a tool* Word Processor, Presentation Tool, Spreadsheet Package, Database Management System; Business software (for example: Inventory Management System, Purchasing System, Human Resource Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System);|| 0% || link ||
+|| || *Developer Tools* Compilers, Integrated Development Environment (IDE e.g.Netbeans), Debugging Tools, Bug tracking tools (e.g. Bugzilla) || 0% || link ||
+|| || Development of *programming languages* (History of programming languages) Machine Language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP,
+Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK,pygtk; Scripting Languages – JavaScript || 0% || link || 
+|| || *GUI Operating System* Important: Students/Teachers will find it easier to teach these concepts using any operating system that uses a GNOME desktop environment such as Ubuntu, OpenSolaris, Fedora, etc || 0% || link || 
+|| || *General features of Desktop* Panel, Icon, Links, Trash, System File Browser, Folder To be taught through practicals. Refer to the practicals section. || 0% || link ||
+|| || *Word Processing* To be taught through practicals. Refer to the practicals section || 0% || link || 
+|| || *Spreadsheet* To be taught through practicals. Refer to the practicals section. || 0% || link || 
+|| || *Computer Networking* Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks|| 0% || link ||
+|| || *Business Applications* Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash Management, Order Processing, Human Resource Management Systems, Payroll systems, Customer Relationship Management Systems, ERP, Business Intelligence || 0% || link ||
+|| || *Industries and Business Computing* Examples of Industries (Production, Shipping, Travel, Hotel, Insurance, Construction, Automobile), Applications of Business Computing in Industries, Ethics in Business Computing, Privacy and Security || 0% || link || 
 
-|| Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting || 0% || link ||
-|| *Hardware concepts* To be taught through practicals. Refer to the practicals section || 0% || link ||
+|| *Chapter 2* || INTRODUCTION TO PROGRAMMING || || ||
+|| || *Introduction to Programming* – Modular Programming, Object Oriented Programming, Event Driven Programming || 0% || link || 
 
-== COMPUTER SYSTEM AND BUSINESS NETWORKING ==
-
-
-
-
-=== Role of Input, Processing and Output Devices in a computer system ===
-
-To be taught through practicals. Refer to the practicals section.
-
-=== Secondary Storage Devices===
-
-To be taught through practicals. Refer to the practicals section.
-
-===Units of Memory===
-Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, Petabyte
-
-===Software Concepts===
-Types of Software: System Software, Utility Software, Application Software and Developer Tools
-
-===System Software===
-Introduction to Operating Systems, Need of operating systems, Functions of Operating System, Types of operating
-system, Free/Open Source Operating Systems (GNU Linux, OpenSolaris, OpenBSD, Microsoft Windows, Android,
-Symbian).
-
-===Utility Software===
-Compression tools, Anti Virus, SPAM Filters, File Management tools, Archiving, Backups, Time
-snapshots of disk and Disk Management tools;
-
-===Application Software as a tool===
-Word Processor, Presentation Tool, Spreadsheet Package, Database Management
-System; Business software (for example: Inventory Management System, Purchasing System, Human Resource
-Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System);
-
-=== Developer Tools ===
-Compilers, Integrated Development Environment (IDE e.g. Netbeans), Debugging Tools, Bug
-tracking tools (e.g. Bugzilla)
-
-===Development of programming languages (History of programming languages)===
-
- - Machine Language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP,
-Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net; Scripting Languages – JavaScript
-
-===GUI Operating System===
-Important: Students/Teachers will find it easier to teach these concepts using any operating system that uses a
-GNOME desktop environment such as Ubuntu, OpenSolaris, Fedora, etc
-===General features of Desktop===
-Panel, Icon, Links, Trash, System File Browser, Folder
-To be taught through practicals. Refer to the practicals section.
-===Word Processing===
-To be taught through practicals. Refer to the practicals section.
-===Spreadsheet===
-To be taught through practicals. Refer to the practicals section.
-===Computer Networking=== Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks.
-===Business Applications=== Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash
-Management, Order Processing, Human Resource Management Systems, Payroll systems, Customer Relationship
-Management Systems, ERP, Business Intelligence
-===Industries and Business Computing=== Examples of Industries (Production, Shipping, Travel, Hotel, Insurance,
-Construction, Automobile), Applications of Business Computing in Industries, Ethics in Business Computing, Privacy
-and Security
-
-== INTRODUCTION TO PROGRAMMING ==
-Introduction to Programming – Modular Programming, Object Oriented Programming, Event Driven Programming
 ===Programming Tool=== Java using Netbeans Integrated Development Environment (IDE)
 Introduction to Netbeans; How to create a Form, How to use Netbeans Wizards to create an application.
 Rapid Application Development using Netbeans IDE ;
