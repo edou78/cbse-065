@@ -13,8 +13,7 @@ If you want to contribute the just open a page with is not 100% complete and edi
 || || *Utility Software* Compression tools, Anti Virus, SPAM Filters, File Management tools, Archiving, Backups, Time snapshots of disk and Disk Management tools || 0% || link ||
 || || *Application Software as a tool* Word Processor, Presentation Tool, Spreadsheet Package, Database Management System; Business software (for example: Inventory Management System, Purchasing System, Human Resource Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System);|| 0% || link ||
 || || *Developer Tools* Compilers, Integrated Development Environment (IDE e.g.Netbeans), Debugging Tools, Bug tracking tools (e.g. Bugzilla) || 0% || link ||
-|| || Development of *programming languages* (History of programming languages) Machine Language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP,
-Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK,pygtk; Scripting Languages – JavaScript || 0% || link || 
+|| || *Development of programming languages* (History of programming languages) Machine language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP, Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK,pygtk; Scripting Languages – JavaScript || 0% || link ||
 || || *GUI Operating System* Important: Students/Teachers will find it easier to teach these concepts using any operating system that uses a GNOME desktop environment such as Ubuntu, OpenSolaris, Fedora, etc || 0% || link || 
 || || *General features of Desktop* Panel, Icon, Links, Trash, System File Browser, Folder To be taught through practicals. Refer to the practicals section. || 0% || link ||
 || || *Word Processing* To be taught through practicals. Refer to the practicals section || 0% || link || 
@@ -22,7 +21,6 @@ Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK
 || || *Computer Networking* Network Topologies, TCP/IP addressing, MAC, Switched Network, Packet Networks|| 0% || link ||
 || || *Business Applications* Procurement systems, Inventory systems, Accounting systems, General Ledger, Cash Management, Order Processing, Human Resource Management Systems, Payroll systems, Customer Relationship Management Systems, ERP, Business Intelligence || 0% || link ||
 || || *Industries and Business Computing* Examples of Industries (Production, Shipping, Travel, Hotel, Insurance, Construction, Automobile), Applications of Business Computing in Industries, Ethics in Business Computing, Privacy and Security || 0% || link || 
-
 || *Chapter 2* || INTRODUCTION TO PROGRAMMING || || ||
 || || *Introduction to Programming* – Modular Programming, Object Oriented Programming, Event Driven Programming || 0% || link || 
 
