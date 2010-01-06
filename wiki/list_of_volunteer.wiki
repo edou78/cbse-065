@@ -2,10 +2,10 @@ Here is the list of Organisation and Individuals Who are now associated with pro
 Please join project.
 
 == Organisations  ==
-* Society for Knowledge Commons
-* LUG@IITD Community
-* FSF India
-* Wikipress.in
+ * Society for Knowledge Commons
+ * LUG@IITD Community
+ * FSF India
+ * Wikipress.in
 
 == Individuals ==
 Please wait for some days to compose list of individuals. This project started on 6 who are  Jan 2010. We will compose list on 15 Jan 2010.
