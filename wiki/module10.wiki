@@ -83,6 +83,14 @@ Semantic analysis is the phase in which the compiler adds semantic information t
 
 ===Back end===
 
+The term back end is sometimes confused with code generator because of the overlapped functionality of generating assembly code. Some literature uses middle end to distinguish the generic analysis and optimization phases in the back end from the machine-dependent code generators.
+
+The main phases of the back end include the following: 
+
+  * Analysis
+  * Optimization
+  * Code generation
+
 = Details =
 
 Add your content here.  Format your content with:
