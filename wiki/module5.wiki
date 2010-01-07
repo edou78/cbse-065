@@ -26,24 +26,24 @@ The term octet was explicitly defined to denote a sequence of 8 bits because of 
 The kilobyte is a multiple of the unit byte for digital information storage or transmission. The prefix kilo means 1000 in the International System of Units (SI), therefore 1 kilobyte is 1000 bytes. The recommended unit symbol for the kilobyte is kB or kbyte. Historically the unit has also been used to denote 1024 (210) bytes, as digital system are based on multiples of powers of 2. This use however, has been discouraged by standards organizations and a new unit was created, the kibibyte, as replacement for the binary multiple.
 
 ==*Megabyte (MB)*==
-The megabyte is a multiple of the unit byte for digital information storage or transmission with two different values depending on context: 1048576 bytes (10242) generally for computer memory; and one million bytes generally for computer storage. The IEEE Standards Board has decided that "Mega will mean 1 000 000", with exceptions allowed for the base-two meaning. In rare cases, it is used to mean 1000×1024 (1024000) bytes. It is commonly abbreviated as Mbyte or MB (compare Mb, for the megabit).
+The megabyte is a multiple of the unit byte for digital information storage or transmission with two different values depending on context: 1048576 bytes (1024^2) generally for computer memory; and one million bytes (10^6)^ generally for computer storage. The IEEE Standards Board has decided that "Mega will mean 1 000 000", with exceptions allowed for the base-two meaning. In rare cases, it is used to mean 1000×1024 (1024000) bytes. It is commonly abbreviated as Mbyte or MB (compare Mb, for the megabit).
 
 ==*Gigabyte (GB)*==
-The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means ,,10,,9 in the International System of Units (SI), therefore 1 gigabyte is 1000000000 bytes. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit.
+The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10^9^ in the International System of Units (SI), therefore 1 gigabyte is 1000000000 bytes. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit.
 
 ==*Terabyte (TB)*==
-A terabyte is a SI-multiple (see prefix tera) of the unit byte for digital information storage and is equal to 10>12 (1 trillion short scale) bytes or 1000 gigabytes. The unit symbol for the terabyte is TB.
+A terabyte is a SI-multiple (see prefix tera) of the unit byte for digital information storage and is equal to 10^12^ (1 trillion short scale) bytes or 1000 gigabytes. The unit symbol for the terabyte is TB.
 
 The designation terabyte is rarely used to refer to the tebibyte, its binary prefix analogue, because only recent (since 2007) disk drives have this capacity. Disk drive sizes are always designated in SI units by manufacturers. However, a possible confusion arises from this definition with the long-standing tradition in some fields of information technology and the computer industry of using binary prefix interpretations for memory sizes. Standards organizations such as International Electrotechnical Commission (IEC), Institute of Electrical and Electronics Engineers (IEEE) and International Organization for Standardization (ISO) recommend to use the alternative term tebibyte to signify the traditional measure of 10244 bytes, or 1024 gibibytes, leading to the following definitions:
 
-In standard SI usage, 1 terabyte (TB) equals 1000000000000 bytes = 1000>4 or 10>12 bytes.
-Using the traditional binary interpretation, a terabyte is 1099511627776bytes = 1024>4 = 2>40 bytes = 1 tebibyte (TiB).
+In standard SI usage, 1 terabyte (TB) equals 1000000000000 bytes = 1000^4^ or 10^12^ bytes.
+Using the traditional binary interpretation, a terabyte is 1099511627776 bytes = 1024^4^ = 2^40^ bytes = 1 tebibyte (TiB).
 The capacities of computer storage devices are typically specified using their the standard SI meaning of unit prefixes, but many operating systems and applications report in binary-based units. Mac OS X 10.6 (Snow Leopard) reports decimal units.
 
 ==*Petabyte (TB)*==
 A petabyte (derived from the SI prefix peta- ) is a unit of information or computer storage equal to one quadrillion bytes (short scale), or 1000 terabytes, or 1,000,000 gigabytes. It is abbreviated PB. The prefix peta- (P) indicates a power of 1000:
 
-1 PB = 1,000,000,000,000,000 B = 10005 B = 1015 bytes.
+1 PB = 1,000,000,000,000,000 B = 1000^5^ B = 10^15 bytes.
 The term "pebibyte", using the binary prefix pebi- (Pi), is used for 1024^5^ bytes.
 
 1 PiB = 1,125,899,906,842,624 B.
