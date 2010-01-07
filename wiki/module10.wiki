@@ -28,6 +28,7 @@ In many application domains the idea of using a higher level language quickly ca
 
 Early compilers were written in assembly language. The first self-hosting compiler — capable of compiling its own source code in a high-level language — was created for Lisp by Tim Hart and Mike Levin at MIT in 1962.Since the 1970s it has become common practice to implement a compiler in the language it compiles, although both Pascal and C have been popular choices for implementation language. Building a self-hosting compiler is a bootstrapping problem—the first such compiler for a language must be compiled either by a compiler written in a different language, or (as in Hart and Levin's Lisp compiler) compiled by running the compiler in an interpreter. 
 
+==Classification of Compilers==
 = Details =
 
 Add your content here.  Format your content with:
