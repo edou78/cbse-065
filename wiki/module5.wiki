@@ -29,7 +29,7 @@ The kilobyte is a multiple of the unit byte for digital information storage or t
 The megabyte is a multiple of the unit byte for digital information storage or transmission with two different values depending on context: 1048576 bytes (10242) generally for computer memory; and one million bytes generally for computer storage. The IEEE Standards Board has decided that "Mega will mean 1 000 000", with exceptions allowed for the base-two meaning. In rare cases, it is used to mean 1000×1024 (1024000) bytes. It is commonly abbreviated as Mbyte or MB (compare Mb, for the megabit).
 
 ==*Gigabyte (GB)*==
-The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10>9 in the International System of Units (SI), therefore 1 gigabyte is 1000000000 bytes. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit.
+The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means ,,10,,9 in the International System of Units (SI), therefore 1 gigabyte is 1000000000 bytes. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit.
 
 ==*Terabyte (TB)*==
 A terabyte is a SI-multiple (see prefix tera) of the unit byte for digital information storage and is equal to 10>12 (1 trillion short scale) bytes or 1000 gigabytes. The unit symbol for the terabyte is TB.
