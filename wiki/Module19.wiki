@@ -1,0 +1,40 @@
+* Content *
+
+Introduction to Programming – Modular Programming, Object Oriented Programming, Event Driven Programming 
+
+= Introduction =
+
+
+*Computer programming* (often shortened to programming or coding) is the process of writing, testing, debugging/troubleshooting, and maintaining the source code of computer programs. This source code is written in a programming language.
+
+A *Programming language* is a standardized communication technique for expressing instruction to a computer. Programming languages enable a programmer to precisely specify what data a computer will act upon, how these data will be stored/transmitted, and precisely what actions to take under various circumstances.
+Many programming languages have some form of written specification of their syntax (form) and semantics (meaning). Some languages are defined by a specification document. For example, the C programming language is specified by an ISO Standard. Other languages, such as Perl, have a dominant implementation that is used as a reference.
+
+*Modular Programming*
+
+Modular programming is a software design technique that increases the extent to which software is composed from separate parts, called modules. It is also called Structered Programming.It is a subset of procedural programming that enforces a logical structure on the program being written to make it more efficient and easier to understand and modify. Infact Modular programming is subdividing your program into separate subprograms such as functions and subroutines.
+Modular programming can be used to break up a large program into manageable units, or to create code that can be easily re-used.  A modular program consists of a main module and one or more auxiliary modules.  Each module originates from a separate source code file.
+
+*Advantages of Modular Programming*
+
+1) Distributed Development:  It's main essence is reusability of code. The _Open Source Software_ has proven to be of immense help to this. For example, if your program needs initial and boundary conditions, use subroutines to set them. Then if someone else wants to compute a different solution using your program, only these subroutines need to be changed. This is a lot easier than having to read through a program line by line, trying to figure out what each line is supposed to do and whether it needs to be changed. And in ten years from now, you yourself will probably no longer remember how the program worked. 
+
+2) Subprograms make your actual program shorter, hence easier to read and understand. Further, the arguments show exactly what information a subprogram is using.
+
+3) Subprograms make it simpler to figure out how the program operates. If the boundary conditions are implemented using a subroutine, the program can be searched for this subroutine to find all places where the boundary conditions are used.
+
+4) Subprograms reduce the likelyhood of bugs. Because subprograms can use local variables, there is less change that the code in the subroutine interferes with that of the program itself, or with that in other subprograms.
+
+Modular Programming in Java
+* Define new class in terms of old ones.
+* Keeps classes small
+
+               It has long been possible to put a bunch of libraries on the Java classpath and run an application. The NetBeans Platform takes the management of libraries further—by actively taking part in the loading of libraries and enforcing that the minimum version of a library that another library uses is adequate.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
