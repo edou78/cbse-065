@@ -33,7 +33,7 @@ Modular programming can be used to break up a large program into manageable unit
 
 4) Subprograms reduce the likelyhood of bugs. Because subprograms can use local variables, there is less change that the code in the subroutine interferes with that of the program itself, or with that in other subprograms.
 
-== Modular Programming in Java ==
+=== Modular Programming in Java ===
 
 - Define new class in terms of old ones.
 
