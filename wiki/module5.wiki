@@ -1,4 +1,11 @@
-#Units of Memory Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte
+<hr/>
+|| *Content* ||  Units of Memory Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte ||
+|| *Team* || Rajat Gupta ||
+|| *Discussion* || [http://groups.google.com/group/cbse065/browse_thread/thread/1607fd29dd31bdcb] ||
+
+<hr/>
+
+<wiki:toc max_depth="3" />
 
 =*Memory*=
 
