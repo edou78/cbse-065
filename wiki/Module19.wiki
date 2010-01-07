@@ -1,6 +1,9 @@
-* Content *
+|| *Content* || Introduction to Programming – Modular Programming, Object Oriented Programming, Event Driven Programming  ||
+|| *Team* || Siddharth Srivastava||
+|| *Discussion Page* || [http://groups.google.co.in/group/cbse065/browse_thread/thread/a8d73c17b4614a32] ||
+<hr/>
 
-Introduction to Programming – Modular Programming, Object Oriented Programming, Event Driven Programming 
+
 
 = Introduction =
 
@@ -25,9 +28,10 @@ Modular programming can be used to break up a large program into manageable unit
 
 4) Subprograms reduce the likelyhood of bugs. Because subprograms can use local variables, there is less change that the code in the subroutine interferes with that of the program itself, or with that in other subprograms.
 
-Modular Programming in Java
-* Define new class in terms of old ones.
-* Keeps classes small
+*Modular Programming in Java*
+
+- Define new class in terms of old ones.
+
+- Keeps classes small.
 
                It has long been possible to put a bunch of libraries on the Java classpath and run an application. The NetBeans Platform takes the management of libraries further—by actively taking part in the loading of libraries and enforcing that the minimum version of a library that another library uses is adequate.
-
