@@ -1,0 +1,17 @@
+#Units of Memory Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte
+
+*Memory*
+
+Memory is the ability to store, retain, and recall information.
+
+*Memory Bit (Binary Digit)*
+
+A bit is a variable or computed quantity that can have only two possible values. These two values are often interpreted as binary digits and are usually denoted by the Arabic numerical digits 0 and 1. Indeed, the term "bit" is a contraction of binary digit. The two values can also be interpreted as logical values (true/false, yes/no). algebraic signs (+/−), activation states (on/off), or any other two-valued attribute. In several popular programming languages, numeric 0 is equivalent (or convertible) to logical false, and 1 to true. The correspondence between these values and the physical states of the underlying storage or device is a matter of convention, and different assignments may be used even within the same device or program.
+
+The symbol for bit, as a unit of information, is "bit" or (lowercase) "b"; the latter being recommended by the IEEE 1541 Standard (2002).
+
+*History*
+
+The encoding of data by discrete bits was used in the punched cards invented by Basile Bouchon and Jean-Baptiste Falcon (1725), developed by Joseph Marie Jacquard (1804), and later adopted by Semen Korsakov, Charles Babbage, Hermann Hollerith, and early computer manufacturers like IBM. Another variant of that idea was the perforated paper tape. In all those systems, the medium (card or tape) conceptually carried an array of hole positions; each position could be either punched through or not, thus potentially carrying one bit of information. The encoding of text by bits was also used in Morse code (1844) and early digital communications machines such as teletypes and stock ticker machines (1870).
+
+Ralph Hartley suggested the use of a logarithmic measure of information in 1928. Claude E. Shannon first used the word bit in his seminal 1948 paper A Mathematical Theory of Communication. He attributed its origin to John W. Tukey, who had written a Bell Labs memo on 9 January 1947 in which he contracted "binary digit" to simply "bit". Interestingly, Vannevar Bush had written in 1936 of "bits of information" that could be stored on the punch cards used in the mechanical computers of that time. The first programmable computer built by Konrad Zuse used binary notation for numbers.
