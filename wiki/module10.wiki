@@ -62,6 +62,10 @@ The front end analyzes the source code to build an internal representation of th
     
 ====Line reconstruction====
 
+Languages which strop their keywords or allow arbitrary spaces within identifiers require a phase before parsing, which converts the input character sequence to a canonical form ready for the parser. The top-down, recursive-descent, table-driven parsers used in the 1960s typically read the source one character at a time and did not require a separate tokenizing phase. Atlas Autocode, and Imp (and some implementations of Algol and Coral66) are examples of stropped languages whose compilers would have a Line Reconstruction phase. 
+
+
+
 = Details =
 
 Add your content here.  Format your content with:
