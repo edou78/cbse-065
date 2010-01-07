@@ -29,6 +29,16 @@ In many application domains the idea of using a higher level language quickly ca
 Early compilers were written in assembly language. The first self-hosting compiler — capable of compiling its own source code in a high-level language — was created for Lisp by Tim Hart and Mike Levin at MIT in 1962.Since the 1970s it has become common practice to implement a compiler in the language it compiles, although both Pascal and C have been popular choices for implementation language. Building a self-hosting compiler is a bootstrapping problem—the first such compiler for a language must be compiled either by a compiler written in a different language, or (as in Hart and Levin's Lisp compiler) compiled by running the compiler in an interpreter. 
 
 ==Classification of Compilers==
+
+One classification of compilers is by the platform on which their generated code executes. This is known as the target platform.
+
+
+A native or hosted compiler is one whose output is intended to directly run on the same type of computer and operating system that the compiler itself runs on.
+
+
+The output of a cross compiler is designed to run on a different platform. Cross compilers are often used when developing software for embedded systems that are not intended to support a software development environment.
+
+The output of a compiler that produces code for a virtual machine (VM) may or may not be executed on the same platform as the compiler that produced it. For this reason such compilers are not usually classified as native or cross compilers. 
 = Details =
 
 Add your content here.  Format your content with:
