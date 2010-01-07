@@ -10,12 +10,12 @@ The name "compiler" is primarily used for programs that translate source code fr
 A compiler is likely to perform many or all of the following operations: 
 
 
-        *lexical analysis
-        *preprocessing
-        *parsing
-        *semantic analysis
-        *code generation
-        *code optimization
+        * Lexical analysis
+        * Preprocessing
+        * Parsing
+        * Semantic Analysis
+        * Code Generation
+        * Code Optimization
 
 = Details =
 
