@@ -10,14 +10,14 @@ The name "compiler" is primarily used for programs that translate source code fr
 A compiler is likely to perform many or all of the following operations: 
 
 
-        * Lexical analysis
+        * Lexical Analysis
         * Preprocessing
         * Parsing
         * Semantic Analysis
         * Code Generation
         * Code Optimization
 
-= History of Compiler =
+== History of Compiler ==
 
 Software for early computers was primarily written in assembly language for many years. Higher level programming languages were not invented until the benefits of being able to reuse software on different kinds of CPUs started to become significantly greater than the cost of writing a compiler. The very limited memory capacity of early computers also created many technical problems when implementing a compiler.
 
