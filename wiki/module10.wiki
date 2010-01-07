@@ -80,6 +80,9 @@ Syntax analysis involves parsing the token sequence to identify the syntactic st
 ====Semantic analysis====
 
 Semantic analysis is the phase in which the compiler adds semantic information to the parse tree and builds the symbol table. This phase performs semantic checks such as type checking (checking for type errors), or object binding (associating variable and function references with their definitions), or definite assignment (requiring all local variables to be initialized before use), rejecting incorrect programs or issuing warnings. Semantic analysis usually requires a complete parse tree, meaning that this phase logically follows the parsing phase, and logically precedes the code generation phase, though it is often possible to fold multiple phases into one pass over the code in a compiler implementation.
+
+===Back end===
+
 = Details =
 
 Add your content here.  Format your content with:
