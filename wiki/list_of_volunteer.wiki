@@ -11,5 +11,6 @@ Please join project.
 
  * Siddharth Srivastava
  * Gaurav Paliwal
+ * Rajat Gupta
 
 This project started on 6 Jan 2010. We will compose full list before 15 Jan 2010.
