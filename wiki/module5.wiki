@@ -47,7 +47,7 @@ In standard SI usage, 1 terabyte (TB) equals 1000000000000 bytes = 1000^4^ or 10
 Using the traditional binary interpretation, a terabyte is 1099511627776 bytes = 1024^4^ = 2^40^ bytes = 1 tebibyte (TiB).
 The capacities of computer storage devices are typically specified using their the standard SI meaning of unit prefixes, but many operating systems and applications report in binary-based units. Mac OS X 10.6 (Snow Leopard) reports decimal units.
 
-==*Petabyte (TB)*==
+==*Petabyte (PB)*==
 A petabyte (derived from the SI prefix peta- ) is a unit of information or computer storage equal to one quadrillion bytes (short scale), or 1000 terabytes, or 1,000,000 gigabytes. It is abbreviated PB. The prefix peta- (P) indicates a power of 1000:
 
 1 PB = 1,000,000,000,000,000 B = 1000^5^ B = 10^15 bytes.
