@@ -3,8 +3,12 @@
 = Introduction =
 
 Life always triggers to perform arithmetical and logical calculations. Humans tend to involve in mathematical calculations. During pre historic period they counted using fingers, pebbles and beads. Markings were made on wood, rocks and bones. Calculations were made based on comparison of objects.
+The early civilization developed number system to implement on business, scientific and other activities.The word *"computing"* means *act of calculating*. 
+The Evolution of computers passed through a number of stages before reaching the present stage of development.
+Some of the notable developments are given below
 
-= Details =
+= 3000 BC - The Abacus =
+Abacus was built out of wood and beads. A rectangle wooden frame consist of beads
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
