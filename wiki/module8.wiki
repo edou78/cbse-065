@@ -5,7 +5,7 @@ Standard utilities available on a GNU/Linux OS
 
 = Details =
 
-This module provides an introduction to the standard utilities available on a GNU/Linux OS installation. We shall cover the features of each utility and the command line syntax for doing typical jobs.
+This module provides an introduction to the standard utilities available on a GNU/Linux OS installation. We shall cover the features of each utility and the command line syntax for doing typical administrative tasks.
 
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
