@@ -1,5 +1,5 @@
 <hr/>
-|| *Content* ||  Units of Memory Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte Petabyte ||
+|| *Content* ||  Units of Memory Bit (Binary Digit), Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, Petabyte ||
 || *Team* || Rajat Gupta ||
 || *Discussion* || [http://groups.google.com/group/cbse065/browse_thread/thread/1607fd29dd31bdcb] ||
 
