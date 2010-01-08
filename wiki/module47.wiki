@@ -24,14 +24,13 @@ Well known free software projects include the Linux kernel, Firefox, Apache web 
 Software forms a cornerstone of the knowledge economy. Software acts as an exponential multiplier of existing capacities in society. It provide the means to distribute services and information without expensive infrastructure. This is vital for a developing country like India. However software is extremely expensive and thus prevents such leveraging. 
 
 The Free software system changes the software development, distribution, maintanence and usage paradigm by making the distribution of source code mandatory to the recipient. Since source code is  simultaneously a knowledge repository,  a raw material and a tool, making code available effectively achives the following:
- 
-# Removes development barriers 
-# Reduce development costs  and Improve quality
+
+#1) Removes development barriers 
  * Free of cost development and debug tools
  * Reuse code since all code is avaialble for reuse
  * Incorporates new ideas since anybody is welcome to contribute his ideas
  * Reduces cost of testing new ideas to near zero
-# Reduce development costs  and Improve quality
+#2) Reduce development costs  and Improve quality
  * By having a large number of developers, effectively distributing the load
  * Debugging by large number of users, since code is available for scrutiny by anyone
  * Debugging under diverse conditions
