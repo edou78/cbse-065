@@ -1,4 +1,14 @@
-#summary One-sentence summary of this page.
+<hr/>
+
+|| *Content* || Why Free Software and Open Standard are important   ||
+|| *Team* || J T Dsouza  ||
+|| *Discussion Page* || [http://groups.google.com/group/cbse065/browse_thread/thread/6ab3a824f2ed8a75] ||
+
+
+<hr/>
+
+<wiki:toc max_depth="3" />
+
 
 = Introduction =
 
