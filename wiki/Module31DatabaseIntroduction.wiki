@@ -14,9 +14,23 @@ Suppose that we want offer this service on web to many schools across India at v
 Then we have various issues like how to get the data into the application, generating different daily, monthly, yearly reports from the data, ensuring the application is almost always available, taking care of any problems (or bugs as known in Software Industry / or issues as kcommonly referred to as in the rest of the IT industry), request for new features by users or necessitated by change of rules etc.
 
 In this module our focus will be on the logical way data is arranged.
-= Details =
+
+= Some History =
+
+Data storage is not a new concept. We have as old a medium as cave paintings, stone carvings and the such. More recently paper took the role of that. Now we are in the age where it is stored in magnetic/optical/semiconductor media.
+
+In the computer industry historically the organisation consisted of Hierarchical , network databases. Relational databases were developed later. the evolution has not stopped. Today we have vary large amount of data stored on the web by companies like yahoo, google using a different database called .
+
+
+(For reference -- to be removed in the final version)
+http://www.databasejournal.com/sqletc/article.php/1428721/Introduction-to-Databases-for-the-Web-Pt-1.htm
+
+Fast forward to present. One of the simplest organising method is a list where seperate items are appear in its own line. we will call this line a row
 
 Add your content here.  Format your content with:
+
   * Text in *bold* or _italic_
+
   * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ 
+ * Automatic links to other wiki pages
