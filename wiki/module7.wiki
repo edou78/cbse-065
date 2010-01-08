@@ -1,0 +1,31 @@
+<hr/>
+
+|| *Content* || *System Software* Introduction to Operating Systems, Need of operating systems, Functions of Operating System, Types of operating system, Free/Open Source Operating Systems (GNU Linux, OpenSolaris?, OpenBSD, Microsoft Windows, Android,Symbian)  ||
+|| *Team* || Siji Sunny, Mayank Joshi ||
+|| *Discussion Page* || [http://groups.google.com/group/cbse065/browse_thread/thread/e1e66933022ada97] ||
+
+
+<hr/>
+
+<wiki:toc max_depth="3" />
+= System software =
+
+System software provides services to other softwares and users to make efficient use of computer hardware. This module will cover Operating systems.
+
+== Topics ==
+
+  * Introduction to Operating Systems
+  * Need of Operating System
+  * Functions of Operating System
+  * Types of Operating System
+  * Free/Open Source Operating Systems
+    # GNU Linux
+    # OpenSolaris
+    # OpenBSD
+    # Microsoft Windows
+    # Android
+    # Symbian
+
+
+
+  
