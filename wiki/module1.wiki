@@ -32,7 +32,8 @@ William Oughtred invented Slide Rule based on Napier's invention. The slide rule
 The first gear-driven calculating machine is the calculating clock invented by Wilhelm Schickard.
 
 = 1642 AD - Pascaline - Blaise Pascal=
-
+Blaise Pascal invented the mechanical calculator called Pascaline. The calculator had spoked metal wheel dials, with the digit displayed around the circumference of each wheel. 
+To input a digit, the user placed a stylus in the corresponding space between the spokes, and turned the dial until a metal stop at the bottom was reached. This would display the number in the boxes at the top of the calculator. Then, redial the second number to be added, causing the sum of both numbers to appear in boxes at the top. Since the gears of the calculator only rotated in one direction, negative numbers could not be directly summed.
 
 
 
