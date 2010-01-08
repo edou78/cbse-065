@@ -17,7 +17,7 @@ One prominent MIT hacker Richard M. Stallman found these restrictions abhorrent 
 The Philopsphy underlying free software is to permit automatic, equal and immutable right to use, copy, modify and distribute software, to all recipients of such software. In principle it provides the tools, knowledge and resources for anyone to contribute ideas, code, documentation and feedback. 
 This caused (and continues to cause) an explosion of creativity and contributions, resulting in rapid development. A number of free licences in addition to the GPL like Apache, BSD, LGPL, AGPL. FDL, Mozilla etc, alongwith their projects and code came into widespread use.
 
-Well known free software projects include the Linux kernel, Firefox, Apache web server, Java, Gnome, KDE, GCC, X.org, VLC, BSD, Clamav etc. Infact the precursor of todays internet, known as UUCP was run using free software created by Ian Lance Taylor and most of the internet core ideas and usage originated from free software.
+Well known free software projects include the Linux kernel, Firefox, Apache web server, Java, Gnome, KDE, GCC, X.org, VLC, BSD, Clamav etc.
 
 *Why is Free Software Important*
 
@@ -39,7 +39,10 @@ The Free software system changes the software development, distribution, maintan
 
 #4) Provides software for users which is essentially free of cost
 
-#5) Provides an extremely deep stack of applications covering every area of the software  and computing infrastructure. It includes compilers, databases, languages, network and security tools, package management, code management, Ecad, CAD, Sound and Video, Graphic editing, Office suites,Maths and Scientific apps, etc
+#5) Provides an extremely deep stack of applications covering every area of the software
+ and computing infrastructure. It includes compilers, databases, languages,
+ network and security tools, package management, code management, Ecad, CAD, Sound and
+ Video, Graphic editing, Office suites,Maths and Scientific apps, etc
 
 #6) Works on a wide spectrum of hardware architectures covering, ARM, SH, Power, Sparc, I386, Sharc, TMS, Alpha, TRON. This covers small embedded systems to petaflop speed super comps. Infact 49 of the top 50 supercomuters use GNU/Linux.
 
