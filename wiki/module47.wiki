@@ -9,27 +9,29 @@ This Appendix provides an introduction to free software and Free and Open Standa
 The acronym FLOSS refers to Free, Libre and Open Source Software. The term covers a vast panoply of software developed in an open and collaborative environment by software pros, scientific organisations, defence and space organisations, software and hardware companies, and individuals from every imaginable skill and profession. Such software is also known as Free software or Open Source software.
 
 *History and Philosophy*
+
 The free software movement can trace it's roots to the MIT Artificial Intelligence Laboratory of the 60s and 70s. In the period 1950-1970 software was produced in a collaborative manner and distributed with few if any restrictions. However as computer usage grew, the early business model of bundled software and hardware started unravelling and an independent software industry started taking root. Along with this change many restrictions began to find their way into licences. These restrictions prevented distribution and reuse of code.
 
-One prominent MIT hacker Richard M. Stallman found these restrictions abhorrent and announced the GNU Project in 1983. The goal of this project was to develop a Unix like operating system free of these restrictions. Development of the GNU Operating System began in January 1984. Shortly after, in 1985  the Free Software Foundation (FSF) was formed. The definition of free software and the GNU licence (GPL V1) were authored by Richard M. Stallman and Eben Moglen at this time and released by the FSF.
+One prominent MIT hacker Richard M. Stallman found these restrictions abhorrent and announced the GNU Project in 1983. The goal of this project was to develop a Unix like operating system free of these restrictions. The acronym GNU stands for GNU is Not UNIX, which aptly describes it's independent code base. Development of the GNU Operating System began in January 1984. Shortly after, in 1985  the Free Software Foundation (FSF) was formed. The definition of free software and the GNU licence (GPL V1) were authored by Richard M. Stallman and Eben Moglen at this time and released by the FSF.
 
-The Philopsphy underlying free software is to permit automatic, equal and immutable right to use, copy, modify and distribute software, to all recipents of the software. In principle it provides the tools and resources for anyone to contribute ideas, code, documentation and feedback. 
-This had (and continues to have) an explosion of creativity and contribution of ideas and code. A number of free licences in addition to the GPL like Apache, BSD, LGPL, AGPL. FDL, Mozilla etc, alongwith their projects and code came into widespread use.
+The Philopsphy underlying free software is to permit automatic, equal and immutable right to use, copy, modify and distribute software, to all recipients of such software. In principle it provides the tools, knowledge and resources for anyone to contribute ideas, code, documentation and feedback. 
+This caused (and continues to cause) an explosion of creativity and contributions, resulting in rapid development. A number of free licences in addition to the GPL like Apache, BSD, LGPL, AGPL. FDL, Mozilla etc, alongwith their projects and code came into widespread use.
 
-Some widely used Free software
-Well known free software projects include the Linux kernel, Firefox, Apache web server, Java, Gnome, KDE, GCC, X.org, VLC, BSD, Clamav etc
+Well known free software projects include the Linux kernel, Firefox, Apache web server, Java, Gnome, KDE, GCC, X.org, VLC, BSD, Clamav etc. Infact the precursor of todays internet, known as UUCP was run using free software created by Ian Lance Taylor and most of the internet core ideas and usage originated from free software.
 
-Why is Free Software Important
+*Why is Free Software Important*
 
 Software forms a cornerstone of the knowledge economy. Software acts as an exponential multiplier of existing capacities in society. It provide the means to distribute services and information without expensive infrastructure. This is vital for a developing country like India. However software is extremely expensive and thus prevents such leveraging. 
 
-The Free software system changes the software development, distribution, maintanence and usage paradigm by making the distribution of source code mandatory to the recipient. Since source code is  simultaneously a knowledge repository,  a raw material and a tool, making code available effectively 
-#1) Removes development barriers 
+The Free software system changes the software development, distribution, maintanence and usage paradigm by making the distribution of source code mandatory to the recipient. Since source code is  simultaneously a knowledge repository,  a raw material and a tool, making code available effectively achives the following:
+ 
+# Removes development barriers 
+# Reduce development costs  and Improve quality
  * Free of cost development and debug tools
  * Reuse code since all code is avaialble for reuse
  * Incorporates new ideas since anybody is welcome to contribute his ideas
  * Reduces cost of testing new ideas to near zero
-#2) Reduce development costs  and Improve quality
+# Reduce development costs  and Improve quality
  * By having a large number of developers, effectively distributing the load
  * Debugging by large number of users, since code is available for scrutiny by anyone
  * Debugging under diverse conditions
