@@ -2,7 +2,8 @@
 
 = Introduction =
 
-This Appendix 
+This Appendix provides an introduction to free software and Free and Open Standards.
+
 What is FLOSS 
 
 The acronym FLOSS refers to Free, Libre and Open Source Software. The term covers a vast panoply of software developed in an open and collaborative environment by software pros, scientific organisations, defence and space organisations, software and hardware companies, and individuals from every imaginable skill and profession. Such software is also known as Free software or Open Source software.
