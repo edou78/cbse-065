@@ -18,7 +18,7 @@ The Evolution of computers passed through a number of stages before reaching the
 Some of the notable developments are given below
 
 = 3000 BC - The Abacus =
-http://en.wikipedia.org/wiki/File:Boulier1.JPG
+http://upload.wikimedia.org/wikipedia/commons/e/ea/Boulier1.JPG
 
 Abacus was built out of wood and beads. A rectangle wooden frame consist of beads representing the digits , strung on cords representing decimal digits. It was mainly used for simple addition and subtraction.
 
