@@ -1,0 +1,22 @@
+= System software =
+
+System software provides services to other softwares and users to make efficient use of computer hardware. This module will cover Operating systems.
+
+== Topics ==
+
+  * Introduction to Operating Systems
+  * Need of Operating System
+  * Functions of Operating System
+  * Types of Operating System
+  * Free/Open Source Operating Systems
+    # GNU Linux
+    # OpenSolaris
+    # OpenBSD
+    # Microsoft Windows
+    # Android
+    # Symbian
+
+== Contributors ==
+
+  # Siji Sunny
+  # Mayank Joshi
