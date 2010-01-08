@@ -1,0 +1,18 @@
+#summary One-sentence summary of this page.
+
+This Module introduces the concept of data storage techniques with specific focus on Relational databases and its management
+
+
+= Introduction =
+
+Computers are used to store data. From the analysis of data, we obtain information.
+
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
