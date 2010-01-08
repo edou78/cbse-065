@@ -55,10 +55,10 @@ The term "pebibyte", using the binary prefix pebi- (Pi), is used for 1024^5^ byt
 
 1 PiB = 1,125,899,906,842,624 B.
 
-Quick Reference
-||8bits || 1 byte|| ||
-||1024 bytes || 1 Kilo Byte ||1KB||
-||1024 KB || 1 Mega Byte ||1MB||
-||1024 MB || 1 Giga Byte ||1GB||
-||1024 GB || 1 Tera Byte ||1TB||
-||1024 TB || 1 Peta Byte ||1PB||
+Quick Reference :
+|| 1      Byte (1 B) || 8    bits || 
+|| 1 Kilo Byte (1KB) || 1024 bytes ||
+|| 1 Mega Byte (1MB) || 1024 KB ||
+|| 1 Giga Byte (1GB) || 1024 MB ||
+|| 1 Tera Byte (1TB) || 1024 GB ||
+|| 1 Peta Byte (1PB) || 1024 TB ||
