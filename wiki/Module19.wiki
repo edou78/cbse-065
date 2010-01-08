@@ -63,3 +63,20 @@ Example: There may be thousands of other bicycles in existence, all of the same 
 The idea of classes leads to the idea of inheritance. Inheritance provides a powerful and natural mechanism for organizing and structuring your software. 
 In object-oriented programming, inheritance is the concept that when a class of objects is defined, any subclass that is defined can inherit the definitions of one or more general classes. This means for the programmer that an object in a subclass need not carry its own definition of data and methods that are generic to the class (or classes) of which it is a part. This not only speeds up program development; it also ensures an inherent validity to the defined subclass object (what works and is consistent about the class will also work for the subclass).
 Example: Class of vehicles is divided into cars, trucks, buses and motorcycles.
+
+=== Encapsulation ===
+
+Encapsulation conceals the functional details of a class from objects that send messages to it.
+In object-oriented programming, information hiding or encapsulation (by way of nesting of types) reduces software development risk by shifting the code's dependency on an uncertain implementation (design decision) onto a well-defined interface. Clients of the interface perform operations purely through it so if the implementation changes, the clients do not have to change.
+
+=== Message ===
+
+A message in its most general meaning is an object of communication. It is a vessel which provides information. 
+
+=== Polymorphism ===
+
+Subtype polymorphism, almost universally called just polymorphism in the context of object-oriented programming, is the ability of one type, A, to appear as and be used like another type, B.
+Polymorphism allows the programmer to treat derived class members just like their parent class' members. More precisely, Polymorphism in object-oriented programming is the ability of objects belonging to different data types to respond to method calls of methods of the same name, each one according to an appropriate type-specific behavior. One method, or an operator such as +, -, or *, can be abstractly applied in many different situations.
+* Overriding Polymorphism * If a Dog is commanded to speak(), this may elicit a bark(). However, if a Pig is commanded to speak(), this may elicit an oink(). They both inherit speak() from Animal, but their derived class methods override the methods of the parent class; this is Overriding Polymorphism.
+
+* Overloading Polymorphism * Overloading Polymorphism is the use of one method signature, or one operator such as "+", to perform several different functions depending on the implementation. The "+" operator, for example, may be used to perform integer addition, float addition, list concatenation, or string concatenation.
