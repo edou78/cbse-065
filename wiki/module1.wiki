@@ -43,7 +43,3 @@ To input a digit, the user placed a stylus in the corresponding space between th
 1842-43, Lovelace translated a memoir on Babbage's Analytical Engine. With the article, she appended a set of notes, a method for calculating a sequence of Bernoulli numbers with the Engine, which would have run correctly had the Analytical Engine ever been built. Based on this work, Lovelace is now widely credited with being the first computer programmer and her method is recognised as the world's first computer program.
 
 =1890 AD - Tabulating Machine - Herman Hollerith =
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
