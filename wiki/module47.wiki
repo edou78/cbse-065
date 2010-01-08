@@ -4,15 +4,14 @@
 
 This Appendix provides an introduction to free software and Free and Open Standards.
 
-What is FLOSS 
+*What is FLOSS* 
 
 The acronym FLOSS refers to Free, Libre and Open Source Software. The term covers a vast panoply of software developed in an open and collaborative environment by software pros, scientific organisations, defence and space organisations, software and hardware companies, and individuals from every imaginable skill and profession. Such software is also known as Free software or Open Source software.
 
-History and Philosophy
-The free software movement can trace it's roots to the MIT Artificial Intelligence Laboratory
- of the 60s and 70s. In the period 1950-1970 software was produced in a colaborative manner and distributed with few if any restrictions. However as computer usage grew, the early business model of bundled software and hardware started unravelling and an independent software industry started taking root. Along with this change many restrictions began to find their way into licences. These restrictions prevented distribution and reuse of code.
+*History and Philosophy*
+The free software movement can trace it's roots to the MIT Artificial Intelligence Laboratory of the 60s and 70s. In the period 1950-1970 software was produced in a collaborative manner and distributed with few if any restrictions. However as computer usage grew, the early business model of bundled software and hardware started unravelling and an independent software industry started taking root. Along with this change many restrictions began to find their way into licences. These restrictions prevented distribution and reuse of code.
 
-One prominent MIT hacker Richard M. Stallman found these resrictions abhorent and announced the GNU Project in 1983. The goal of this project was to develop a Unix like operating system free of these restrictions. Development of the GNU Operating System began in January 1984. Shortly after, in 1985  the Free Software Foundation (FSF) was formed. The definition of free software and the GNU licence (GPL V1) were authored by Richard M. Stallman and Eben Moglen at this time and released by the FSF.
+One prominent MIT hacker Richard M. Stallman found these restrictions abhorrent and announced the GNU Project in 1983. The goal of this project was to develop a Unix like operating system free of these restrictions. Development of the GNU Operating System began in January 1984. Shortly after, in 1985  the Free Software Foundation (FSF) was formed. The definition of free software and the GNU licence (GPL V1) were authored by Richard M. Stallman and Eben Moglen at this time and released by the FSF.
 
 The Philopsphy underlying free software is to permit automatic, equal and immutable right to use, copy, modify and distribute software, to all recipents of the software. In principle it provides the tools and resources for anyone to contribute ideas, code, documentation and feedback. 
 This had (and continues to have) an explosion of creativity and contribution of ideas and code. A number of free licences in addition to the GPL like Apache, BSD, LGPL, AGPL. FDL, Mozilla etc, alongwith their projects and code came into widespread use.
