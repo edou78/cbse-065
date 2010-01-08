@@ -1,5 +1,15 @@
 #Introduction to computing and Evolution of computers
 
+<hr/>
+
+|| *Content* || Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting ||
+|| *Team* || Thiagarajan N ||
+|| *Discussion* || [http://groups.google.com/group/cbse065/browse_thread/thread/94aa1429d159a17e] || 
+
+<hr/>
+
+<wiki:toc max_depth="3" />
+
 = Introduction =
 
 Life always triggers to perform arithmetical and logical calculations. Humans tend to involve in mathematical calculations. During pre historic period they counted using fingers, pebbles and beads. Markings were made on wood, rocks and bones. Calculations were made based on comparison of objects.
