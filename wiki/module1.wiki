@@ -25,12 +25,14 @@ Abacus was built out of wood and beads. A rectangle wooden frame consist of bead
 =1617 AD - Napier's Bones =
 When John Napier invented logarithms,values were carved on ivory sticks which are now called Napier's Bones.
 
-=1632 AD - Slide Rule - William Oughtred.
+=1632 AD - Slide Rule - William Oughtred=
 William Oughtred invented Slide Rule based on Napier's invention. The slide rule uses two logarithmic scales to do multiplication and division of numbers. It is based on the principle that the actual distance from the starting point of the rule is directly proportional to the logarithm of the numbers printed on the Slide Rule.
 
-= 1623 AD = Calculating Clock - Wilhelm Schickard  =
+= 1623 AD - Calculating Clock - Wilhelm Schickard =
 The first gear-driven calculating machine is the calculating clock invented by Wilhelm Schickard.
-= 1642 AD = Pascaline - Blaise Pascal=
+
+= 1642 AD - Pascaline - Blaise Pascal=
+
 
 
 
