@@ -3,11 +3,17 @@
 
 = Introduction =
 
-Computers are used to store data. From the analysis of data, we obtain information.
+Computers are used to store data. From the analysis of data, we obtain information. The way in which data is organised or arranged has evolved historically. This is different from ideas such has puched card, tape, magnetic disk, semiconductor etc. which are more of a hardware technology.
 
+By organisation of data for this module we are looking at a more abstract concept. Let us take an example. 
 
+Suppose an application is to be designed for preparing time table and attendance of students and teachers. We are then thinking in terms of subjects, days, holidays, teachers, students, rooms, time etc as logical way of organising data.
 
+Suppose that we want offer this service on web to many schools across India at various schools at various locations. Then we are thinking in terms of states, location, different state boards and the such. We need to think of ways in which we have to organise the data.
 
+Then we have various issues like how to get the data into the application, generating different daily, monthly, yearly reports from the data, ensuring the application is almost always available, taking care of any problems (or bugs as known in Software Industry / or issues as kcommonly referred to as in the rest of the IT industry), request for new features by users or necessitated by change of rules etc.
+
+In this module our focus will be on the logical way data is arranged.
 = Details =
 
 Add your content here.  Format your content with:
