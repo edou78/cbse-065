@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
-
-This Module introduces the concept of data storage techniques with specific focus on Relational databases and its management
+#summary This Module introduces the concept of data storage techniques with specific focus on Relational databases and its management
 
 
 = Introduction =
