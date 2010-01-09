@@ -16,11 +16,11 @@ This Appendix provides an introduction to free software and Free and Open Standa
 
 *What is FLOSS* 
 
-The acronym FLOSS refers to Free, Libre and Open Source Software. The term covers a vast panoply of software developed in an open and collaborative environment by software pros, scientific organisations, defence and space organisations, software and hardware companies, and individuals from every imaginable skill and profession. Such software is also known as Free software or Open Source software.
+The acronym FLOSS refers to Free, Libre and Open Source Software. The term covers a vast panoply of software developed in an open and collaborative environment by software pros, scientific organisations, defence and space organisations, software and hardware companies, and individuals from every imaginable skill and profession. Such software is also known as Free software or Open Source software. Subtle philosophical differences exist between proponents of the term Open source and the proponents of the term Free software. Also the term Free tends to be confused as meaning gratis (free of costs) instead of it's intended meaning of freedom. Hence the term FLOSS or FOSS is finding increasing use.
 
 *History and Philosophy*
 
-The free software movement can trace it's roots to the MIT Artificial Intelligence Laboratory of the 60s and 70s. In the period 1950-1970 software was produced in a collaborative manner and distributed with few if any restrictions. However as computer usage grew, the early business model of bundled software and hardware started unravelling and an independent software industry started taking root. Along with this change many restrictions began to find their way into licences. These restrictions prevented distribution and reuse of code.
+The free software movement can trace it's roots to the MIT Artificial Intelligence Laboratory of the 60s and 70s. In the period 1950-1970 software was produced in a collaborative manner and distributed with few if any restrictions. However as computer usage grew, the early business model of bundled software and hardware started unraveling and an independent software industry started taking root. Along with this change many restrictions began to find their way into licences. These restrictions prevented distribution and reuse of code.
 
 One prominent MIT hacker Richard M. Stallman found these restrictions abhorrent and announced the GNU Project in 1983. The goal of this project was to develop a Unix like operating system free of these restrictions. The acronym GNU stands for GNU is Not UNIX, which aptly describes it's independent code base. Development of the GNU Operating System began in January 1984. Shortly after, in 1985  the Free Software Foundation (FSF) was formed. The definition of free software and the GNU licence (GPL V1) were authored by Richard M. Stallman and Eben Moglen at this time and released by the FSF.
 
@@ -67,6 +67,7 @@ This covers small embedded systems to petaflop speed super comps. Infact 49 of t
 
 Infact the distributed and collaborative nature of FLOSS is being used in several other areas, like hardware development, Gene mapping etc. 
 
-*What are Free and Open Standrds*
+*What are Free and Open Standards*
 
-A standard that is available free of costs and encumbrances  to anybody can be defined as free and open if it meets the following crit 
+A standard that is available free of costs and restrictions to anybody for implementation can be termed as free and open. 
+A formal definition has been proposed to remove ambiguities, that may lead to confusion:
