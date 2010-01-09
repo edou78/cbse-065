@@ -69,11 +69,56 @@ Infact the distributed and collaborative nature of FLOSS is being used in severa
 
 *What are Free and Open Standards*
 
-A standard is a set of rules and specifications that describe how a particular task / device / software should conform to. A free and open standard may is a standard that is available free of costs and restrictions to anybody for implementation. 
+A standard is a set of rules and specifications that a particular task / device / software should conform to. A free and open standard may is a standard that is available free of costs and restrictions to anybody for implementation. 
 A formal definition has been proposed to remove ambiguities, that may lead to confusion about which standards are open:
     * The standard is adopted and will be maintained by a not-for-profit organization, and its ongoing development occurs on the basis of an open decision-making procedure available to all interested parties.
     * The standard has been published and the standard specification document is available freely. It must be permissible to all to copy, distribute, and use it freely.
     * The patents possibly present on (parts of) the standard are made irrevocably available on a royalty-free basis.
     * There are no constraints on the re-use of the standard.
 
-   
+Some standards that meet the above criteria are
+ * Open Document Format (ODF)
+ * Hypertext Markup Language (HTML)
+ * Extensible HTML (XHTML)
+ * Internet Protocol (IP) 
+ * Transmission Control Protocol (TCP)
+ * Xtensibile Messaging and Presence Protocol (XMPP)
+
+Some standards that are open but *DO Not* meet the above criteria are
+ H264 MPEG4 video compression 
+ Office Open XML (OOXML)
+ SMBFS network file 
+
+All of the above standards are available, but have various restrictions that prevent Open implementation and / or distribution and / or usage.
+
+*Why are Free and Open Standards important*
+
+The role of a standard is to allow multiple vendors to develop and produce goods / software / services, that can easily operate with each other. A simple example is the 230V AC plugs and sockets in our houses. Any device conforming to the standard can be plugged in. The result of a standard is to provide a large market for both consumers and suppliers - any customer can buy from any vendor and any vendor can sell to any customer.
+
+One can imagine the catastrophe if every plug and socket differs or if every socket supplied a voltage other than 230VAc. This situation is caused by multiple standards or non availability of standards. 
+
+ Imagine further that you had to pay some entity (organisation or person) for buying the specifications for making the plug / socket and further you had to pay this entity a charge for every plug / socket you sold. While it would make this entity rich, it would make every plug /socket more expensive. This situation arises from use of standards which are not Free and Open.
+ 
+ Now imagine further that this entity is inimical to you (or your country) and therefore refuses to sell you the specs. His arbitrary decision will prevent you (or the country ) from using this technology.  This situation arises from implementation of standards that are Discriminatory.
+ 
+ The above example is based on an extremely simple piece of hardware. Yet the implications of encumbered standards are very clear. In the case of computers and digital data, the situation becomes extremely complicated. This is because computers accept (input), process and disseminate (output) information as digital data, which is unintelligible to humans. Consequently the data has to be converted and reconverted every time a human needs to use that data. This involves moving the data between innumerable machines, software, networks and organisations extending across the globe. In order that the data move through this chain, it is obvious that every part in this chain should understand the data that it receives from the preceeding stage and presents the output in a form that the next stage understands. Any deviation would result in the process coming to a dead stop. 
+
+A good example is using net banking to transfer funds form your account in a bank in Mumbai to a vendor with an account in another bank located in Delhi, while you are in London. This is possible because there is long chain of standards compliant technology at work. However occasionally you will get a "This site only supports xyz browser". This is caused because the site developers did not bother to follow a Free and open standard, thereby  causing you some trouble. 
+
+We can further extend this analogy to include effects of time. Your data should also be reusable in the future, long after the current machines, software and technology have become obsolete. For example the digital data recording your birth date and XII certificate details should be readable 20 years from now. Land records have to accessed in excess of 100 years. Data form Banking / Pension / Insurance etc typically has to last the lifetime of an individual.
+
+One may note that the typical life of a piece of software is between 3 and 15 years. The process of software obsolescence is termed bitrot.
+
+From the above it is obvious that creation of new standards have to incorporate methods that are backward compatible with older data and hence the older standard must be freely available and widely implemented and the new standard would have to be developed in an open and transparent process, with maximum participation of technologists and users.
+It is further obvious that if we have multiple standards, we would have to incur additional costs to process data from different sources. 
+
+One quite often comes across such situations while trying to play old music on cassettes or vinyl records. If one has to reuse this data, we have to convert it from it's old format to the new digital formats, which involves additional cost and resources.
+
+Yet another example is changing trains when the track changes to meter gauge from the existing broad gauge. We as travelers are stressed and the Indian railways has to incur additional costs for a second set of tracks and trains. Recognizing the problem the railways will be spending an estimated Rs.16000/- crores to convert all meter gauge lines to broad gauge.
+
+In summary 
+ * Standards must be Free and Open
+ * New standards must be backward compatabile
+ * Multiple standards should be avoided as a dangerous impediment to progress
+
+One may refer to http://www.digistan.org/text:rationale to get a good overview of the process of creating, implementing, using and maintaining standards.
