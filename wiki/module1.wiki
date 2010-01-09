@@ -4,7 +4,8 @@
 
 || *Content* || Evolution of computers; Basics of computer and networking: Functional Components of a Computer and their inter-connections, concept of Booting ||
 || *Team* || Thiagarajan N ||
-|| *Discussion* || [http://groups.google.com/group/cbse065/browse_thread/thread/94aa1429d159a17e] || 
+|| *Discussion* || [http://groups.google.com/group/cbse065/browse_thread/thread/94aa1429d159a17e] ||
+|| *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module1.wiki&format=side&r=-1 ||  
 
 <hr/>
 
