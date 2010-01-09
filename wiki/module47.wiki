@@ -69,18 +69,11 @@ Infact the distributed and collaborative nature of FLOSS is being used in severa
 
 *What are Free and Open Standards*
 
-A standard that is available free of costs and restrictions to anybody for implementation can be termed as free and open. 
-A formal definition has been proposed to remove ambiguities, that may lead to confusion:
+A standard is a set of rules and specifications that describe how a particular task / device / software should conform to. A free and open standard may is a standard that is available free of costs and restrictions to anybody for implementation. 
+A formal definition has been proposed to remove ambiguities, that may lead to confusion about which standards are open:
+    * The standard is adopted and will be maintained by a not-for-profit organization, and its ongoing development occurs on the basis of an open decision-making procedure available to all interested parties.
+    * The standard has been published and the standard specification document is available freely. It must be permissible to all to copy, distribute, and use it freely.
+    * The patents possibly present on (parts of) the standard are made irrevocably available on a royalty-free basis.
+    * There are no constraints on the re-use of the standard.
 
-   1. *No Intentional Secrets:* The standard MUST NOT withhold any detail necessary for interoperable implementation. As flaws are inevitable, the standard MUST define a process for fixing flaws identified during implementation and interoperability testing and to incorporate said changes into a revised version or superseding version of the standard to be released under terms that do not violate the OSR.
-
-   2. *Availability:* The standard MUST be freely and publicly available (e.g., from a stable web site) under royalty-free terms.
-
-   3. *Patents:* All patents essential to implementation of the standard MUST:
-          * be licensed under royalty-free terms for unrestricted use, or
-          * be covered by a promise of non-assertion when practiced by open source software
-
-   4. *No Agreements:* There MUST NOT be any requirement for execution of a license agreement, NDA, grant, click-through, or any other form of paperwork to deploy conforming implementations of the standard.
-
-   5. *No Incompatible Dependencies:* Implementation of the standard MUST NOT require any other technology that fails to meet the criteria of this Requirement.
    
