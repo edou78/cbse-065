@@ -15,3 +15,9 @@ If you have anyquery then ask here.
 == How to add image to an text ==
 
 == What type of Images I can add here ==
+ * You can only add "CC-By-SA" images.
+ * One quick way to take image is from CCsearch
+  * Search it here http://www.flickr.com/search/?l=commderiv&mt=all&adv=1&w=all&q=&m=text
+  * Get exact image url
+  * paste on your module/article
+ * You can also create new image and upload it flickr and give a link here
