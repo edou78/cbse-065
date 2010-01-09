@@ -1,6 +1,8 @@
 || *Content* || Developer Tools Compilers, Integrated Development Environment (IDE e.g.Netbeans), Debugging Tools, Bug tracking tools (e.g. Bugzilla) ||
 || *Team* || Gaurav Paliwal, ||
 || *Discussion Page* || [http://groups.google.com/group/cbse065/browse_thread/thread/0046a965fa31d122] ||
+|| *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module10.wiki&format=side&r=-1 || 
+
 <hr/>
 
 <wiki:toc max_depth="3" />
