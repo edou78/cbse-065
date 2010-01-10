@@ -7,6 +7,17 @@ Standard utilities available on a GNU/Linux OS
 
 This module provides an introduction to the standard utilities available on a GNU/Linux OS installation. We shall cover the features of each utility and the command line syntax for doing typical administrative tasks.
 
+We shall be using debian distribution named Lenny. However what we learn here will be applicable on almost any GNU/Linux distribution like Fedora, Suse, Mandriva, Ubuntu, Slacware etc. Embedded distributions like DSL, MontaVista, Emdebian etc, may not have all the utilities and even included utilities will have several features missing. 
+
+Utilities are small command line programs used to do mundane installation, maintanence, configuration and testing tasks.
+These programs can be divided into a few broad categories
+ #1 Shell
+ #2 File and directory utils
+ #3 Network utils
+ #4 Search utils
+ #5 Install utils
+ #6 Editors
+
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
