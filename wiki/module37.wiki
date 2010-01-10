@@ -76,3 +76,27 @@ Note : mod(a,b) is also applicable as there is no case sensitivity.
         =====mysql> select mod(-10,-4);=====
                
         The output is -2.
+
+
+== POWER() ==
+ 
+  * POWER(A,B)
+    This function returns the value of A^B, provided A and B are integers.
+    Note : power(a,b) is also applicable as there is no case sensitivity.
+           pow(a,b) is also applicable.
+
+===SYNTAX===
+
+||select power(a,b);||
+
+       * eg
+
+         =====mysql> select power(3,4);=====
+               
+        The output is 81.
+
+
+
+    
+
+     
