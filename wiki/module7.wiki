@@ -20,10 +20,13 @@ System software provides services to other softwares and users to make efficient
   * Functions of Operating System
   * Types of Operating System
   * Free/Open Source Operating Systems
-    # GNU Linux
-    # OpenSolaris
-    # OpenBSD
+    # Unix
+      # These all are similar to Unix. But no part of code is same in the kernel.
+      # GNU Linux
+      # OpenSolaris (This is provided by Sun Microsystems)
+      # BSD (OpenBSD, FreeBSD, many other variants)
     # Microsoft Windows
+    # MS-DOS (now obsolete)
     # Android
     # Symbian
 
