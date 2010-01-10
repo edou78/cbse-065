@@ -1,7 +1,7 @@
 <hr/>
 
 || *Content* || Why Free Software and Open Standard are important   ||
-|| *Team* || J T Dsouza  ||
+|| *Team* || J T D'souza  ||
 || *Discussion Page* || [http://groups.google.com/group/cbse065/browse_thread/thread/6ab3a824f2ed8a75] ||
 || *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module47.wiki&format=side&r=-1 || 
 || *Old Version List* || http://code.google.com/p/cbse-065/source/list?path=/wiki/module47.wiki ||
@@ -15,11 +15,11 @@
 
 This Appendix provides an introduction to free software and Free and Open Standards.
 
-*What is FLOSS* 
+=What is FLOSS=
 
 The acronym FLOSS refers to Free, Libre and Open Source Software. The term covers a vast panoply of software developed in an open and collaborative environment by software pros, scientific organisations, defence and space organisations, software and hardware companies, and individuals from every imaginable skill and profession. Such software is also known as Free software or Open Source software. Subtle philosophical differences exist between proponents of the term Open source and the proponents of the term Free software. Also the term Free tends to be confused as meaning gratis (free of costs) instead of it's intended meaning of freedom. Hence the term FLOSS or FOSS is finding increasing use.
 
-*History and Philosophy*
+==History and Philosophy==
 
 The free software movement can trace it's roots to the MIT Artificial Intelligence Laboratory of the 60s and 70s. In the period 1950-1970 software was produced in a collaborative manner and distributed with few if any restrictions. However as computer usage grew, the early business model of bundled software and hardware started unraveling and an independent software industry started taking root. Along with this change many restrictions began to find their way into licences. These restrictions prevented distribution and reuse of code.
 
@@ -30,7 +30,7 @@ This caused (and continues to cause) an explosion of creativity and contribution
 
 Well known free software projects include the Linux kernel, Firefox, Apache web server, Wikipedia, Java, Gnome, Bittorrent, KDE, GCC, X.org, VLC, BSD, Clamav etc.
 
-*Why is Free Software Important*
+==Why is Free Software Important==
 
 Software forms a cornerstone of the knowledge economy. Software acts as an exponential multiplier of existing capacities in society. It provide the means to distribute services and information without expensive infrastructure. This is vital for a developing country like India. However software is extremely expensive and thus prevents such leveraging. 
 
@@ -59,7 +59,7 @@ The Free software system changes the software development, distribution, mainten
 
 Infact the distributed and collaborative nature of FLOSS is being used in several other areas, like hardware development, Gene mapping etc. 
 
-*What are Free and Open Standards*
+=What are Free and Open Standards=
 
 A standard is a set of rules and specifications that a particular task / device / software should conform to. A free and open standard may is a standard that is available free of costs and restrictions to anybody for implementation. 
 A formal definition has been proposed to remove ambiguities, that may lead to confusion about which standards are open:
@@ -83,7 +83,7 @@ Some standards that are open but *DO Not* meet the above criteria are
 
 All of the above standards are available, but have various restrictions that prevent Open implementation and / or distribution and / or usage.
 
-*Why are Free and Open Standards important*
+==Why are Free and Open Standards important==
 
 The role of a standard is to allow multiple vendors to develop and produce goods / software / services, that can easily operate with each other. A simple example is the 230V AC plugs and sockets in our houses. Any device conforming to the standard can be plugged in. The result of a standard is to provide a large market for both consumers and suppliers - any customer can buy from any vendor and any vendor can sell to any customer.
 
@@ -108,7 +108,7 @@ One quite often comes across such situations while trying to play old music on c
 
 Yet another example is changing trains when the track changes to meter gauge from the existing broad gauge. We as travelers are stressed and the Indian railways has to incur additional costs for a second set of tracks and trains. Recognizing the problem the railways will be spending an estimated Rs.16000/- crores to convert all meter gauge lines to broad gauge.
 
-In summary 
+=In summary=
  * Standards must be Free and Open
  * New standards must be backward compatabile
  * Multiple standards should be avoided as a dangerous impediment to progress
