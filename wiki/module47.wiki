@@ -36,35 +36,26 @@ Software forms a cornerstone of the knowledge economy. Software acts as an expon
 
 The Free software system changes the software development, distribution, maintenance and usage paradigm by making the distribution of source code mandatory to the recipient. Since source code is  simultaneously a knowledge repository,  a raw material and a tool, making code available effectively achieves the following:
 
-#1) Removes development barriers 
- * Free of cost development and debug tools
- * Reuse code since all code is available for reuse
- * Incorporates new ideas since anybody is welcome to contribute his ideas
- * Reduces cost of testing new ideas to near zero
-#2) Reduce development costs  and Improve quality
- * By having a large number of developers, effectively distributing the load
- * Debugging by large number of users, since code is available for scrutiny by anyone
- * Debugging under diverse conditions
- * Excellent security as code is scrutinised for bugs
-#3) Creates a knowledge society by sharing of ideas through code
-
-#4) Provides software for users which is essentially free of cost
-
-#5) Provides an extremely deep stack of applications covering every area of the software
- and computing infrastructure. Applications includes compilers, databases, languages,
- network and security tools, package management, code management, Ecad, CAD, Sound and
- Video, Graphic editing, Office suites, Maths and Scientific apps, etc. 
-
-#6) Works on a wide spectrum of hardware architectures covering, ARM, Blackfin, cris, SH, Power, Sparc, I386, Sharc, TMS, Alpha parisc, TRON, Alpha, ARM, avr32, cris, ia64, m32r,   m68k, mn10300, powerpc, sh, sparc64, x86, s390, xtensa
-This covers small embedded systems to petaflop speed super comps. Infact 49 of the top 50 supercomputers use GNU/Linux as the OS.
-
-
-#8)Creates the infrastructure for Software-As-Service Industry, through opportunities for
- * Installation 
- * Maintanence
- * Customisation
- * Localization
- * Distribution
+ # Removes development barriers 
+  * Free of cost development and debug tools
+  * Reuse code since all code is available for reuse
+  * Incorporates new ideas since anybody is welcome to contribute his ideas
+  * Reduces cost of testing new ideas to near zero
+ # Reduce development costs  and Improve quality
+  * By having a large number of developers, effectively distributing the load
+  * Debugging by large number of users, since code is available for scrutiny by anyone
+  * Debugging under diverse conditions
+  * Excellent security as code is scrutinised for bugs
+ # Creates a knowledge society by sharing of ideas through code 
+ # Provides software for users which is essentially free of cost
+ # Provides an extremely deep stack of applications covering every area of the software and computing infrastructure. Applications includes compilers, databases, languages, network and security tools, package management, code management, Ecad, CAD, Sound and Video, Graphic editing, Office suites, Maths and Scientific apps, etc.
+ # Works on a wide spectrum of hardware architectures covering, ARM, Blackfin, cris, SH, Power, Sparc, I386, Sharc, TMS, Alpha parisc, TRON, Alpha, ARM, avr32, cris, ia64, m32r, m68k, mn10300, powerpc, sh, sparc64, x86, s390, xtensa. This covers small embedded systems to petaflop speed super comps. Infact 49 of the top 50 supercomputers use GNU/Linux as the OS.
+ # Creates the infrastructure for Software-As-Service Industry, through opportunities for
+  * Installation 
+  * Maintanence
+  * Customisation
+  * Localization
+  * Distribution
 
 Infact the distributed and collaborative nature of FLOSS is being used in several other areas, like hardware development, Gene mapping etc. 
 
