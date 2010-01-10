@@ -61,6 +61,13 @@ Infact the distributed and collaborative nature of FLOSS is being used in severa
 
 =In summary=
 
+One may refer to the links below for a deeper view of the FLOSS philosophies, methodologies and a few key personalities.
+http://www.fsf.org
+http://en.wikipedia.org/wiki/Richard_M._Stallman
+http://en.wikipedia.org/wiki/Eric_S._Raymond
+http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/
+http://en.wikipedia.org/wiki/Linus_Torvalds
+
 =What are Free and Open Standards=
 
 A standard is a set of rules and specifications that a particular task / device / software should conform to. A free and open standard may is a standard that is available free of costs and restrictions to anybody for implementation. 
@@ -115,4 +122,6 @@ Yet another example is changing trains when the track changes to meter gauge fro
  * New standards must be backward compatible, to allow reuse of data whose life far exceeds that of the original software and systems.
  * Multiple standards should be avoided as a dangerous impediment to progress, as it results in a plethora of isolated pools of data, which imposes hughe costs for conversion and interworking. 
 
-One may refer to http://www.digistan.org/text:rationale to get a good overview of the process of creating, implementing, using and maintaining standards.
+One may refer to the links below to get a good overview of the process of creating, implementing, using and maintaining standards.
+http://www.digistan.org/text:rationale
+http://www.csrstds.com/openstds.html
