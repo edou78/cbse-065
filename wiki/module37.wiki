@@ -1,0 +1,78 @@
+<hr/>
+|| *Content* || Mathematical Functions- MOD(), POWER(), ROUND(), SQRT(), TRUNCATE() ||
+|| *Team* || Aishwarya.M.B ||
+<hr/>
+
+<wiki:toc max_depth="3" />
+
+=*Mathematical Functions*=
+The mathematical functions are the built in functions which makes the mathematical calculations easy.
+The following are the basic mathematical functions:
+ * MOD()
+ * POWER()
+ * ROUND()
+ * SQRT()
+ * TRUNCATE()
+
+== MOD() ==
+ * MOD(A,B)
+This functions returns the mod value of A and B provided A and B are integers. 
+Note : mod(a,b) is also applicable as there is no case sensitivity.
+
+
+===SYNTAX===
+
+||select mod(a,b);||
+
+
+===DEALING WITH POSITIVE AND NEGATIVE VALUES OF A & B ===
+ * ===Case: 1 ===
+     ||a -> Positive||
+     ||b -> Positive||
+     
+     If both the values are positive integers, we get a *positive* integer as output.
+
+      * eg
+
+        =====mysql> select mod(10,4);=====
+                
+        The output is 2.
+
+
+ * ===Case: 2 ===
+     ||a -> Positive||
+     ||b -> Negative||
+     
+     If a is positive and b is negative, we again get a *positive* integer as output.
+
+      * eg
+
+        =====mysql> select mod(10,-4);=====
+               
+        The output is 2.
+
+
+ * ===Case: 3 ===
+     ||a -> Negative||
+     ||b -> Positive||
+     
+     If a is negative and b is positive, we get a *negative* integer as output.
+
+      * eg
+
+        =====mysql> select mod(-10,4);=====
+               
+        The output is -2.
+
+
+ * ===Case: 4 ===
+     ||a -> Negative||
+     ||b -> Negative||
+     
+     If a & b are negative integers, we again get a *negative* integer as output.
+
+      * eg
+
+        =====mysql> select mod(-10,-4);=====
+               
+        The output is -2.
