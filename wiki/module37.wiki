@@ -2,7 +2,7 @@
 || *Content* || Mathematical Functions- MOD(), POWER(), ROUND(), SQRT(), TRUNCATE() ||
 || *Team* || Aishwarya.M.B ||
 || *Discussion Page* || [http://groups.google.com/group/cbse065/browse_thread/thread/2fea7bb7b04b6ada] ||
-|| *Changes* || [http://code.google.com/p/cbse-065/source/browse/wiki/module37.wiki] ||
+|| *Changes* || [http://code.google.com/p/cbse-065/source/diff?path=/wiki/module37.wiki&format=side&r=-1] ||
 <hr/>
 
 <wiki:toc max_depth="3" />
