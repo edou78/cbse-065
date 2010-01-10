@@ -75,12 +75,12 @@ Some standards that meet the above criteria are
  * Internet Protocol (IP) 
  * Transmission Control Protocol (TCP)
  * Xtensibile Messaging and Presence Protocol (XMPP)
+The above standards are available on the net at no charge and without restrictions on implementation / distribution / usage.
 
 Some standards that are open but *DO Not* meet the above criteria are
- H264 MPEG4 video compression 
- Office Open XML (OOXML)
- SMBFS network file 
-
+ * H264 MPEG4 video compression 
+ * Office Open XML (OOXML)
+ * SMBFS network file 
 All of the above standards are available, but have various restrictions that prevent Open implementation and / or distribution and / or usage.
 
 ==Why are Free and Open Standards important==
