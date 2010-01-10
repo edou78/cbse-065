@@ -52,12 +52,14 @@ The Free software system changes the software development, distribution, mainten
  # Works on a wide spectrum of hardware architectures covering, ARM, Blackfin, cris, SH, Power, Sparc, I386, Sharc, TMS, Alpha parisc, TRON, Alpha, ARM, avr32, cris, ia64, m32r, m68k, mn10300, powerpc, sh, sparc64, x86, s390, xtensa. This covers small embedded systems to petaflop speed super comps. Infact 49 of the top 50 supercomputers use GNU/Linux as the OS.
  # Creates the infrastructure for Software-As-Service Industry, through opportunities for
   * Installation 
-  * Maintanence
+  * Maintenance
   * Customisation
   * Localization
   * Distribution
 
 Infact the distributed and collaborative nature of FLOSS is being used in several other areas, like hardware development, Gene mapping etc. 
+
+=In summary=
 
 =What are Free and Open Standards=
 
@@ -109,8 +111,8 @@ One quite often comes across such situations while trying to play old music on c
 Yet another example is changing trains when the track changes to meter gauge from the existing broad gauge. We as travelers are stressed and the Indian railways has to incur additional costs for a second set of tracks and trains. Recognizing the problem the railways will be spending an estimated Rs.16000/- crores to convert all meter gauge lines to broad gauge.
 
 =In summary=
- * Standards must be Free and Open
- * New standards must be backward compatabile
- * Multiple standards should be avoided as a dangerous impediment to progress
+ * Standards must be Free and Open, so that they are widely adopted and available with multiple implementations, thus providing maximum benefit to all
+ * New standards must be backward compatible, to allow reuse of data whose life far exceeds that of the original software and systems.
+ * Multiple standards should be avoided as a dangerous impediment to progress, as it results in a plethora of isolated pools of data, which imposes hughe costs for conversion and interworking. 
 
 One may refer to http://www.digistan.org/text:rationale to get a good overview of the process of creating, implementing, using and maintaining standards.
