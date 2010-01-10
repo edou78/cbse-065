@@ -60,13 +60,14 @@ The Free software system changes the software development, distribution, mainten
 Infact the distributed and collaborative nature of FLOSS is being used in several other areas, like hardware development, Gene mapping etc. 
 
 =In summary=
-
+Free, Libre and Open Source Software is a new collaborative methodology for creating software. This method has played a vital role in bringing the tools of a "Knowledge society" into widespread use. It's methodologies are increasingly being used in a number of other fields and has resulted in the creation of innovative new services and businesses. FLOSS plays a vital role in bridging the "Digital divide" in developing countries like India,
+    
 One may refer to the links below for a deeper view of the FLOSS philosophies, methodologies and a few key personalities.
-http://www.fsf.org
-http://en.wikipedia.org/wiki/Richard_M._Stallman
-http://en.wikipedia.org/wiki/Eric_S._Raymond
-http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/
-http://en.wikipedia.org/wiki/Linus_Torvalds
+ * http://www.fsf.org
+ * http://en.wikipedia.org/wiki/Richard_M._Stallman
+ * http://en.wikipedia.org/wiki/Eric_S._Raymond
+ * http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/
+ * http://en.wikipedia.org/wiki/Linus_Torvalds
 
 =What are Free and Open Standards=
 
@@ -118,10 +119,11 @@ One quite often comes across such situations while trying to play old music on c
 Yet another example is changing trains when the track changes to meter gauge from the existing broad gauge. We as travelers are stressed and the Indian railways has to incur additional costs for a second set of tracks and trains. Recognizing the problem the railways will be spending an estimated Rs.16000/- crores to convert all meter gauge lines to broad gauge.
 
 =In summary=
+ * Standards are vital for rapid development and widespread deployment of technology
  * Standards must be Free and Open, so that they are widely adopted and available with multiple implementations, thus providing maximum benefit to all
  * New standards must be backward compatible, to allow reuse of data whose life far exceeds that of the original software and systems.
  * Multiple standards should be avoided as a dangerous impediment to progress, as it results in a plethora of isolated pools of data, which imposes hughe costs for conversion and interworking. 
 
 One may refer to the links below to get a good overview of the process of creating, implementing, using and maintaining standards.
-http://www.digistan.org/text:rationale
-http://www.csrstds.com/openstds.html
+ * http://www.digistan.org/text:rationale
+ * http://www.csrstds.com/openstds.html
