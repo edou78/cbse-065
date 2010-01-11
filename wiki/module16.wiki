@@ -11,7 +11,7 @@
 
 <wiki:toc max_depth="3" />
 
-== Computer Networking and Network Topologies ==
+= Computer Networking and Network Topologies =
 
  
 Computer networking is basically connecting computer devices for the purpose of data transmission among them. The devices can be linked to each other in many different ways. The layout of connected devices is called Network Topology. Here we will learn the different standard ways (topologies) to connect the computers. 
