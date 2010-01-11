@@ -51,3 +51,7 @@ You can search google for open content by clicking
   * Get exact image url
   * paste on your module/article
  * You can also create new image and upload it flickr and give a link here
+
+
+== Who are in Project ==
+ * Volunteers and Organizations across India. See [list_of_volunteer]
