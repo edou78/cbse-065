@@ -47,18 +47,82 @@ So we then remodel out data as three distinct lists: Teachers, Subjects and Teac
 
 eg.
 
-Teacher
-1. A
-2. B
-3. C
-4. D
+Teachers
+code Name
+1     A
+2     B
+3     C
+4     D
 
-Subject
-1. English
-2. Science
-3. Mathematics
-4. IT Practices
-5. 
+Subjects
+Code Name
+1    English
+2    Science
+3    Mathematics
+4    IT Practices
+5    Social Science
+
+Note that in the above two tables, the nuber is associated with the names and they are unique. Assuming 
+Teachers A and C teach English,
+Teacher B teaches Mathematics and
+Teacher D and C teach Science, The teacher-Subject list would look like
+
+Teacher-Subject
+Tcode Scode
+1 (A) 1 (English)
+2 (B) 3 (MAthematics)
+3 (C) 1 (English)
+3 (C) 2 (Science)
+4 (D) 2 (Science)
+
+The words in () is for illustrative purposes. The actual list would contain the following data where all are numbers and no text.
+
+Teacher-Subject
+Tcode Scode
+1       1
+2       3
+3       1
+3       2
+4       2
+
+This is known a many to many relationship in the relational model where one teacher can take many subject and one subject can be taught multiple teachers.
+
+In formal language, each of the above list is known as Table or relation. Each horizontal list of values is known as Row/Tuple and Each vertical list is known as Column/Attribute.
+
+Often in the formal text books one would come across the terminology of Relation/Tuple/Attribute and most user manuals use the term Table/Row/Column
+
+Using the above terminology, the serial number and name are the columns in the teachers table.
+
+Now let us suppose we want to store the phone numbers of the teacher. We can readily see that we just need to add one more column to the table teacher.
+
+If a new subject is added to the syllabus, one just need to add one row to the subjects column with a distinct or non duplicate number for the subject.
+
+If a teacher's name changes, say after marriage, one just need to update that particular teacher's name accordingly.
+
+Now that we have got the data into the table, we need to know now who teaches what. The steps are:
+
+1. Select first name of the list
+2. Look up the Teacher-Subject table where the code of teacher corresponds to the code that we have from the step one
+3. read the list of subject code if more than one is there
+4. read off the list of subjects we get in step 3 from the subjects table
+5. print it out
+6. repeat steps 1-5 till all the teachers code have been done with
+
+Quite simple really!!
+
+Most RDBMS use what is known as Structured Query Language or SQL in short for that purpose. So in that language the above six steps are done by the statement:
+
+{{{
+SELECT Teachers.name, Subjects.name from teacher, subjects, teacher-subject
+   WHERE teacher-subject.code = teachers.code ;
+}}}
+
+If you noticed the above statement, we just mentioned _what_ to do. Nowhere did we mention _how_ to do. That usually is the responsibility of the RDBMS Engine/Software.
+
+Because the procedure for obtaining the data was not explicitly spelled out as we did in the steps 1-6 above in SQL, this language is often referred to as non-procedural language.
+
+Before the advent of SQL, the developers had to know not only what data was needed, but also where the data resided and had to specify how to access that data in the application.
+
 
 
 Add your content here.  Format your content with:
