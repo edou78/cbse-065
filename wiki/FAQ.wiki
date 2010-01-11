@@ -53,5 +53,14 @@ You can search google for open content by clicking
  * You can also create new image and upload it flickr and give a link here
 
 
-== Who are in Project ==
+= Who are in Project =
  * Volunteers and Organizations across India. See [list_of_volunteer]
+
+= When this project started =
+ * 6 Jan 2010
+
+= Contact =
+ * All communication must be done via Mailing list but in case or urgency you can contact Narendra Sisodiya for help desk (narendrasisodiya @gmail.com)
+
+= Where is the mailing list =
+ * http://groups.google.com/group/cbse065
