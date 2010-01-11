@@ -20,9 +20,9 @@ Basic types of topologies:
 
   * Bus
   * Ring
-*Star
-*Tree
-*Mesh
+  * Star
+* Tree
+* Mesh
 
 
 
