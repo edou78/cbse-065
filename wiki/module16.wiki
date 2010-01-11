@@ -20,11 +20,11 @@ Basic types of topologies:
 
 
 
-*  bus 
-*  ring 
-*  star 
-*  tree 
-*  mesh
+*bus 
+*ring 
+*star 
+*tree 
+*mesh
 
 
 
@@ -36,11 +36,13 @@ All the computers are connected to a single cable through some connector.  The 
 
 
 
-* Advantages *
+*Advantages*
 
 
 
 *Bus topology requires only one cable hence it is easy to install and requires less cable.
+
+
 *Easy to connect a computer or peripheral to a linear bus. 
 
  
