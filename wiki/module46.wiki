@@ -5,7 +5,7 @@
 || *Changes* || [http://code.google.com/p/cbse-065/source/diff?path=/wiki/module46.wiki&format=side&r=-1] ||
 <hr/>
 
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="5" />
 
 = Introduction =
 
@@ -13,16 +13,35 @@ Here you will learn how to install,configure open source platform,programming to
 
 ==Operating System : Linux==
 ===Introduction===
-===Choosing from the pool of linux Distributions===
-===Ubuntu Installation===
-===Fedora Installation===
+The name "Linux" comes from the Linux kernel, originally written in 1991 by Linus Torvalds. The full operating system usually comprises components such as utilities and libraries from the GNU Project, the X Window System, the GNOME and KDE desktop environments and commonly-used applications like firefox,openoffice.
 
-==Java Development Kit : openjdk==
+===Choosing from the pool of linux Distributions===
+Linux distributions have taken linux into wide variety of forms — from fully featured desktop and server operating systems to minimal environments (typically for use in embedded systems, or for booting from a floppy disk). A distribution is most simply described as a particular set of applications,kernel modules installed on top of the linux kernel, such that its "out-of-the-box" capabilities meet most of the needs of its particular end-user base.
+
+===Installation===
+There are many ways to install a Linux distribution. The most common method of installing Linux is by booting from a CD-ROM or DVD that contains the installation program and installable software. Such a CD can be burned from a downloaded ISO image, purchased alone for a low price, provided as a cover disk with a magazine, shipped for free by request, or obtained as part of a box set that may also include manuals and additional commercial software. New users tend to begin by partitioning a hard drive in order to keep their previously-installed operating system. The Linux distribution can then be installed on its own separate partition without affecting previously saved data.
+
+
+====Ubuntu Installation====
+====Fedora Installation====
+
+==Java Development Kit : openjdk,netbeans==
 ===Introduction===
-===Ubuntu===
+===Ubuntu,Kubuntu,xbuntu,Debian===
+On the command line, type: 
+||#sudo apt-get install openjdk-6-jdk netbeans||
+
 ===Fedora===
+On the command line, type: 
+||#sudo yum install java-openjdk netbeans||
 
 ==MySQL : mysql-server==
 ===Introduction===
-===Ubuntu===
+
+===Ubuntu,Kubuntu,xbuntu,debian===
+On the command line, type: 
+||#sudo apt-get install mysql mysql-server||
+
 ===Fedora===
+On the command line, type: 
+||#sudo yum install mysql mysql-server||
