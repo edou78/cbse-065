@@ -18,13 +18,8 @@ Computer networking is basically connecting computer devices for the purpose of 
 Basic types of topologies:
 
 
-
-
-*bus 
-*ring 
-*star 
-*tree 
-*mesh
+  * A list
+  * Of bulleted items
 
 
 
