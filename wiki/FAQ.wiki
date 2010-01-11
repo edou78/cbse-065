@@ -1,18 +1,33 @@
-#List Of FAQ
+*FAQ*
 
-= Introduction =
+<wiki:toc max_depth="2" />
 
-If you have anyquery then ask here.
 
 == What is this Project ==
+"Project 065" is India's first project to write a wiki based, collaboratively written textbook for CBSE Class XI & XII - subject code 065. Subject Code 065 is called Informatics Practice. 
 
 == What is Wiki System ==
+wiki allows easy creation and editing of any number of interlinked web pages via a web browser using a simplified markup language or a WYSIWYG text editor.
+
+http://en.wikipedia.org/wiki/Wiki
 
 == How to Join this project ==
+=== Step 1: ===
+Join Our mailing list, [http://groups.google.com/group/cbse065 here]
+=== Step 2: ===
+Checkout the stage of development. We have divided the whole in appx 50 modules. You can see list of modules and the percentage of work done. Choose any of the module and enhance it. The Syllabus is available [http://code.google.com/p/cbse-065/wiki/syllabus here]
+=== Step 3: ===
+Post your interest in contributing in Mailing list or mail
+narendrasisodiya@gmail.com
 
 == How to upload text ==
+There are many different ways in which wikis have users edit the content. Ordinarily, the structure and formatting of wiki pages are specified with a simplified markup language, sometimes known as "wikitext".
 
-== How to add image to an text ==
+http://code.google.com/p/support/wiki/WikiSyntax
+
+==How to use google to search for CC by SA content==
+You can search google for open content by clicking 
+[http://www.google.com/search?q=CC-By-SA&as_rights=%28cc_publicdomain|cc_attribute|cc_sharealike%29.-%28cc_noncommercial|cc_nonderived%29 here]
 
 == What type of Images I can add here ==
  * You can only add "CC-By-SA" images.
