@@ -36,8 +36,16 @@ All the computers are connected to a single cable through some connector.  The 
 
 *Advantages*
 
-  *Bus topology requires only one cable hence it is easy to install and requires less cable.
-  *Easy to connect a computer or peripheral to a linear bus. 
+  * Bus topology requires only one cable hence it is easy to install and requires less cable.
+  * Easy to connect a computer or peripheral to a linear bus. 
+
+* Disadvantages *
+  * Good for small network of 2-5 devices. More computers decrease the performance and available bandwidth of the network. 
+  * If the cable damages anywhere in its path the entire network shuts down.
+  * Terminators are required at both ends of the backbone cable. 
+  * Difficult to identify the problem if the entire network shuts down. 
+
+
 
  
  
