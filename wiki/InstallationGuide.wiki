@@ -1,0 +1,22 @@
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+Here you will learn how to install,configure open source platform,programming tools.
+
+==Operating System : Linux==
+===Introduction===
+===Choosing from the pool of linux Distributions===
+===Ubuntu Installation===
+===Fedora Installation===
+
+==Java Development Kit : openjdk==
+===Introduction===
+===Ubuntu===
+===Fedora===
+
+==MySQL : mysql-server==
+===Introduction===
+===Ubuntu===
+===Fedora===
+
