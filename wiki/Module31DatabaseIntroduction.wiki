@@ -19,13 +19,47 @@ In this module our focus will be on the logical way data is arranged.
 
 Data storage is not a new concept. We have as old a medium as cave paintings, stone carvings and the such. More recently paper took the role of that. Now we are in the age where it is stored in magnetic/optical/semiconductor media.
 
-In the computer industry historically the organisation consisted of Hierarchical , network databases. Relational databases were developed later. the evolution has not stopped. Today we have vary large amount of data stored on the web by companies like yahoo, google using a different database called .
+In the computer industry historically the organisation consisted of Hierarchical , network databases. Relational databases were developed later. the evolution has not stopped. Today we have vary large amount of data stored on the web by companies like yahoo, google using a more web friendly technology which provides distributed and highly available database.
 
+Today a huge amount of project use a Relational Data Base Management System (RDBMS) a lot for various reasons:
 
-(For reference -- to be removed in the final version)
-http://www.databasejournal.com/sqletc/article.php/1428721/Introduction-to-Databases-for-the-Web-Pt-1.htm
+ * Ubiquitous availability in both proprietary and Free/Open source licences
+ * A large pool of people trained in this technology
+ * Well tested technology in production environments
 
-Fast forward to present. One of the simplest organising method is a list where seperate items are appear in its own line. we will call this line a row
+#sidebar
+A note on environments:
+
+Usually a project will had three distinct environments
+ * Development
+ * User Acceptance Testing (UAT)
+ * Production or Live
+
+Generally all the development takes place in the development environment. When the development team feels it is ready for testing, they release it on the UAT for some of the users to test the application functionality. 
+
+When the users and the development team are satisfied that the application can be deployed, a planned release of the application is made on the Live or Production environment.
+
+Fast forward to present. One of the simplest organising method is a list where seperate items are appear in its own line. we will call this line a row. For example List of teachers. Now we want to identify the subject which they will be teaching. We then write down the subject to right of their names. 
+
+But this sort of writing down will result in duplicate appearances of subject against teacher name. For example if three teachers teach english, the datapoint english will appear three times. One of the main problem that Relational datamodel addresses is this: avoid data duplication. 
+
+So we then remodel out data as three distinct lists: Teachers, Subjects and Teacher-Subject.
+
+eg.
+
+Teacher
+1. A
+2. B
+3. C
+4. D
+
+Subject
+1. English
+2. Science
+3. Mathematics
+4. IT Practices
+5. 
+
 
 Add your content here.  Format your content with:
 
@@ -34,3 +68,8 @@ Add your content here.  Format your content with:
   * Headings, paragraphs, and lists
  
  * Automatic links to other wiki pages
+
+
+
+(For reference -- to be removed in the final version)
+http://www.databasejournal.com/sqletc/article.php/1428721/Introduction-to-Databases-for-the-Web-Pt-1.htm
