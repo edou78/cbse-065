@@ -1,0 +1,27 @@
+<hr/>
+|| *Content* || How to install GNU/Linux Operating System, Java, MySQL and other tool  ||
+|| *Team* || Aishwarya.M.B, Ramnish.R ||
+|| *Changes* || [http://code.google.com/p/cbse-065/source/diff?path=/wiki/module46.wiki&format=side&r=-1] ||
+<hr/>
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+Here you will learn how to install,configure open source platform,programming tools.
+
+==Operating System : Linux==
+===Introduction===
+===Choosing from the pool of linux Distributions===
+===Ubuntu Installation===
+===Fedora Installation===
+
+==Java Development Kit : openjdk==
+===Introduction===
+===Ubuntu===
+===Fedora===
+
+==MySQL : mysql-server==
+===Introduction===
+===Ubuntu===
+===Fedora===
