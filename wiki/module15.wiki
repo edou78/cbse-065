@@ -1,4 +1,15 @@
-This module is not yet started.
-You can read How to join [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]
+<hr/>
+
+|| *Content* || Spreadsheet (using OpenOffice) To be taught through practicals. Refer to the practicals section.  ||
+|| *Team* || [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]  ||
+|| *Discussion* ||  ||
+|| *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module15.wiki&format=side&r=-1 ||
+
+<hr/>
+
+<wiki:toc max_depth="3" />
+
+
+This module is not yet started. You can read [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]
 
 If you are a new member and have permission to edit, that you can click on http://code.google.com/p/cbse-065/w/edit/module15 to start editing this page !
