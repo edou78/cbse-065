@@ -1,6 +1,5 @@
 <hr/>
-|| *Content* || *Application Software as a tool* Word Processor, Presentation Tool, Spreadsheet Package, Database Management System; Business software (for example: Inventory Management System, Purchasing System, Human Resource Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System);
- ||
+|| *Content* || *Application Software as a tool* Word Processor, Presentation Tool, Spreadsheet Package, Database Management System; Business software (for example: Inventory Management System, Purchasing System, Human Resource Management System, Payroll System, Financial Accounting, Hotel Management and Reservation System); ||
 || *Team* || [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]  ||
 || *Discussion* ||  ||
 || *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module9.wiki&format=side&r=-1 ||
