@@ -1,16 +1,11 @@
-*Development of programming languages* (History of programming languages) Machine language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP, Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net GTK,pygtk; Scripting Languages – JavaScript
-
 <hr/>
-
-|| *Content* ||  ||
+|| *Content* || *Development of programming languages* (History of programming languages) Machine language, Assembly Language, High Level Language (BASIC COBOL, FORTRAN, PASCAL, LISP, Java, C++); GUI based languages - Visual Basic, Visual C++; C#, Java, vb.net; Scripting Languages – JavaScript ||
 || *Team* || [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]  ||
 || *Discussion* ||  ||
 || *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module11.wiki&format=side&r=-1 ||
-
 <hr/>
 
 <wiki:toc max_depth="3" />
-
 
 This module is not yet started. You can read [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]
 
