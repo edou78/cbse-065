@@ -8,7 +8,7 @@
 
 <hr/>
 
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="5" />
 
 = Introduction =
 
@@ -58,7 +58,7 @@ The bash shell is the most widely used shell in most FLOSS distributions.
 
 Bash is an acronym for ‘Bourne-Again SHell’. The Bourne shell is the traditional Unix shell originally written by Stephen Bourne. All of the Bourne shell builtin commands are available in Bash, The rules for evaluation and quoting are taken from the posix specification for the `standard' Unix shell.
 
-This chapter briefly summarizes the shell's `building blocks': commands, control structures, shell functions, shell parameters, shell expansions, redirections, which are a way to direct input and output from and to named files, and how the shell executes commands.
+This chapter briefly summarizes the shell's `building blocks': commands, control structures, shell functions, shell parameters, shell expansions, redirections, which are a way to direct input and output from and to named files, and how the shell executes commands. Typing "man bash" on the shell command prompt will give you all the stuff we have printed below. 
 
     #1 Shell Syntax: What your input means to the shell.
     #2 Shell Commands: The types of commands you can use.
@@ -93,7 +93,7 @@ The following is a brief description of the shell's operation when it reads and 
    6. Executes the command (see Executing Commands).
    7. Optionally waits for the command to complete and collects its exit status (see Exit Status). 
 
-====  Quoting ====
+==== Quoting ====
 
     * Escape Character: How to remove the special meaning from a single character.
     * Single Quotes: How to inhibit all interpretation of a sequence of characters.
@@ -179,6 +179,513 @@ More complex shell commands are composed of simple commands arranged together in
 === Compound Commands: === Shell commands for control flow.
 
 === Coprocesses: === Two-way communication between commands. 
+
+=== Simple Commands ===
+
+A simple command is the kind of command encountered most often. It's just a sequence of words separated by blanks, terminated by one of the shell's control operators (see Definitions). The first word generally specifies a command to be executed, with the rest of the words being that command's arguments.
+
+The return status (see Exit Status) of a simple command is its exit status as provided by the posix 1003.1 waitpid function, or 128+n if the command was terminated by signal n. 
+
+eg. ls 
+will list the contents of the current directory
+ls -l will list the contents of the current directory but in the long format
+
+=== Pipelines ===
+
+A pipeline is a sequence of simple commands separated by one of the control operators ‘|’ or ‘|&’.
+
+The format for a pipeline is
+
+     [time [-p]] [!] command1 [ [| or |&] command2 ...]
+
+The output of each command in the pipeline is connected via a pipe to the input of the next command. That is, each command reads the previous command's output. This connection is performed before any redirections specified by the command.
+
+If ‘|&’ is used, the standard error of command1 is connected to command2's standard input through the pipe; it is shorthand for 2>&1 |. This implicit redirection of the standard error is performed after any redirections specified by the command.
+
+The reserved word time causes timing statistics to be printed for the pipeline once it finishes. The statistics currently consist of elapsed (wall-clock) time and user and system time consumed by the command's execution. The -p option changes the output format to that specified by posix. The TIMEFORMAT variable may be set to a format string that specifies how the timing information should be displayed. See Bash Variables, for a description of the available formats. The use of time as a reserved word permits the timing of shell builtins, shell functions, and pipelines. An external time command cannot time these easily.
+
+If the pipeline is not executed asynchronously (see Lists), the shell waits for all commands in the pipeline to complete.
+
+Each command in a pipeline is executed in its own subshell (see Command Execution Environment). The exit status of a pipeline is the exit status of the last command in the pipeline, unless the pipefail option is enabled (see The Set Builtin). If pipefail is enabled, the pipeline's return status is the value of the last (rightmost) command to exit with a non-zero status, or zero if all commands exit successfully. If the reserved word ‘!’ precedes the pipeline, the exit status is the logical negation of the exit status as described above. The shell waits for all commands in the pipeline to terminate before returning a value. 
+
+=== Lists of Commands ===
+
+A list is a sequence of one or more pipelines separated by one of the operators ‘;’, ‘&’, ‘&&’, or ‘||’, and optionally terminated by one of ‘;’, ‘&’, or a newline.
+
+Of these list operators, ‘&&’ and ‘||’ have equal precedence, followed by ‘;’ and ‘&’, which have equal precedence.
+
+A sequence of one or more newlines may appear in a list to delimit commands, equivalent to a semicolon.
+
+If a command is terminated by the control operator ‘&’, the shell executes the command asynchronously in a subshell. This is known as executing the command in the background. The shell does not wait for the command to finish, and the return status is 0 (true). When job control is not active (see Job Control), the standard input for asynchronous commands, in the absence of any explicit redirections, is redirected from /dev/null.
+
+Commands separated by a ‘;’ are executed sequentially; the shell waits for each command to terminate in turn. The return status is the exit status of the last command executed.
+
+and and or lists are sequences of one or more pipelines separated by the control operators ‘&&’ and ‘||’, respectively. and and or lists are executed with left associativity.
+
+An and list has the form
+
+     command1 && command2
+
+command2 is executed if, and only if, command1 returns an exit status of zero.
+
+An or list has the form
+
+     command1 || command2
+
+command2 is executed if, and only if, command1 returns a non-zero exit status.
+
+The return status of and and or lists is the exit status of the last command executed in the list. 
+
+=== Compound Commands ===
+
+    * Looping Constructs: Shell commands for iterative action.
+    * Conditional Constructs: Shell commands for conditional execution.
+    * Command Grouping: Ways to group commands. 
+
+Compound commands are the shell programming constructs. Each construct begins with a reserved word or control operator and is terminated by a corresponding reserved word or operator. Any redirections (see Redirections) associated with a compound command apply to all commands within that compound command unless explicitly overridden.
+
+Bash provides looping constructs, conditional commands, and mechanisms to group commands and execute them as a unit. 
+
+=== Coprocesses ===
+
+A coprocess is a shell command preceded by the coproc reserved word. A coprocess is executed asynchronously in a subshell, as if the command had been terminated with the ‘&’ control operator, with a two-way pipe established between the executing shell and the coprocess.
+
+The format for a coprocess is:
+
+     coproc [NAME] command [redirections]
+
+This creates a coprocess named NAME. If NAME is not supplied, the default name is COPROC. NAME must not be supplied if command is a simple command (see Simple Commands); otherwise, it is interpreted as the first word of the simple command.
+
+When the coproc is executed, the shell creates an array variable (see Arrays) named NAME in the context of the executing shell. The standard output of command is connected via a pipe to a file descriptor in the executing shell, and that file descriptor is assigned to NAME[0]. The standard input of command is connected via a pipe to a file descriptor in the executing shell, and that file descriptor is assigned to NAME[1]. This pipe is established before any redirections specified by the command (see Redirections). The file descriptors can be utilized as arguments to shell commands and redirections using standard word expansions.
+
+The process id of the shell spawned to execute the coprocess is available as the value of the variable NAME_PID. The wait builtin command may be used to wait for the coprocess to terminate.
+
+The return status of a coprocess is the exit status of command. 
+
+== Shell Functions ==
+
+Shell functions are a way to group commands for later execution using a single name for the group. They are executed just like a "regular" command. When the name of a shell function is used as a simple command name, the list of commands associated with that function name is executed. Shell functions are executed in the current shell context; no new process is created to interpret them.
+
+Functions are declared using this syntax:
+
+     [ function ] name () compound-command [ redirections ]
+
+This defines a shell function named name. The reserved word function is optional. If the function reserved word is supplied, the parentheses are optional. The body of the function is the compound command compound-command (see Compound Commands). That command is usually a list enclosed between { and }, but may be any compound command listed above. compound-command is executed whenever name is specified as the name of a command. Any redirections (see Redirections) associated with the shell function are performed when the function is executed.
+
+A function definition may be deleted using the -f option to the unset builtin (see Bourne Shell Builtins).
+
+The exit status of a function definition is zero unless a syntax error occurs or a readonly function with the same name already exists. When executed, the exit status of a function is the exit status of the last command executed in the body.
+
+Note that for historical reasons, in the most common usage the curly braces that surround the body of the function must be separated from the body by blanks or newlines. This is because the braces are reserved words and are only recognized as such when they are separated from the command list by whitespace or another shell metacharacter. Also, when using the braces, the list must be terminated by a semicolon, a ‘&’, or a newline.
+
+When a function is executed, the arguments to the function become the positional parameters during its execution (see Positional Parameters). The special parameter ‘#’ that expands to the number of positional parameters is updated to reflect the change. Special parameter 0 is unchanged. The first element of the FUNCNAME variable is set to the name of the function while the function is executing. All other aspects of the shell execution environment are identical between a function and its caller with the exception that the DEBUG and RETURN traps are not inherited unless the function has been given the trace attribute using the declare builtin or the -o functrace option has been enabled with the set builtin, (in which case all functions inherit the DEBUG and RETURN traps). See Bourne Shell Builtins, for the description of the trap builtin.
+
+If the builtin command return is executed in a function, the function completes and execution resumes with the next command after the function call. Any command associated with the RETURN trap is executed before execution resumes. When a function completes, the values of the positional parameters and the special parameter ‘#’ are restored to the values they had prior to the function's execution. If a numeric argument is given to return, that is the function's return status; otherwise the function's return status is the exit status of the last command executed before the return.
+
+Variables local to the function may be declared with the local builtin. These variables are visible only to the function and the commands it invokes.
+
+Function names and definitions may be listed with the -f option to the declare or typeset builtin commands (see Bash Builtins). The -F option to declare or typeset will list the function names only (and optionally the source file and line number, if the extdebug shell option is enabled). Functions may be exported so that subshells automatically have them defined with the -f option to the export builtin (see Bourne Shell Builtins). Note that shell functions and variables with the same name may result in multiple identically-named entries in the environment passed to the shell's children. Care should be taken in cases where this may cause a problem.
+
+Functions may be recursive. No limit is placed on the number of recursive calls. 
+
+== Shell Parameters ==
+
+    * Positional Parameters: The shell's command-line arguments.
+    * Special Parameters: Parameters denoted by special characters. 
+
+A parameter is an entity that stores values. It can be a name, a number, or one of the special characters listed below. A variable is a parameter denoted by a name. A variable has a value and zero or more attributes. Attributes are assigned using the declare builtin command (see the description of the declare builtin in Bash Builtins).
+
+A parameter is set if it has been assigned a value. The null string is a valid value. Once a variable is set, it may be unset only by using the unset builtin command.
+
+A variable may be assigned to by a statement of the form
+
+     name=[value]
+
+If value is not given, the variable is assigned the null string. All values undergo tilde expansion, parameter and variable expansion, command substitution, arithmetic expansion, and quote removal (detailed below). If the variable has its integer attribute set, then value is evaluated as an arithmetic expression even if the $((...)) expansion is not used (see Arithmetic Expansion). Word splitting is not performed, with the exception of "$@" as explained below. Filename expansion is not performed. Assignment statements may also appear as arguments to the alias, declare, typeset, export, readonly, and local builtin commands.
+
+In the context where an assignment statement is assigning a value to a shell variable or array index (see Arrays), the ‘+=’ operator can be used to append to or add to the variable's previous value. When ‘+=’ is applied to a variable for which the integer attribute has been set, value is evaluated as an arithmetic expression and added to the variable's current value, which is also evaluated. When ‘+=’ is applied to an array variable using compound assignment (see Arrays), the variable's value is not unset (as it is when using ‘=’), and new values are appended to the array beginning at one greater than the array's maximum index (for indexed arrays), or added as additional key-value pairs in an associative array. When applied to a string-valued variable, value is expanded and appended to the variable's value. 
+
+=== Positional Parameters ===
+
+A positional parameter is a parameter denoted by one or more digits, other than the single digit 0. Positional parameters are assigned from the shell's arguments when it is invoked, and may be reassigned using the set builtin command. Positional parameter N may be referenced as ${N}, or as $N when N consists of a single digit. Positional parameters may not be assigned to with assignment statements. The set and shift builtins are used to set and unset them (see Shell Builtin Commands). The positional parameters are temporarily replaced when a shell function is executed (see Shell Functions).
+
+When a positional parameter consisting of more than a single digit is expanded, it must be enclosed in braces. 
+
+=== Special Parameters ===
+
+The shell treats several parameters specially. These parameters may only be referenced; assignment to them is not allowed.
+
+*
+    Expands to the positional parameters, starting from one. When the expansion occurs within double quotes, it expands to a single word with the value of each parameter separated by the first character of the IFS special variable. That is, "$*" is equivalent to "$1c$2c...", where c is the first character of the value of the IFS variable. If IFS is unset, the parameters are separated by spaces. If IFS is null, the parameters are joined without intervening separators.
+@
+    Expands to the positional parameters, starting from one. When the expansion occurs within double quotes, each parameter expands to a separate word. That is, "$@" is equivalent to "$1" "$2" .... If the double-quoted expansion occurs within a word, the expansion of the first parameter is joined with the beginning part of the original word, and the expansion of the last parameter is joined with the last part of the original word. When there are no positional parameters, "$@" and $@ expand to nothing (i.e., they are removed).
+#
+    Expands to the number of positional parameters in decimal.
+?
+    Expands to the exit status of the most recently executed foreground pipeline.
+-
+    (A hyphen.) Expands to the current option flags as specified upon invocation, by the set builtin command, or those set by the shell itself (such as the -i option).
+$
+    Expands to the process id of the shell. In a () subshell, it expands to the process id of the invoking shell, not the subshell.
+!
+    Expands to the process id of the most recently executed background (asynchronous) command.
+0
+    Expands to the name of the shell or shell script. This is set at shell initialization. If Bash is invoked with a file of commands (see Shell Scripts), $0 is set to the name of that file. If Bash is started with the -c option (see Invoking Bash), then $0 is set to the first argument after the string to be executed, if one is present. Otherwise, it is set to the filename used to invoke Bash, as given by argument zero.
+_
+    (An underscore.) At shell startup, set to the absolute pathname used to invoke the shell or shell script being executed as passed in the environment or argument list. Subsequently, expands to the last argument to the previous command, after expansion. Also set to the full pathname used to invoke each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file. 
+
+== Shell Expansions ==
+
+Expansion is performed on the command line after it has been split into tokens. There are seven kinds of expansion performed:
+
+    * brace expansion
+    * tilde expansion
+    * parameter and variable expansion
+    * command substitution
+    * arithmetic expansion
+    * word splitting
+    * filename expansion 
+
+    * Brace Expansion: Expansion of expressions within braces.
+    * Tilde Expansion: Expansion of the ~ character.
+    * Shell Parameter Expansion: How Bash expands variables to their values.
+    * Command Substitution: Using the output of a command as an argument.
+    * Arithmetic Expansion: How to use arithmetic in shell expansions.
+    * Process Substitution: A way to write and read to and from a command.
+    * Word Splitting: How the results of expansion are split into separate arguments.
+    * Filename Expansion: A shorthand for specifying filenames matching patterns.
+    * Quote Removal: How and when quote characters are removed from words. 
+
+The order of expansions is: brace expansion, tilde expansion, parameter, variable, and arithmetic expansion and command substitution (done in a left-to-right fashion), word splitting, and filename expansion.
+
+On systems that can support it, there is an additional expansion available: process substitution. This is performed at the same time as parameter, variable, and arithmetic expansion and command substitution.
+
+Only brace expansion, word splitting, and filename expansion can change the number of words of the expansion; other expansions expand a single word to a single word. The only exceptions to this are the expansions of "$@" (see Special Parameters) and "${name[@]}" (see Arrays).
+
+After all expansions, quote removal (see Quote Removal) is performed. 
+
+=== Brace Expansion ===
+
+Brace expansion is a mechanism by which arbitrary strings may be generated. This mechanism is similar to filename expansion (see Filename Expansion), but the file names generated need not exist. Patterns to be brace expanded take the form of an optional preamble, followed by either a series of comma-separated strings or a seqeunce expression between a pair of braces, followed by an optional postscript. The preamble is prefixed to each string contained within the braces, and the postscript is then appended to each resulting string, expanding left to right.
+
+Brace expansions may be nested. The results of each expanded string are not sorted; left to right order is preserved. For example,
+
+     bash$ echo a{d,c,b}e
+     ade ace abe
+
+A sequence expression takes the form {x..y[incr]}, where x and y are either integers or single characters, and incr, an optional increment, is an integer. When integers are supplied, the expression expands to each number between x and y, inclusive. Supplied integers may be prefixed with ‘0’ to force each term to have the same width. When either x or y begins with a zero, the shell attempts to force all generated terms to contain the same number of digits, zero-padding where necessary. When characters are supplied, the expression expands to each character lexicographically between x and y, inclusive. Note that both x and y must be of the same type. When the increment is supplied, it is used as the difference between each term. The default increment is 1 or -1 as appropriate.
+
+Brace expansion is performed before any other expansions, and any characters special to other expansions are preserved in the result. It is strictly textual. Bash does not apply any syntactic interpretation to the context of the expansion or the text between the braces. To avoid conflicts with parameter expansion, the string ‘${’ is not considered eligible for brace expansion.
+
+A correctly-formed brace expansion must contain unquoted opening and closing braces, and at least one unquoted comma or a valid sequence expression. Any incorrectly formed brace expansion is left unchanged.
+
+A { or ‘,’ may be quoted with a backslash to prevent its being considered part of a brace expression. To avoid conflicts with parameter expansion, the string ‘${’ is not considered eligible for brace expansion.
+
+This construct is typically used as shorthand when the common prefix of the strings to be generated is longer than in the above example:
+
+     mkdir /usr/local/src/bash/{old,new,dist,bugs}
+
+or
+
+     chown root /usr/{ucb/{ex,edit},lib/{ex?.?*,how_ex}}
+
+=== Tilde Expansion ===
+
+If a word begins with an unquoted tilde character (‘~’), all of the characters up to the first unquoted slash (or all characters, if there is no unquoted slash) are considered a tilde-prefix. If none of the characters in the tilde-prefix are quoted, the characters in the tilde-prefix following the tilde are treated as a possible login name. If this login name is the null string, the tilde is replaced with the value of the HOME shell variable. If HOME is unset, the home directory of the user executing the shell is substituted instead. Otherwise, the tilde-prefix is replaced with the home directory associated with the specified login name.
+
+If the tilde-prefix is ‘~+’, the value of the shell variable PWD replaces the tilde-prefix. If the tilde-prefix is ‘~-’, the value of the shell variable OLDPWD, if it is set, is substituted.
+
+If the characters following the tilde in the tilde-prefix consist of a number N, optionally prefixed by a ‘+’ or a ‘-’, the tilde-prefix is replaced with the corresponding element from the directory stack, as it would be displayed by the dirs builtin invoked with the characters following tilde in the tilde-prefix as an argument (see The Directory Stack). If the tilde-prefix, sans the tilde, consists of a number without a leading ‘+’ or ‘-’, ‘+’ is assumed.
+
+If the login name is invalid, or the tilde expansion fails, the word is left unchanged.
+
+Each variable assignment is checked for unquoted tilde-prefixes immediately following a ‘:’ or the first ‘=’. In these cases, tilde expansion is also performed. Consequently, one may use file names with tildes in assignments to PATH, MAILPATH, and CDPATH, and the shell assigns the expanded value.
+
+The following table shows how Bash treats unquoted tilde-prefixes:
+
+~
+    The value of $HOME
+~/foo
+    $HOME/foo
+~fred/foo
+    The subdirectory foo of the home directory of the user fred
+~+/foo
+    $PWD/foo
+~-/foo
+    ${OLDPWD-'~-'}/foo
+~N
+    The string that would be displayed by ‘dirs +N’
+~+N
+    The string that would be displayed by ‘dirs +N’
+~-N
+    The string that would be displayed by ‘dirs -N’ 
+
+=== Shell Parameter Expansion ===
+
+The ‘$’ character introduces parameter expansion, command substitution, or arithmetic expansion. The parameter name or symbol to be expanded may be enclosed in braces, which are optional but serve to protect the variable to be expanded from characters immediately following it which could be interpreted as part of the name.
+
+When braces are used, the matching ending brace is the first ‘}’ not escaped by a backslash or within a quoted string, and not within an embedded arithmetic expansion, command substitution, or parameter expansion.
+
+The basic form of parameter expansion is ${parameter}. The value of parameter is substituted. The braces are required when parameter is a positional parameter with more than one digit, or when parameter is followed by a character that is not to be interpreted as part of its name.
+
+If the first character of parameter is an exclamation point, a level of variable indirection is introduced. Bash uses the value of the variable formed from the rest of parameter as the name of the variable; this variable is then expanded and that value is used in the rest of the substitution, rather than the value of parameter itself. This is known as indirect expansion. The exceptions to this are the expansions of ${!prefix*} and ${!name[@]} described below. The exclamation point must immediately follow the left brace in order to introduce indirection.
+
+In each of the cases below, word is subject to tilde expansion, parameter expansion, command substitution, and arithmetic expansion.
+
+When not performing substring expansion, using the form described below, Bash tests for a parameter that is unset or null. Omitting the colon results in a test only for a parameter that is unset. Put another way, if the colon is included, the operator tests for both parameter's existence and that its value is not null; if the colon is omitted, the operator tests only for existence.
+
+${parameter:−word}
+    If parameter is unset or null, the expansion of word is substituted. Otherwise, the value of parameter is substituted.
+${parameter:=word}
+    If parameter is unset or null, the expansion of word is assigned to parameter. The value of parameter is then substituted. Positional parameters and special parameters may not be assigned to in this way.
+${parameter:?word}
+    If parameter is null or unset, the expansion of word (or a message to that effect if word is not present) is written to the standard error and the shell, if it is not interactive, exits. Otherwise, the value of parameter is substituted.
+${parameter:+word}
+    If parameter is null or unset, nothing is substituted, otherwise the expansion of word is substituted.
+${parameter:offset}
+${parameter:offset:length}
+    Expands to up to length characters of parameter starting at the character specified by offset. If length is omitted, expands to the substring of parameter starting at the character specified by offset. length and offset are arithmetic expressions (see Shell Arithmetic). This is referred to as Substring Expansion.
+
+    length must evaluate to a number greater than or equal to zero. If offset evaluates to a number less than zero, the value is used as an offset from the end of the value of parameter. If parameter is ‘@’, the result is length positional parameters beginning at offset. If parameter is an indexed array name subscripted by ‘@’ or ‘*’, the result is the length members of the array beginning with ${parameter[offset]}. A negative offset is taken relative to one greater than the maximum index of the specified array. Substring expansion applied to an associative array produces undefined results.
+
+    Note that a negative offset must be separated from the colon by at least one space to avoid being confused with the ‘:-’ expansion. Substring indexing is zero-based unless the positional parameters are used, in which case the indexing starts at 1 by default. If offset is 0, and the positional parameters are used, $@ is prefixed to the list.
+${!prefix*}
+${!prefix@}
+    Expands to the names of variables whose names begin with prefix, separated by the first character of the IFS special variable. When ‘@’ is used and the expansion appears within double quotes, each variable name expands to a separate word.
+${!name[@]}
+${!name[*]}
+    If name is an array variable, expands to the list of array indices (keys) assigned in name. If name is not an array, expands to 0 if name is set and null otherwise. When ‘@’ is used and the expansion appears within double quotes, each key expands to a separate word.
+${#parameter}
+    The length in characters of the expanded value of parameter is substituted. If parameter is ‘*’ or ‘@’, the value substituted is the number of positional parameters. If parameter is an array name subscripted by ‘*’ or ‘@’, the value substituted is the number of elements in the array.
+${parameter#word}
+${parameter##word}
+    The word is expanded to produce a pattern just as in filename expansion (see Filename Expansion). If the pattern matches the beginning of the expanded value of parameter, then the result of the expansion is the expanded value of parameter with the shortest matching pattern (the ‘#’ case) or the longest matching pattern (the ‘##’ case) deleted. If parameter is ‘@’ or ‘*’, the pattern removal operation is applied to each positional parameter in turn, and the expansion is the resultant list. If parameter is an array variable subscripted with ‘@’ or ‘*’, the pattern removal operation is applied to each member of the array in turn, and the expansion is the resultant list.
+${parameter%word}
+${parameter%%word}
+    The word is expanded to produce a pattern just as in filename expansion. If the pattern matches a trailing portion of the expanded value of parameter, then the result of the expansion is the value of parameter with the shortest matching pattern (the ‘%’ case) or the longest matching pattern (the ‘%%’ case) deleted. If parameter is ‘@’ or ‘*’, the pattern removal operation is applied to each positional parameter in turn, and the expansion is the resultant list. If parameter is an array variable subscripted with ‘@’ or ‘*’, the pattern removal operation is applied to each member of the array in turn, and the expansion is the resultant list.
+${parameter/pattern/string}
+    The pattern is expanded to produce a pattern just as in filename expansion. Parameter is expanded and the longest match of pattern against its value is replaced with string. If pattern begins with ‘/’, all matches of pattern are replaced with string. Normally only the first match is replaced. If pattern begins with ‘#’, it must match at the beginning of the expanded value of parameter. If pattern begins with ‘%’, it must match at the end of the expanded value of parameter. If string is null, matches of pattern are deleted and the / following pattern may be omitted. If parameter is ‘@’ or ‘*’, the substitution operation is applied to each positional parameter in turn, and the expansion is the resultant list. If parameter is an array variable subscripted with ‘@’ or ‘*’, the substitution operation is applied to each member of the array in turn, and the expansion is the resultant list.
+${parameter^pattern}
+${parameter^^pattern}
+${parameter,pattern}
+${parameter,,pattern}
+    This expansion modifies the case of alphabetic characters in parameter. The pattern is expanded to produce a pattern just as in pathname expansion. The ‘^’ operator converts lowercase letters matching pattern to uppercase; the ‘,’ operator converts matching uppercase letters to lowercase. The ‘^^’ and ‘,,’ expansions convert each matched character in the expanded value; the ‘^’ and ‘,’ expansions match and convert only the first character in the expanded value. If pattern is omitted, it is treated like a ‘?’, which matches every character. If parameter is ‘@’ or ‘*’, the case modification operation is applied to each positional parameter in turn, and the expansion is the resultant list. If parameter is an array variable subscripted with ‘@’ or ‘*’, the case modification operation is applied to each member of the array in turn, and the expansion is the resultant list. 
+
+=== Command Substitution ===
+
+Command substitution allows the output of a command to replace the command itself. Command substitution occurs when a command is enclosed as follows:
+
+     $(command)
+
+or
+
+     `command`
+
+Bash performs the expansion by executing command and replacing the command substitution with the standard output of the command, with any trailing newlines deleted. Embedded newlines are not deleted, but they may be removed during word splitting. The command substitution $(cat file) can be replaced by the equivalent but faster $(< file).
+
+When the old-style backquote form of substitution is used, backslash retains its literal meaning except when followed by ‘$’, ‘`’, or ‘\’. The first backquote not preceded by a backslash terminates the command substitution. When using the $(command) form, all characters between the parentheses make up the command; none are treated specially.
+
+Command substitutions may be nested. To nest when using the backquoted form, escape the inner backquotes with backslashes.
+
+If the substitution appears within double quotes, word splitting and filename expansion are not performed on the results. 
+
+=== Arithmetic Expansion ===
+
+Arithmetic expansion allows the evaluation of an arithmetic expression and the substitution of the result. The format for arithmetic expansion is:
+
+     $(( expression ))
+
+The expression is treated as if it were within double quotes, but a double quote inside the parentheses is not treated specially. All tokens in the expression undergo parameter expansion, command substitution, and quote removal. Arithmetic expansions may be nested.
+
+The evaluation is performed according to the rules listed below (see Shell Arithmetic). If the expression is invalid, Bash prints a message indicating failure to the standard error and no substitution occurs. 
+
+=== Process Substitution ===
+
+Process substitution is supported on systems that support named pipes (fifos) or the /dev/fd method of naming open files. It takes the form of
+
+     <(list)
+
+or
+
+     >(list)
+
+The process list is run with its input or output connected to a fifo or some file in /dev/fd. The name of this file is passed as an argument to the current command as the result of the expansion. If the >(list) form is used, writing to the file will provide input for list. If the <(list) form is used, the file passed as an argument should be read to obtain the output of list. Note that no space may appear between the < or > and the left parenthesis, otherwise the construct would be interpreted as a redirection.
+
+When available, process substitution is performed simultaneously with parameter and variable expansion, command substitution, and arithmetic expansion. 
+
+=== Word Splitting ===
+
+The shell scans the results of parameter expansion, command substitution, and arithmetic expansion that did not occur within double quotes for word splitting.
+
+The shell treats each character of $IFS as a delimiter, and splits the results of the other expansions into words on these characters. If IFS is unset, or its value is exactly <space><tab><newline>, the default, then sequences of <space>, <tab>, and <newline> at the beginning and end of the results of the previous expansions are ignored, and any sequence of IFS characters not at the beginning or end serves to delimit words. If IFS has a value other than the default, then sequences of the whitespace characters space and tab are ignored at the beginning and end of the word, as long as the whitespace character is in the value of IFS (an IFS whitespace character). Any character in IFS that is not IFS whitespace, along with any adjacent IFS whitespace characters, delimits a field. A sequence of IFS whitespace characters is also treated as a delimiter. If the value of IFS is null, no word splitting occurs.
+
+Explicit null arguments ("" or '') are retained. Unquoted implicit null arguments, resulting from the expansion of parameters that have no values, are removed. If a parameter with no value is expanded within double quotes, a null argument results and is retained.
+
+Note that if no expansion occurs, no splitting is performed. 
+
+=== Filename Expansion ===
+
+    * Pattern Matching: How the shell matches patterns. 
+
+After word splitting, unless the -f option has been set (see The Set Builtin), Bash scans each word for the characters ‘*’, ‘?’, and ‘[’. If one of these characters appears, then the word is regarded as a pattern, and replaced with an alphabetically sorted list of file names matching the pattern. If no matching file names are found, and the shell option nullglob is disabled, the word is left unchanged. If the nullglob option is set, and no matches are found, the word is removed. If the failglob shell option is set, and no matches are found, an error message is printed and the command is not executed. If the shell option nocaseglob is enabled, the match is performed without regard to the case of alphabetic characters.
+
+When a pattern is used for filename generation, the character ‘.’ at the start of a filename or immediately following a slash must be matched explicitly, unless the shell option dotglob is set. When matching a file name, the slash character must always be matched explicitly. In other cases, the ‘.’ character is not treated specially.
+
+See the description of shopt in The Shopt Builtin, for a description of the nocaseglob, nullglob, failglob, and dotglob options.
+
+The GLOBIGNORE shell variable may be used to restrict the set of filenames matching a pattern. If GLOBIGNORE is set, each matching filename that also matches one of the patterns in GLOBIGNORE is removed from the list of matches. The filenames . and .. are always ignored when GLOBIGNORE is set and not null. However, setting GLOBIGNORE to a non-null value has the effect of enabling the dotglob shell option, so all other filenames beginning with a ‘.’ will match. To get the old behavior of ignoring filenames beginning with a ‘.’, make ‘.*’ one of the patterns in GLOBIGNORE. The dotglob option is disabled when GLOBIGNORE is unset. 
+
+=== Quote Removal ===
+
+After the preceding expansions, all unquoted occurrences of the characters ‘\’, ‘'’, and ‘"’ that did not result from one of the above expansions are removed. 
+
+=== Redirections ===
+
+Before a command is executed, its input and output may be redirected using a special notation interpreted by the shell. Redirection may also be used to open and close files for the current shell execution environment. The following redirection operators may precede or appear anywhere within a simple command or may follow a command. Redirections are processed in the order they appear, from left to right.
+
+In the following descriptions, if the file descriptor number is omitted, and the first character of the redirection operator is ‘<’, the redirection refers to the standard input (file descriptor 0). If the first character of the redirection operator is ‘>’, the redirection refers to the standard output (file descriptor 1).
+
+The word following the redirection operator in the following descriptions, unless otherwise noted, is subjected to brace expansion, tilde expansion, parameter expansion, command substitution, arithmetic expansion, quote removal, filename expansion, and word splitting. If it expands to more than one word, Bash reports an error.
+
+Note that the order of redirections is significant. For example, the command
+
+     ls > dirlist 2>&1
+
+directs both standard output (file descriptor 1) and standard error (file descriptor 2) to the file dirlist, while the command
+
+     ls 2>&1 > dirlist
+
+directs only the standard output to file dirlist, because the standard error was made a copy of the standard output before the standard output was redirected to dirlist.
+
+Bash handles several filenames specially when they are used in redirections, as described in the following table:
+
+/dev/fd/fd
+    If fd is a valid integer, file descriptor fd is duplicated.
+/dev/stdin
+    File descriptor 0 is duplicated.
+/dev/stdout
+    File descriptor 1 is duplicated.
+/dev/stderr
+    File descriptor 2 is duplicated.
+/dev/tcp/host/port
+    If host is a valid hostname or Internet address, and port is an integer port number or service name, Bash attempts to open a TCP connection to the corresponding socket.
+/dev/udp/host/port
+    If host is a valid hostname or Internet address, and port is an integer port number or service name, Bash attempts to open a UDP connection to the corresponding socket. 
+
+A failure to open or create a file causes the redirection to fail.
+
+Redirections using file descriptors greater than 9 should be used with care, as they may conflict with file descriptors the shell uses internally.
+
+==== Redirecting Input ====
+
+Redirection of input causes the file whose name results from the expansion of word to be opened for reading on file descriptor n, or the standard input (file descriptor 0) if n is not specified.
+
+The general format for redirecting input is:
+
+     [n]<word
+
+==== Redirecting Output ====
+
+Redirection of output causes the file whose name results from the expansion of word to be opened for writing on file descriptor n, or the standard output (file descriptor 1) if n is not specified. If the file does not exist it is created; if it does exist it is truncated to zero size.
+
+The general format for redirecting output is:
+
+     [n]>[|]word
+
+If the redirection operator is ‘>’, and the noclobber option to the set builtin has been enabled, the redirection will fail if the file whose name results from the expansion of word exists and is a regular file. If the redirection operator is ‘>|’, or the redirection operator is ‘>’ and the noclobber option is not enabled, the redirection is attempted even if the file named by word exists.
+3.6.3 Appending Redirected Output
+
+Redirection of output in this fashion causes the file whose name results from the expansion of word to be opened for appending on file descriptor n, or the standard output (file descriptor 1) if n is not specified. If the file does not exist it is created.
+
+The general format for appending output is:
+
+     [n]>>word
+
+====  Redirecting Standard Output and Standard Error ====
+
+This construct allows both the standard output (file descriptor 1) and the standard error output (file descriptor 2) to be redirected to the file whose name is the expansion of word.
+
+There are two formats for redirecting standard output and standard error:
+
+     &>word
+
+and
+
+     >&word
+
+Of the two forms, the first is preferred. This is semantically equivalent to
+
+     >word 2>&1
+
+==== Appending Standard Output and Standard Error ====
+
+This construct allows both the standard output (file descriptor 1) and the standard error output (file descriptor 2) to be appended to the file whose name is the expansion of word.
+
+The format for appending standard output and standard error is:
+
+     &>>word
+
+This is semantically equivalent to
+
+     >>word 2>&1
+
+==== Here Documents ====
+
+This type of redirection instructs the shell to read input from the current source until a line containing only word (with no trailing blanks) is seen. All of the lines read up to that point are then used as the standard input for a command.
+
+The format of here-documents is:
+
+     <<[−]word
+             here-document
+     delimiter
+
+No parameter expansion, command substitution, arithmetic expansion, or filename expansion is performed on word. If any characters in word are quoted, the delimiter is the result of quote removal on word, and the lines in the here-document are not expanded. If word is unquoted, all lines of the here-document are subjected to parameter expansion, command substitution, and arithmetic expansion. In the latter case, the character sequence \newline is ignored, and ‘\’ must be used to quote the characters ‘\’, ‘$’, and ‘`’.
+
+If the redirection operator is ‘<<-’, then all leading tab characters are stripped from input lines and the line containing delimiter. This allows here-documents within shell scripts to be indented in a natural fashion.
+
+==== Here Strings ====
+
+A variant of here documents, the format is:
+
+     <<< word
+
+The word is expanded and supplied to the command on its standard input.
+
+==== Duplicating File Descriptors ====
+
+The redirection operator
+
+     [n]<&word
+
+is used to duplicate input file descriptors. If word expands to one or more digits, the file descriptor denoted by n is made to be a copy of that file descriptor. If the digits in word do not specify a file descriptor open for input, a redirection error occurs. If word evaluates to ‘-’, file descriptor n is closed. If n is not specified, the standard input (file descriptor 0) is used.
+
+The operator
+
+     [n]>&word
+
+is used similarly to duplicate output file descriptors. If n is not specified, the standard output (file descriptor 1) is used. If the digits in word do not specify a file descriptor open for output, a redirection error occurs. As a special case, if n is omitted, and word does not expand to one or more digits, the standard output and standard error are redirected as described previously.
+
+==== Moving File Descriptors ====
+
+The redirection operator
+
+     [n]<&digit-
+
+moves the file descriptor digit to file descriptor n, or the standard input (file descriptor 0) if n is not specified. digit is closed after being duplicated to n.
+
+Similarly, the redirection operator
+
+     [n]>&digit-
+
+moves the file descriptor digit to file descriptor n, or the standard output (file descriptor 1) if n is not specified.
+
+==== Opening File Descriptors for Reading and Writing ====
+
+The redirection operator
+
+     [n]<>word
+
+causes the file whose name is the expansion of word to be opened for both reading and writing on file descriptor n, or on file descriptor 0 if n is not specified. If the file does not exist, it is created. 
 
 == Compression tools ==
 === Anti Virus=== 
