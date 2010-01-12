@@ -33,16 +33,7 @@ Basic types of topologies:
 All the computers are connected to a single cable through some connector.  The cable is terminated at both the ends with some special terminators whose job is to absorb the electrical signal so it won't reflect back to where it came from. During the data transmission, the source computer adds the intended recipient's address with the data. The data travels in both the directions of cable to all the connected machines but it is only accepted by machine whose address matches the intended address for the data.
 
 
-|| *Advantages*
-
-  * Bus topology requires only one cable hence it is easy to install and requires less cable.
-  * Easy to connect a computer or peripheral to a linear bus. 
-
-* Disadvantages *
-  * Good for small network of 2-5 devices. More computers decrease the performance and available bandwidth of the network. 
-  * If the cable damages anywhere in its path the entire network shuts down.
-  * Terminators are required at both ends of the backbone cable. 
-  * Difficult to identify the problem if the entire network shuts down.  || http://farm3.static.flickr.com/2732/4267527387_0a8f4ff0bc.jpg ||
+http://farm3.static.flickr.com/2732/4267527387_0a8f4ff0bc.jpg
 
 *Advantages*
 
