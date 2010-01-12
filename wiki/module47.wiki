@@ -71,7 +71,7 @@ One may refer to the links below for a deeper view of the FLOSS philosophies, me
 
 =What are Free and Open Standards=
 
-A standard is a set of rules and specifications that a particular task / device / software should conform to. A free and open standard may is a standard that is available free of costs and restrictions to anybody for implementation. 
+A standard is a set of rules and specifications that a particular task / device / software should conform to. A free and open standard is a standard that is available free of costs and restrictions to anybody for implementation. 
 A formal definition has been proposed to remove ambiguities, that may lead to confusion about which standards are open:
     * The standard is adopted and will be maintained by a not-for-profit organization, and its ongoing development occurs on the basis of an open decision-making procedure available to all interested parties.
     * The standard has been published and the standard specification document is available freely. It must be permissible to all to copy, distribute, and use it freely.
