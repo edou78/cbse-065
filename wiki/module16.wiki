@@ -13,7 +13,7 @@
 
 = Computer Networking and Network Topologies =
 
- 
+ 
 Computer networking is basically connecting computer devices for the purpose of data transmission among them. The devices can be linked to each other in many different ways. The layout of connected devices is called Network Topology. Here we will learn the different standard ways (topologies) to connect the computers. 
 Basic types of topologies:
 
@@ -30,9 +30,9 @@ Basic types of topologies:
 
 
 
-All the computers are connected to a single cable through some connector.  The cable is terminated at both the ends with some special terminators whose job is to absorb the electrical signal so it won't reflect back to where it came from. During the data transmission, the source computer adds the intended recipient's address with the data. The data travels in both the directions of cable to all the connected machines but it is only accepted by machine whose address matches the intended address for the data.
+All the computers are connected to a single cable through some connector.  The cable is terminated at both the ends with some special terminators whose job is to absorb the electrical signal so it won't reflect back to where it came from. During the data transmission, the source computer adds the intended recipient's address with the data. The data travels in both the directions of cable to all the connected machines but it is only accepted by machine whose address matches the intended address for the data.
 
-http://cbse-065.googlecode.com/files/bus-topology.jpg
+http://farm3.static.flickr.com/2732/4267527387_0a8f4ff0bc.jpg
 
 
 *Advantages*
@@ -49,4 +49,4 @@ http://cbse-065.googlecode.com/files/bus-topology.jpg
 
 
  
- 
+ 
