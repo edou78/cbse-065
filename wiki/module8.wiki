@@ -24,11 +24,13 @@ We shall be using debian distribution named Lenny. However what we learn here wi
 Utilities are small command line programs used to do mundane installation, maintanence, configuration and testing tasks.
 These programs can be divided into a few broad categories
  #1 Shell
- #2 File and directory utils
- #3 Network utils
- #4 Search utils
- #5 Install utils
- #6 Editors
+ #2 Disk utils
+ #3 File and directory utils
+ #4 Network utils
+ #5 Search utils
+ #6 Install utils
+ #7 Editors
+ #8 Others
 
 == Compression tools ==
 === Anti Virus=== 
