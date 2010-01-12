@@ -26,7 +26,7 @@ Basic types of topologies:
 
 
 
-*Bus Topology (Linear Bus Topology)*
+==Bus Topology (Linear Bus Topology)==
 
 
 
@@ -47,7 +47,8 @@ http://farm3.static.flickr.com/2788/4267626111_4c21b3aed8.jpg
   * Difficult to identify the problem if the entire network shuts down. 
 
 
-*Ring Topology*
+
+==Ring Topology==
 
 Every computer is connected to two other neighboring computers. Hence all the computers are connected to single circle of cable (ring) and there are no terminating ends like in bus topology. The data travels through ring in one direction either clockwise or anticlockwise and passes through each computer, which also acts as a repeater and forwards it to next. 
 
@@ -59,7 +60,7 @@ Every computer is connected to two other neighboring computers. Hence all the co
   * Network performance is affected if there is change in nodes.
 
 
- *Star Topology *
+==Star Topology==
 
 All the computers are connected to the central device that may be hub, switch or router. All the data transfer happens through this central device only. This central device also works as repeater for the data flow. 
 
@@ -76,7 +77,7 @@ All the computers are connected to the central device that may be hub, switch or
 
  
 
- *Tree Topology*
+==Tree Topology==
 
 Tree topology is the combination of bus topology and star topology. In it hub devices are connected to the bus cable and computers are connected to these hubs. It is very easy to expand the network in this approach.
 
@@ -92,7 +93,7 @@ Tree topology is the combination of bus topology and star topology. In it hub de
 
 
 
- *Mesh Topology*
+==Mesh Topology==
 
 In mesh topology each computer on the network connects to every other, creating a point-to-point connection between every device on the network. This approach provides redundancy, if one link is down; there is always an alternative path between the computers. 
 
@@ -110,7 +111,7 @@ In mesh topology each computer on the network connects to every other, creating 
 
 
 
- *Summary *
+==Summary==
 
 Understanding the concept of Topology is very useful in understanding and troubleshooting network problems. There are many things which can be considered while designing network. Some of them are-
 
