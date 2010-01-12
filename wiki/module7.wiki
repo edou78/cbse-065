@@ -29,7 +29,7 @@ System software provides services to other softwares and users to make efficient
     # Android
     # Symbian
 
-=== Introduction to Operating System ===
+== Introduction to Operating System ==
 
 We all have been using computers in some form or the other in our day to day life in this 21st century. Be it a desktop computer, server, PDA or a cellphone, computers have become an integral part of our day to day life. All these electronic gadgets are not that useful if we were to only receive the hardware. What makes them useful for us is *something* which manages the hardware components of these electronic gadgets. This *something* is what is known as an Operating System.
 
@@ -38,6 +38,14 @@ As a user of a cellphone we don't concern ourselves with how the cellphone is st
 A computer system comprises of four major components, namely hardware, operating system, application programs, users. These four components can be thought of to be stacked in following fashion:
 
 http://lh4.ggpht.com/_kpglEYwtRpk/S0v8-7_xlJI/AAAAAAAAN50/6R7r5XojptE/OS_Stack.jpg
+
+There is no set definition for what an Operating system should comprise of. If we look at different Operating systems available today then we can immediately see that there is a great difference between them. However as an end user the difference we normally see is from point of view of applications that come bundled along with the Operating System. Though at the end of the day these applications are the most used software by end user but these applications won't be our area of concern. What we are concerned with is the software which governs the hardware and provides services to end users and applications for making efficient use of the electronic components associated with a computer system. This software is the Operating system and keeping in view this aspect of an Operating system we can immediately identify few key elements that can be associated with an Operating system.
+
+  * _a technical layer of software_ for driving the hardware of computer system, like disk drives, keyboard, screen etc.
+  * _a filesystem_ which provides a way of organizing files logically
+  * _a simple command language_ which enables users to run their own programs and manipulate their files in a simple way.
+  * As an operating system is in charge of computer hardware, all requests to use its resources and devices need to go through the operating system. Thus an operating system should provide _legal entry points_ into its code for performing basic operations like writing to devices etc.
+
 
 
 
