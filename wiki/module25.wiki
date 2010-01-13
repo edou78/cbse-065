@@ -13,15 +13,19 @@
 
 == Data Types ==
 === byte ===
-byte data type is an 8-bit signed two's complement integer with a minimum value of -128 and a maximum value of 127 (inclusive)
+is an 8-bit signed two's complement integer with a minimum value of -128 and a maximum value of 127 (inclusive)
 === short ===
-short data type is a 16-bit signed two's complement integer with a minimum value of -32,768 and a maximum value of 32,767 (inclusive).
+is a 16-bit signed two's complement integer with a minimum value of -32,768 and a maximum value of 32,767 (inclusive).
 === int ===
-int data type is a 32-bit signed two's complement integer with a minimum value of -2,147,483,648 and a maximum value of 2,147,483,647 (inclusive).
+is a 32-bit signed two's complement integer with a minimum value of -2,147,483,648 and a maximum value of 2,147,483,647 (inclusive).
 === long ===
-long data type is a 64-bit signed two's complement integer with a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807 (inclusive).
+is a 64-bit signed two's complement integer with a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807 (inclusive).
 === float ===
+
 === double ===
+
 === char ===
+
 === String ===
+
 === boolean ===
