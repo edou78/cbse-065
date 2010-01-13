@@ -85,13 +85,13 @@ The shell then parses these tokens into commands and other constructs, removes t
 
 The following is a brief description of the shell's operation when it reads and executes a command. Basically, the shell does the following:
 
-   1. Reads its input from a file (see Shell Scripts), from a string supplied as an argument to the -c invocation option (see Invoking Bash), or from the user's terminal.
-   2. Breaks the input into words and operators, obeying the quoting rules described in Quoting. These tokens are separated by metacharacters. Alias expansion is performed by this step (see Aliases).
-   3. Parses the tokens into simple and compound commands (see Shell Commands).
-   4. Performs the various shell expansions (see Shell Expansions), breaking the expanded tokens into lists of filenames (see Filename Expansion) and commands and arguments.
-   5. Performs any necessary redirections (see Redirections) and removes the redirection operators and their operands from the argument list.
-   6. Executes the command (see Executing Commands).
-   7. Optionally waits for the command to complete and collects its exit status (see Exit Status). 
+   #1. Reads its input from a file (see Shell Scripts), from a string supplied as an argument to the -c invocation option (see Invoking Bash), or from the user's terminal.
+   #2. Breaks the input into words and operators, obeying the quoting rules described in Quoting. These tokens are separated by metacharacters. Alias expansion is performed by this step (see Aliases).
+   #3. Parses the tokens into simple and compound commands (see Shell Commands).
+   #4. Performs the various shell expansions (see Shell Expansions), breaking the expanded tokens into lists of filenames (see Filename Expansion) and commands and arguments.
+   #5. Performs any necessary redirections (see Redirections) and removes the redirection operators and their operands from the argument list.
+   #6. Executes the command (see Executing Commands).
+   #7. Optionally waits for the command to complete and collects its exit status (see Exit Status). 
 
 ==== Quoting ====
 
@@ -1731,9 +1731,9 @@ HISTFILE
 HISTFILESIZE
     The maximum number of lines contained in the history file. When this variable is assigned a value, the history file is truncated, if necessary, by removing the oldest entries, to contain no more than that number of lines. The history file is also truncated to this size after writing it when an interactive shell exits. The default value is 500.
 HISTIGNORE
-    A colon-separated list of patterns used to decide which command lines should be saved on the history list. Each pattern is anchored at the beginning of the line and must match the complete line (no implicit ‘*’ is appended). Each pattern is tested against the line after the checks specified by HISTCONTROL are applied. In addition to the normal shell pattern matching characters, ‘&’ matches the previous history line. ‘&’ may be escaped using a backslash; the backslash is removed before attempting a match. The second and subsequent lines of a multi-line compound command are not tested, and are added to the history regardless of the value of HISTIGNORE.
+    A colon-separated list of patterns used to decide which command lines should be saved on the history list. Each pattern is anchored at the beginning of the line and must match the complete line (no implicit {{{‘*’}}} is appended). Each pattern is tested against the line after the checks specified by HISTCONTROL are applied. In addition to the normal shell pattern matching characters, ‘&’ matches the previous history line. ‘&’ may be escaped using a backslash; the backslash is removed before attempting a match. The second and subsequent lines of a multi-line compound command are not tested, and are added to the history regardless of the value of HISTIGNORE.
 
-    HISTIGNORE subsumes the function of HISTCONTROL. A pattern of ‘&’ is identical to ignoredups, and a pattern of ‘[ ]*’ is identical to ignorespace. Combining these two patterns, separating them with a colon, provides the functionality of ignoreboth.
+    HISTIGNORE subsumes the function of HISTCONTROL. A pattern of ‘&’ is identical to ignoredups, and a pattern of {{{‘[ ]*’}}} is identical to ignorespace. Combining these two patterns, separating them with a colon, provides the functionality of ignoreboth.
 HISTSIZE
     The maximum number of commands to remember on the history list. The default value is 500.
 HISTTIMEFORMAT
@@ -1981,7 +1981,7 @@ To determine within a startup script whether or not Bash is running interactivel
      {{{case "$-" in
      *i*)	echo This shell is interactive ;;
      *)	echo This shell is not interactive ;;
-     esac{{{
+     esac}}}
 
 Alternatively, startup scripts may examine the variable PS1; it is unset in non-interactive shells, and set in interactive shells. Thus:
 
