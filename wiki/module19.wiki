@@ -101,17 +101,17 @@ There are more than a hundred programming languages available in the world. It i
   
   The programming languages used for programming applications that interact with users on the web i.e. WWW.
 
-  * PHP [Most popular, Open Source, Recursive acronym for HyperText PreProcessor, Platform (OS) Independent]
-  * Perl [Platform (OS) Independent]
-  * Java [Platform (OS) Independent]
-  * ASP [Works only on Windows]
-  * ASP.NET [Mostly used with Windows, No evidence of being used on Linux]
-  * Python [Platform (OS) Independent]
+  * PHP: Most popular, Open Source, Recursive acronym for HyperText PreProcessor, Platform (OS) Independent
+  * Perl: Platform (OS) Independent
+  * Java: Platform (OS) Independent
+  * ASP: Works only on Windows
+  * ASP.NET: Mostly used with Windows, No evidence of being used on Linux
+  * Python: Platform (OS) Independent
 
 * Server Application Programming Languages -
   
   The programming languages which are used to write programs for performing different tasks on Linux servers.
 
-  * Bash [Shell Script]
+  * Bash: Shell Script
   * Perl
   * C
