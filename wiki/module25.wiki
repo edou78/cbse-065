@@ -9,15 +9,15 @@
 
 <wiki:toc max_depth="3" />
 
-= Data Types  =
+= Introduction  =
 
-* Data Types
-   # byte
-   # short
-   # int
-   # long
-   # float
-   # double
-   # char
-   # String
-   # boolean
+== Data Types ==
+=== byte ===
+=== short ===
+=== int ===
+=== long ===
+=== float ===
+=== double ===
+=== char ===
+=== String ===
+=== boolean ===
