@@ -9,7 +9,15 @@
 
 <wiki:toc max_depth="3" />
 
+= Data Types  =
 
-This module is not yet started. You can read [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]
-
-If you are a new member and have permission to edit, that you can click on "Edit This Page" to start editing this page !
+* Data Types
+   # byte
+   # short
+   # int
+   # long
+   # float
+   # double
+   # char
+   # String
+   # boolean
