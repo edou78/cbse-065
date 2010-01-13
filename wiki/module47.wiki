@@ -90,7 +90,7 @@ The above standards are available on the net at no charge and without restrictio
 Some standards that are open but *DO Not* meet the above criteria are
  * H264 MPEG4 video compression 
  * Office Open XML (OOXML)
- * SMBFS network file 
+ * SMBFS File sharing / networking protocol 
 All of the above standards are available, but have various restrictions that prevent Open implementation and / or distribution and / or usage.
 
 ==Why are Free and Open Standards important==
