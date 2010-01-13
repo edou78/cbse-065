@@ -1,7 +1,7 @@
 <hr/>
 
-|| *Content* ||  ||
-|| *Team* || [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]  ||
+|| *Content* || Programming Fundamentals ||
+|| *Team* ||Thomas Mani P ||
 || *Discussion* ||  ||
 || *Changes* || ||
 
