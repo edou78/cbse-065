@@ -1,7 +1,7 @@
 <hr/>
 
 || *Content* || Introduction to Programming – Modular Programming, Object Oriented Programming, Event Driven Programming  ||
-|| *Team* || Siddharth Srivastava||
+|| *Team* || Siddharth Srivastava, Nilesh Govindarajan (www.itech7.com)||
 || *Discussion Page* || [http://groups.google.co.in/group/cbse065/browse_thread/thread/a8d73c17b4614a32] ||
 || *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module19.wiki&format=side&r=-1 || 
 
@@ -82,3 +82,36 @@ Polymorphism allows the programmer to treat derived class members just like thei
 * Overriding Polymorphism * If a Dog is commanded to speak(), this may elicit a bark(). However, if a Pig is commanded to speak(), this may elicit an oink(). They both inherit speak() from Animal, but their derived class methods override the methods of the parent class; this is Overriding Polymorphism.
 
 * Overloading Polymorphism * Overloading Polymorphism is the use of one method signature, or one operator such as "+", to perform several different functions depending on the implementation. The "+" operator, for example, may be used to perform integer addition, float addition, list concatenation, or string concatenation.
+
+= Programming Languages =
+
+There are more than a hundred programming languages available in the world. It is not possible to cover all of them here. This section highlights some of the important programming languages in use now.
+
+* Client Application Programming Languages -
+  
+  The programming languages used for creating applications used on the client side. For example - Firefox, etc.
+
+ * C
+ * C++
+ * C# (Pronounced as C sharp)
+ * Java
+ * Python
+
+* Web Application Programming Languages -
+  
+  The programming languages used for programming applications that interact with users on the web i.e. WWW.
+
+  * PHP [Most popular, Open Source, Recursive acronym for HyperText PreProcessor, Platform (OS) Independent]
+  * Perl [Platform (OS) Independent]
+  * Java [Platform (OS) Independent]
+  * ASP [Works only on Windows]
+  * ASP.NET [Mostly used with Windows, No evidence of being used on Linux]
+  * Python [Platform (OS) Independent]
+
+* Server Application Programming Languages -
+  
+  The programming languages which are used to write programs for performing different tasks on Linux servers.
+
+  * Bash [Shell Script]
+  * Perl
+  * C
