@@ -1,6 +1,6 @@
 <hr/>
 
-|| *Content* || Programming Fundamentals ||
+|| *Content* || Programming Fundamentals *Data Types* byte, short, int, long, float, double char, String (or any object), boolean *Variables* Need to use variable, Declaring Variables, Variable Naming Convention, Assigning value to Variables, Data Types of variable, Scope and lifetime of Variables (Public and Private) *Control Structures* Decision Structure – IF, IF--ELSE, Switch; Looping Structure- WHILE, DO WHILE, FOR; Object Oriented Programming using Java: Features of Java, Classes in Java||
 || *Team* ||Thomas Mani P ||
 || *Discussion* ||  ||
 || *Changes* || ||
