@@ -48,33 +48,33 @@ Object-oriented programming (OOP) is a programming language model organized arou
  
 == Basic Concepts == 
 
-=== Object ===
+* Object *
 
 The fundamental idea behind object orientation is to combine both data and functions that operate upon them under a single unit called *object*. Software objects are often used to model the real-world objects that you find in everyday life. Object have characteristics and behavior.
 Technically, Programmers developing a system model create object classes to represent each component of a system. Those generic classes are then used to create specific instances of each object for use in the program. Objects may interact with each other through the use of methods.
 Examples of objects range from human beings (described by name, address, and so forth) to buildings and floors (whose properties can be described and managed) down to the little widgets on your computer desktop (such as buttons and scroll bars).
 
-=== Class ===
+* Class *
 
 In OOP, objects are members of classes. It defines the characteristics and behavior of an object. 
 Example: There may be thousands of other bicycles in existence, all of the same make and model. Each bicycle was built from the same set of blueprints and therefore contains the same components. In object-oriented terms, we say that your bicycle is an instance of the class of objects known as bicycles.
 
-=== Inheritence ===
+* Inheritence *
 
 The idea of classes leads to the idea of inheritance. Inheritance provides a powerful and natural mechanism for organizing and structuring your software. 
 In object-oriented programming, inheritance is the concept that when a class of objects is defined, any subclass that is defined can inherit the definitions of one or more general classes. This means for the programmer that an object in a subclass need not carry its own definition of data and methods that are generic to the class (or classes) of which it is a part. This not only speeds up program development; it also ensures an inherent validity to the defined subclass object (what works and is consistent about the class will also work for the subclass).
 Example: Class of vehicles is divided into cars, trucks, buses and motorcycles.
 
-=== Encapsulation ===
+* Encapsulation *
 
 Encapsulation conceals the functional details of a class from objects that send messages to it.
 In object-oriented programming, information hiding or encapsulation (by way of nesting of types) reduces software development risk by shifting the code's dependency on an uncertain implementation (design decision) onto a well-defined interface. Clients of the interface perform operations purely through it so if the implementation changes, the clients do not have to change.
 
-=== Message ===
+* Message *
 
 A message in its most general meaning is an object of communication. It is a vessel which provides information. 
 
-=== Polymorphism ===
+* Polymorphism *
 
 Subtype polymorphism, almost universally called just polymorphism in the context of object-oriented programming, is the ability of one type, A, to appear as and be used like another type, B.
 Polymorphism allows the programmer to treat derived class members just like their parent class' members. More precisely, Polymorphism in object-oriented programming is the ability of objects belonging to different data types to respond to method calls of methods of the same name, each one according to an appropriate type-specific behavior. One method, or an operator such as +, -, or {{{*}}}, can be abstractly applied in many different situations.
