@@ -1,0 +1,138 @@
+|| *Content* || *Utility Software* Compression tools, Anti Virus, SPAM Filters, File Management tools, Archiving, Backups, Time snapshots of disk and Disk Management tools ||
+|| *Team* || J T D'souza  ||
+|| *Discussion Page* || [http://groups.google.com/group/cbse065/browse_thread/thread/afae959fd217d881] ||
+|| *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module8.wiki&format=side&r=-1 || 
+|| *Old Version List* || http://code.google.com/p/cbse-065/source/list?path=/wiki/module8.wiki ||
+
+<hr/>
+
+<wiki:toc max_depth="5" />
+
+= Introduction =
+
+Standard utilities available on a GNU/Linux OS
+
+
+= Details =
+
+This module provides an introduction to the standard utilities available on a GNU/Linux OS installation. We shall cover the features of each utility and the command line syntax for doing typical administrative tasks.
+
+We shall be using debian distribution named Lenny. However what we learn here will be applicable on almost any GNU/Linux distribution like Fedora, Suse, Mandriva, Ubuntu, Slacware etc. Embedded distributions like DSL, MontaVista, Emdebian etc, may not have all the utilities and even included utilities will have several features missing. 
+
+Utilities are small command line programs used to do mundane installation, maintanence, configuration and testing tasks.
+These programs can be divided into a few broad categories
+ #1 Shell
+ #2 Disk utils
+ #3 File and directory utils
+ #4 Network utils
+ #5 Search utils
+ #6 Install utils
+ #7 Editors
+ #8 Others
+
+Before we proceed any further we will take a look at that most profound creation of all - man. No it isnt man of hu-man or wo-man, but even so man is our mana from heaven and will save you from disaster always. Well at least from disaster on the computer.
+man is a shortform for manual and will give you a brief description of the programme and it's usage syntax for the innumerable options available with every utility.
+The syntax is man <command>
+Thus typing 
+man man 
+will tell you all about itself and give you the details of what the man command does and it's usage options.
+So before you go and type rm and wipe your disk clean, please type man rm to understand the implications of your action. Well even if you are not going to wipe your disk clean do use man - especially when this textbook gets boring.
+
+The usage syntax for every utility listed below is available with man
+ 
+== Disk and File Utils ==
+
+=== basename ===
+=== cat ===
+=== chgrp === 
+=== chmod ===
+=== chown ===
+=== chroot ===
+=== cksum ===
+=== comm ===
+=== cp ===
+=== csplit ===
+=== cut ===
+=== date ===
+=== dd ===
+=== df ===
+=== dir ===
+=== dircolors ===
+=== dirname ===
+=== du ===
+=== echo ===
+=== env ===
+=== expand ===
+=== expr ===
+=== factor ===
+=== false ===
+=== fmt ===
+=== fold ===
+=== groups ===
+=== head ===
+=== hostid ===
+=== id ===
+=== install ===
+=== join ===
+=== link ===
+=== ln ===
+=== logname ===
+=== ls ===
+=== md5sum ===
+=== mkdir ===
+=== mkfifo ===
+=== mknod ===
+=== mv ===
+=== nice ===
+=== nl ===
+=== nohup ===
+=== od ===
+=== paste ===
+=== pathchk ===
+=== pinky ===
+=== pr ===
+=== printenv ===
+=== printf ===
+=== ptx ===
+=== pwd ===
+=== readlink ===
+=== rm ===
+=== rmdir ===
+=== sha1sum ===
+=== seq ===
+=== shred ===
+=== sleep ===
+=== sort ===
+=== split ===
+=== stat ===
+=== stty ===
+=== sum ===
+=== sync ===
+=== tac ===
+=== tail ===
+=== tee ===
+=== test ===
+=== touch ===
+=== tr ===
+=== true ===
+=== tsort ===
+=== tty ===
+=== uname ===
+=== unexpand ===
+=== uniq ===
+=== unlink ===
+=== users ===
+=== vdir ===
+=== wc ===
+=== who ===
+=== whoami ===
+=== yes ===
+
+== Compression tools ==
+=== Anti Virus=== 
+=== SPAM Filters ===
+=== File Management tools ===
+=== Archiving===
+=== Backups===
+=== Time snapshots of disk===
+=== Disk Management tools ===
