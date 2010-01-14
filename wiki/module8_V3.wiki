@@ -62,7 +62,58 @@ Or ls -al | grep ^d which will only list directories.
 For complex repetitive tasks one can write a bash script.
 
 === basename ===
+Strip directory and suffix from filenames
+Examples
+
+ basename /usr/bin/sort
+              Output "sort".
+
+ basename include/stdio.h .h
+              Output "stdio".
+
 === cat ===
+Concatenate FILE(s), or standard input, to standard output.
+
+       -A, --show-all
+              equivalent to -vET
+
+       -b, --number-nonblank
+              number nonempty output lines
+
+       -e     equivalent to -vE
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+              number all output lines
+
+       -s, --squeeze-blank
+              suppress repeated empty output lines
+
+       -t     equivalent to -vT
+
+       -T, --show-tabs
+             display TAB characters as ^I
+
+       -u     (ignored)
+
+       -v, --show-nonprinting
+              use ^ and M- notation, except for LFD and TAB
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       With no FILE, or when FILE is -, read standard input.
+
+EXAMPLES
+
+ cat /usr//share/doc/manpages/README.Debian 
+
+ will give you details of the debian GNU/Linux manual pages
+
 === chgrp === 
 === chmod ===
 === chown ===
@@ -147,55 +198,6 @@ For complex repetitive tasks one can write a bash script.
 === whoami ===
 === yes ===
 
-==== basename ====
-Strip directory and suffix from filenames
-eg
- basename /usr/bin/sort
-              Output "sort".
-
- basename include/stdio.h .h
-              Output "stdio".
-
-==== cat ===
-Concatenate FILE(s), or standard input, to standard output.
-
-       -A, --show-all
-              equivalent to -vET
-
-       -b, --number-nonblank
-              number nonempty output lines
-
-       -e     equivalent to -vE
-
-       -E, --show-ends
-              display $ at end of each line
-
-       -n, --number
-              number all output lines
-
-       -s, --squeeze-blank
-              suppress repeated empty output lines
-
-       -t     equivalent to -vT
-
-       -T, --show-tabs
-             display TAB characters as ^I
-
-       -u     (ignored)
-
-       -v, --show-nonprinting
-              use ^ and M- notation, except for LFD and TAB
-
-       --help display this help and exit
-
-       --version
-              output version information and exit
-
-       With no FILE, or when FILE is -, read standard input.
-
-EXAMPLES
-cat /usr//share/doc/manpages/README.Debian 
-will give you details of the debian GNU/Linux manual pages
 
 == Compression tools ==
 === Anti Virus=== 
