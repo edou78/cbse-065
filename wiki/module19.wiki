@@ -114,7 +114,26 @@ Example: Games are the biggest example of these kinds of applications. The GUI b
 
 Events are the actions that are performed by the user during the application usage. If a user clicks a mouse button then the Click event occurs. If a user moves the mouse then the mouse move event occurs. Similarly an application can generate Key down event, Key up event.
 
-EventDrivenProgramming is quite useful when dealing with GUIs, HCI, and other object systems where one expects response to action as the primary activity. It is inappropriate for systems that must do one thing well and finish without intervention (like compilers... this sort of thing implies ProceduralProgramming). It is also inappropriate for systems that must react intelligently based upon total observed context of any sort 
+* Characteristics of Events in Event Driven Programming *
+
+ * Events are generally referenced, indexed, or named based on an object (noun) and the type of action that triggered the event. For example, "icon3_click" or "icon3 - onClick".
+
+ * Events often return a status indicator as to whether the event was successful or not. For example, an "onValidate" event may return True if a form passed validation or False if it did not.Not all events need to return results.
+
+ * Events can often "talk" to a declarative state framework and/or database. For example, in a GUI an event may be able to change the colors or text of an input box not related to the event.
+
+ * Some rules usually need to be set about which event has priority if multiple events are triggered at the same time.
+
+ * Events are often allowed to trigger other events through an API.
+
+
+ * Event Driven Programming is quite useful when dealing with GUIs, HCI, and other object systems where one expects response to action as the primary activity. It is inappropriate for systems that must do one thing well and finish without intervention (like compilers... this sort of thing implies ProceduralProgramming). It is also inappropriate for systems that must react intelligently based upon total observed context of any sort.
+
+ * Event Driven Programming may or may not be Object Oriented or possess an Object Model. 
+
+ * Trivially, a language that supported only Event Driven Programming could perform procedural programming by accepting exactly one event, that being: (main_event with (args)). Nonetheless, in practice, whether a particular program architecture can really be considered 'Event Driven Programming' doesn't often overlap with architectures that can reasonably be called 'Procedural Programming'... i.e. they do tend to be rather exclusive. This is true even when the programming language happens to be capable of both.
+
+ * It's important to note that not all 'procedural languages' are capable of supporting Event Driven Programming. The ability to receive real events (as opposed to emulated events) is not implied even for a language that is Turing Complete. (Turing Complete only implies ability to perform any computable closed calculation, and says nothing of communication). Event Driven Programming fundamentally requires the ability to detect signals and trigger 'events' upon receiving them - e.g. via interrupts on a CPU, or continuous polling in a forever-loop. 
 
  * Exception handlers
 
