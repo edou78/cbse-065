@@ -105,7 +105,7 @@ There are also object databases which can be used to replace RDBMSs, but these h
 
 = Event Driven Programming =
 
-_EventDrivenProgramming is for dumb reaction to obvious stimuli_
+_Event Driven Programming is for dumb reaction to obvious stimuli_
 
 In computer programming, event-driven programming or event-based programming is a programming paradigm in which the flow of the program is determined by events—i.e., sensor outputs or user actions (mouse clicks, key presses) or messages from other programs or threads.
 Example: Games are the biggest example of these kinds of applications. The GUI based programs are all developed using event driven programming.
