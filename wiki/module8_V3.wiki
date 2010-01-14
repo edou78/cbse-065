@@ -32,10 +32,10 @@ These programs can be divided into a few broad categories
 
 Before we proceed any further we will take a look at that most profound creation of all - man. No it is not man from hu-man or wo-man, but man from manual and will beat super-man. It is your mana from heaven and will save you from disaster always. Well at least from disaster on the computer, where quite often even superman like powers fail.
 man is a shortform for manual and gives you a brief description of the programme and it's usage syntax for the innumerable options available with every utility.
-The syntax for man is man <command>
+The syntax for man is man `<command>`
 Thus typing 
 man man 
-will, in a bout of self glorification, tell you all about itself and give you the details of what the man command does and it's usage options. Although man itself has several options just typing man <command> is sufficient for most purposes.
+will, in a bout of self glorification, tell you all about itself and give you the details of what the man command does and it's usage options. Although man itself has several options just typing man `<command>` is sufficient for most purposes.
 
 So before you go and type rm and wipe your disk clean, please type man rm to understand the implications of your action. Well even if you are not going to wipe your disk clean do use man - especially when this textbook gets boring.
 
@@ -155,6 +155,47 @@ eg
 
  basename include/stdio.h .h
               Output "stdio".
+
+==== cat ===
+Concatenate FILE(s), or standard input, to standard output.
+
+       -A, --show-all
+              equivalent to -vET
+
+       -b, --number-nonblank
+              number nonempty output lines
+
+       -e     equivalent to -vE
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+              number all output lines
+
+       -s, --squeeze-blank
+              suppress repeated empty output lines
+
+       -t     equivalent to -vT
+
+       -T, --show-tabs
+             display TAB characters as ^I
+
+       -u     (ignored)
+
+       -v, --show-nonprinting
+              use ^ and M- notation, except for LFD and TAB
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       With no FILE, or when FILE is -, read standard input.
+
+EXAMPLES
+cat /usr//share/doc/manpages/README.Debian 
+will give you details of the debian GNU/Linux manual pages
 
 == Compression tools ==
 === Anti Virus=== 
