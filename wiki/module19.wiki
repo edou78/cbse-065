@@ -135,9 +135,7 @@ Events are the actions that are performed by the user during the application usa
 
  * It's important to note that not all 'procedural languages' are capable of supporting Event Driven Programming. The ability to receive real events (as opposed to emulated events) is not implied even for a language that is Turing Complete. (Turing Complete only implies ability to perform any computable closed calculation, and says nothing of communication). Event Driven Programming fundamentally requires the ability to detect signals and trigger 'events' upon receiving them - e.g. via interrupts on a CPU, or continuous polling in a forever-loop. 
 
- * Exception handlers
-
-In some programming languages (eg PL/1) ,even though a program itself may not be predominantly event driven, certain abnormal events such as a hardware error, overflow (software) or "program checks" may occur that possibly prevents further processing. Exception handlers, may be provided by "ON statements" in (unseen) callers to provide housekeeping routines to clean up afterward before termination.
+ * Exception handlers * In some programming languages (eg PL/1) ,even though a program itself may not be predominantly event driven, certain abnormal events such as a hardware error, overflow (software) or "program checks" may occur that possibly prevents further processing. Exception handlers, may be provided by "ON statements" in (unseen) callers to provide housekeeping routines to clean up afterward before termination.
 
 
 = Programming Languages =
