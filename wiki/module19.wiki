@@ -114,7 +114,7 @@ Example: Games are the biggest example of these kinds of applications. The GUI b
 
 Events are the actions that are performed by the user during the application usage. If a user clicks a mouse button then the Click event occurs. If a user moves the mouse then the mouse move event occurs. Similarly an application can generate Key down event, Key up event.
 
-* Characteristics of Events in Event Driven Programming *
+== Characteristics of Events in Event Driven Programming ==
 
  * Events are generally referenced, indexed, or named based on an object (noun) and the type of action that triggered the event. For example, "icon3_click" or "icon3 - onClick".
 
@@ -126,7 +126,7 @@ Events are the actions that are performed by the user during the application usa
 
  * Events are often allowed to trigger other events through an API.
 
-
+== Features of Event Driven Programming ==
  * Event Driven Programming is quite useful when dealing with GUIs, HCI, and other object systems where one expects response to action as the primary activity. It is inappropriate for systems that must do one thing well and finish without intervention (like compilers... this sort of thing implies ProceduralProgramming). It is also inappropriate for systems that must react intelligently based upon total observed context of any sort.
 
  * Event Driven Programming may or may not be Object Oriented or possess an Object Model. 
