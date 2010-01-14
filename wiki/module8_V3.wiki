@@ -19,28 +19,47 @@ This module provides an introduction to the standard utilities available on a GN
 
 We shall be using debian distribution named Lenny. However what we learn here will be applicable on almost any GNU/Linux distribution like Fedora, Suse, Mandriva, Ubuntu, Slacware etc. Embedded distributions like DSL, MontaVista, Emdebian etc, may not have all the utilities and even included utilities will have several features missing. 
 
-Utilities are small command line programs used to do mundane installation, maintanence, configuration and testing tasks.
+Utilities are small command line programs used to do mundane installation, maintenance, configuration and testing tasks.
 These programs can be divided into a few broad categories
  #1 Shell
  #2 Disk utils
- #3 File and directory utils
+ #3 File, Shell and Text utils
  #4 Network utils
  #5 Search utils
  #6 Install utils
  #7 Editors
  #8 Others
 
-Before we proceed any further we will take a look at that most profound creation of all - man. No it isnt man of hu-man or wo-man, but even so man is our mana from heaven and will save you from disaster always. Well at least from disaster on the computer.
-man is a shortform for manual and will give you a brief description of the programme and it's usage syntax for the innumerable options available with every utility.
-The syntax is man <command>
+Before we proceed any further we will take a look at that most profound creation of all - man. No it is not man from hu-man or wo-man, but man from manual and will beat super-man. It is your mana from heaven and will save you from disaster always. Well at least from disaster on the computer, where quite often even superman like powers fail.
+man is a shortform for manual and gives you a brief description of the programme and it's usage syntax for the innumerable options available with every utility.
+The syntax for man is man <command>
 Thus typing 
 man man 
-will tell you all about itself and give you the details of what the man command does and it's usage options.
+will, in a bout of self glorification, tell you all about itself and give you the details of what the man command does and it's usage options. Although man itself has several options just typing man <command> is sufficient for most purposes.
+
 So before you go and type rm and wipe your disk clean, please type man rm to understand the implications of your action. Well even if you are not going to wipe your disk clean do use man - especially when this textbook gets boring.
 
 The usage syntax for every utility listed below is available with man
  
-== Disk and File Utils ==
+==  Fileutils, shellutils and textutils ==
+
+These utilities are available in the coreutils package in Debain  / Redhat and their derivatives.  Previously a set of three packages,  GNU fileutils, shellutils and textutils, implemented the core set of GNU utilities.
+
+on apt based distributions like debian, Ubuntu, Knoppix etc 
+apt-get install coreutils 
+will install coreutils
+
+On rpm based distros like Redhat, Fedora, etc
+rpm -i coreutils
+will install coreutils
+
+And by the way, you just learn't how to install a package on debian and derivative distros and Redhat and derivative distros in the above two paras.
+ 
+In the previous section on shells, you have seen how output from one command is piped to a second (or third or more) command. We can pipe the output of a utility to another one to ease tasks or realise more complex tasks.
+For example ls gives you a long list if you have many files and the output scrolls off the top of your screen. So you use ls | less which will give you a scrollable output.
+Or ls -al | grep ^d which will only list directories.
+
+For complex repetitive tasks one can write a bash script.
 
 === basename ===
 === cat ===
@@ -127,6 +146,15 @@ The usage syntax for every utility listed below is available with man
 === who ===
 === whoami ===
 === yes ===
+
+==== basename ====
+Strip directory and suffix from filenames
+eg
+ basename /usr/bin/sort
+              Output "sort".
+
+ basename include/stdio.h .h
+              Output "stdio".
 
 == Compression tools ==
 === Anti Virus=== 
