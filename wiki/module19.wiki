@@ -103,6 +103,22 @@ There are also object databases which can be used to replace RDBMSs, but these h
 
  * Languages designed mainly for OO programming, but with some procedural elements. Examples: C++, Java, Python.
 
+= Event Driven Programming =
+
+_EventDrivenProgramming is for dumb reaction to obvious stimuli_
+
+In computer programming, event-driven programming or event-based programming is a programming paradigm in which the flow of the program is determined by events—i.e., sensor outputs or user actions (mouse clicks, key presses) or messages from other programs or threads.
+Example: Games are the biggest example of these kinds of applications. The GUI based programs are all developed using event driven programming.
+
+ But what is an * Event * ?
+
+Events are the actions that are performed by the user during the application usage. If a user clicks a mouse button then the Click event occurs. If a user moves the mouse then the mouse move event occurs. Similarly an application can generate Key down event, Key up event.
+
+EventDrivenProgramming is quite useful when dealing with GUIs, HCI, and other object systems where one expects response to action as the primary activity. It is inappropriate for systems that must do one thing well and finish without intervention (like compilers... this sort of thing implies ProceduralProgramming). It is also inappropriate for systems that must react intelligently based upon total observed context of any sort 
+
+ * Exception handlers
+
+In some programming languages (eg PL/1) ,even though a program itself may not be predominantly event driven, certain abnormal events such as a hardware error, overflow (software) or "program checks" may occur that possibly prevents further processing. Exception handlers, may be provided by "ON statements" in (unseen) callers to provide housekeeping routines to clean up afterward before termination.
 
 
 = Programming Languages =
