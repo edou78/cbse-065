@@ -2,7 +2,7 @@
 
 || *Content* || Introduction to MySQL ||
 || *Team* || Nilesh Govindarajan (www.itech7.com)  ||
-|| *Discussion* ||  ||
+|| *Discussion* || http://groups.google.com/group/cbse065/t/b53b3c6e7908fc67 ||
 || *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module32.wiki&format=side&r=-1 ||
 
 <hr/>
