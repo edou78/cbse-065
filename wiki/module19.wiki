@@ -89,6 +89,14 @@ Polymorphism allows the programmer to treat derived class members just like thei
 
 Decoupling allows for the separation of object interactions from classes and inheritance into distinct layers of abstraction. A common use of decoupling is to polymorphically decouple the encapsulation, which is the practice of using reusable code to prevent discrete code modules from interacting with each other.
 
+=== Did you Know ? ===
+
+* Simula (1967) is generally accepted as the first language to have the primary features  of an object-oriented language.It was created for making simulation programs, in which what came to be called objects were the most important information representation.
+
+* Languages called "pure" OO languages, because everything in them is treated consistently as an object, from primitives such as characters and punctuation, all the way up to whole classes, prototypes, blocks, modules, etc. They were designed specifically to facilitate, even enforce, OO methods. Examples: Smalltalk, Eiffel, Ruby, JADE.
+
+*
+
 = Programming Languages =
 
 There are more than a hundred programming languages available in the world. It is not possible to cover all of them here. This section highlights some of the important programming languages in use now.
