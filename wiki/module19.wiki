@@ -83,6 +83,12 @@ Polymorphism allows the programmer to treat derived class members just like thei
 
 * Overloading Polymorphism * Overloading Polymorphism is the use of one method signature, or one operator such as "+", to perform several different functions depending on the implementation. The "+" operator, for example, may be used to perform integer addition, float addition, list concatenation, or string concatenation.
 
+* Parametric Polymorphism * In Parametric Polymorphism, the code is written without mention of any specific type and thus can be used transparently with any number of new types. Pointers are an example of a simple polymorphic routine that can be used with many different types of objects.
+
+* Decoupling *
+
+Decoupling allows for the separation of object interactions from classes and inheritance into distinct layers of abstraction. A common use of decoupling is to polymorphically decouple the encapsulation, which is the practice of using reusable code to prevent discrete code modules from interacting with each other.
+
 = Programming Languages =
 
 There are more than a hundred programming languages available in the world. It is not possible to cover all of them here. This section highlights some of the important programming languages in use now.
