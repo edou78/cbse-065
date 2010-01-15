@@ -124,6 +124,20 @@ Because the procedure for obtaining the data was not explicitly spelled out as w
 Before the advent of SQL, the developers had to know not only what data was needed, but also where the data resided and had to specify how to access that data in the application.
 
 
+== Commonly available RDBMS ==
+
+
+The following table lists some of the most commonly used RDBMS
+|| RDBMS || Free/Proprietary || Remarks ||
+|| PostgreSQL || Free || A true RDBMS ||
+|| MySQL || Dual Licencing ||Initially was not treated as a true RDBMS but over time it gained many RDBMS features ||
+|| Firebird || Free || ||
+||DB2 from IBM || Proprietary || Very feature rich RDBMS ||
+|| Oracle || Proprietary || Very feature rich RDBMS ||
+
+
+
+
 
 Add your content here.  Format your content with:
 
