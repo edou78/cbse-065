@@ -129,7 +129,7 @@ Now for some theory. Historically  the idea of relational model for data ws firs
 Many consider that for a DBMS to be called a RDBMS, all of Codd's rule should be satisfied.
 
 == Codd's Rule ====
-From http://en.wikipedia.org/wiki/Codd's_rules:
+From [http://en.wikipedia.org/wiki/Codd's_rules Codd's Rules]:
 
 Rule 0: The system must qualify as relational, as a database, and as a management system.
 For a system to qualify as a relational database management system (RDBMS), that system must use its relational facilities (exclusively) to manage the database.
