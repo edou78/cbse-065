@@ -299,7 +299,19 @@ EXAMPLES
        If no command is given, run `${SHELL} -i` (default: /bin/sh).
 
 === cksum ===
+      Print CRC checksum and byte counts of each FILE.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+EXAMPLES
+       cksum /bin/ls
+       3265941495 92312 /bin/ls
+       displays the crc checksum 3265941495 and byte count 92312 of /bin/ls
+   
 === comm ===
+
 === cp ===
 === csplit ===
 === cut ===
