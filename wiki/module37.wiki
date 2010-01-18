@@ -99,6 +99,30 @@ Note : mod(a,b) is also applicable as there is no case sensitivity.
 
 
 
-    
+== ROUND() ==
 
-     
+This function is used to round the decimal digits.
+
+There are two forms of this function
+
+   * round(a) -  rounds 'a' to the nearest decimal.
+   * round(a,b) - rounds 'a' to 'b' decimal places.
+ 
+
+===SYNTAX===
+
+||select round(a)||
+
+||select round(a,b)||
+
+       * eg
+
+         =====mysql> select round(11.123);=====
+               
+         The output is 11.
+
+         
+         =====mysql> select round(11.123,2);=====
+
+          The output is 11.12
+
