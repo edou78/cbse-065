@@ -126,3 +126,19 @@ There are two forms of this function
 
           The output is 11.12
 
+
+== SQRT() ==
+ 
+  * SQRT(A)
+    This function returns the value of square root of the integer 'A'.
+    Note : sqrt(a) is also applicable as there is no case sensitivity.
+           
+===SYNTAX===
+
+||select sqrt(a);||
+
+       * eg
+
+         =====mysql> select sqrt(2);=====
+               
+        The output is 1.4142135623731.
