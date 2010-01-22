@@ -22,7 +22,7 @@ Richard Stallman created the GNU project whose aim was to have a "complete Unix-
 
 The full operating system usually comprises components such as utilities and libraries from the GNU Project, the X Window System, the GNOME and KDE desktop environments and commonly-used applications like firefox, openoffice.
 
-If you're interested, you can read more at [http://en.wikipedia.org/wiki/Linux WikiPedia]
+If you're interested, you can read more at [http://en.wikipedia.org/wiki/Linux Wikipedia]
 
 ===Choosing from the pool of linux Distributions===
 
