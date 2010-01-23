@@ -442,9 +442,241 @@ EXAMPLES
           copies somefile from the users home directory to the bkp directory
        cp -rvp ~/ /bkp/
           copy recursively everything from the users home dirctory to the bkp directory, displaying what is going on, and preserving permissions.
+
 === csplit ===
+ Output  pieces  of FILE separated by PATTERN(s) to files "xx00", "xx01", ..., and output byte counts
+       of each piece to standard output.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -b, --suffix-format=FORMAT
+              use sprintf FORMAT instead of %02d
+
+       -f, --prefix=PREFIX
+              use PREFIX instead of 'xx'
+
+       -k, --keep-files
+              do not remove output files on errors
+
+       -n, --digits=DIGITS
+              use specified number of digits instead of 2
+
+       -s, --quiet, --silent
+              do not print counts of output file sizes
+
+       -z, --elide-empty-files
+              remove empty output files
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Read standard input if FILE is -.  Each PATTERN may be:
+
+       INTEGER
+              copy up to but not including specified line number
+
+       /REGEXP/[OFFSET]
+              copy up to but not including a matching line
+
+       %REGEXP%[OFFSET]
+              skip to, but not including a matching line
+
+       `{INTEGER}`
+              repeat the previous pattern specified number of times
+
+       `{*}`    repeat the previous pattern as many times as possible
+
+       A line OFFSET is a required "+" or "-" followed by a positive integer.
+
 === cut ===
+ Print selected parts of lines from each FILE to standard output.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -b, --bytes=LIST
+              select only these bytes
+
+       -c, --characters=LIST
+              select only these characters
+
+       -d, --delimiter=DELIM
+              use DELIM instead of TAB for field delimiter
+
+       -f, --fields=LIST
+              select  only  these fields;  also print any line that contains no delimiter character, unless
+              the -s option is specified
+
+       -n     (ignored)
+
+       --complement
+              complement the set of selected bytes, characters or fields.
+
+       -s, --only-delimited
+              do not print lines not containing delimiters
+
+       --output-delimiter=STRING
+              use STRING as the output delimiter the default is to use the input delimiter
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Use one, and only one of -b, -c or -f.  Each LIST is made up of one range, or many ranges  separated
+       by  commas.   Selected  input  is  written in the same order that it is read, and is written exactly
+       once.  Each range is one of:
+
+       N      N'th byte, character or field, counted from 1
+
+       N-     from N'th byte, character or field, to end of line
+
+       N-M    from N'th to M'th (included) byte, character or field
+
+       -M     from first to M'th (included) byte, character or field
+
+       With no FILE, or when FILE is -, read standard input.
+
+
 === date ===
+ Display the current time in the given FORMAT, or set the system date.
+
+       -d, --date=STRING
+              display time described by STRING, not "now"
+
+       -f, --file=DATEFILE
+              like --date once for each line of DATEFILE
+
+       -r, --reference=FILE
+              display the last modification time of FILE
+
+       -R, --rfc-2822
+              output date and time in RFC 2822 format.  Example: Mon, 07 Aug 2006 12:34:56 -0600
+
+       --rfc-3339=TIMESPEC
+              output  date  and  time in RFC 3339 format.  TIMESPEC="date", "seconds", or "ns" for date and
+              time to the indicated precision.  Date and time components are separated by a  single  space:
+              2006-08-07 12:34:56-06:00
+
+       -s, --set=STRING
+              set time described by STRING
+
+       -u, --utc, --universal
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       FORMAT controls the output.  The only valid option for the second form specifies Coordinated Universal Time.  Interpreted sequences are:
+
+`         %%     a literal %
+
+       %a     locale's abbreviated weekday name (e.g., Sun)
+
+       %A     locale's full weekday name (e.g., Sunday)
+
+       %b     locale's abbreviated month name (e.g., Jan)
+
+       %B     localeâs full month name (e.g., January)
+
+       %c     locale's date and time (e.g., Thu Mar  3 23:05:25 2005)
+
+       %C     century; like %Y, except omit last two digits (e.g., 21)
+
+       %d     day of month (e.g, 01)
+
+       %D     date; same as %m/%d/%y
+
+       %e     day of month, space padded; same as %_d
+
+       %F     full date; same as %Y-%m-%d
+
+       %g     last two digits of year of ISO week number (see %G)
+
+       %G     year of ISO week number (see %V); normally useful only with %V
+
+       %h     same as %b
+
+       %H     hour (00..23)
+
+       %I     hour (01..12)
+
+       %j     day of year (001..366)
+
+       %k     hour ( 0..23)
+
+       %l     hour ( 1..12)
+
+       %m     month (01..12)
+
+       %M     minute (00..59)
+
+       %n     a newline
+
+       %N     nanoseconds (000000000..999999999)
+
+       %p     locale's equivalent of either AM or PM; blank if not known
+
+       %P     like %p, but lower case
+
+       %r     locale's 12-hour clock time (e.g., 11:11:04 PM)
+
+       %R     24-hour hour and minute; same as %H:%M
+
+       %s     seconds since 1970-01-01 00:00:00 UTC
+
+       %S     second (00..60)
+
+       %t     a tab
+
+       %T     time; same as %H:%M:%S
+
+       %u     day of week (1..7); 1 is Monday
+
+       %U     week number of year, with Sunday as first day of week (00..53)
+
+       %V     ISO week number, with Monday as first day of week (01..53)
+
+       %w     day of week (0..6); 0 is Sunday
+
+       %W     week number of year, with Monday as first day of week (00..53)
+
+       %x     locale's date representation (e.g., 12/31/99)
+
+       %X     locale's time representation (e.g., 23:13:48)
+
+       %y     last two digits of year (00..99)
+
+       %Y     year
+
+       %z     +hhmm numeric timezone (e.g., -0400)
+
+       %:z    +hh:mm numeric timezone (e.g., -04:00)
+
+       %::z   +hh:mm:ss numeric time zone (e.g., -04:00:00)
+
+       %:::z  numeric time zone with : to necessary precision (e.g., -04, +05:30)
+
+       %Z     alphabetic time zone abbreviation (e.g., EDT)
+
+       By default, date pads numeric fields with zeroes.  The following optional flags may follow "%":
+
+       -      (hyphen) do not pad the field
+
+       _      (underscore) pad with spaces
+
+       0      (zero) pad with zeros
+
+       ^      use upper case if possible
+
+       `#`      use opposite case if possible
+
+       After any flags comes an optional field width, as a decimal number; then an optional modifier, which
+       is  either  E  to  use the locale's alternate representations if available, or O to use the locale's
+       alternate numeric symbols if available.
+`
 === dd ===
 === df ===
 === dir ===
