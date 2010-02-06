@@ -1161,15 +1161,276 @@ PATTERNS
        will skip all files and subdirectories ending in .o (including the file .o itself).
 
 === echo ===
+
+Echo the STRING(s) to standard output.
+
+       -n     do not output the trailing newline
+
+       -e     enable interpretation of backslash escapes
+
+       -E     disable interpretation of backslash escapes (default)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If -e is in effect, the following sequences are recognized:
+
+       \0NNN  the character whose ASCII code is NNN (octal)
+
+       \\     backslash
+
+       \a     alert (BEL)
+
+       \b     backspace
+
+       \c     suppress trailing newline
+
+       \f     form feed
+
+       \n     new line
+
+       \r     carriage return
+
+       \t     horizontal tab
+
+       \v     vertical tab
+
+       NOTE:  your  shell  may have its own version of echo, which usually supersedes the version described
+       here.  Please refer to your shell's documentation for details about the options it supports.
+
 === env ===
+
+       Set each NAME to VALUE in the environment and run COMMAND.
+
+       -i, --ignore-environment
+              start with an empty environment
+
+       -u, --unset=NAME
+              remove variable from the environment
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       A mere - implies -i.  If no COMMAND, print the resulting environment.
+
+
 === expand ===
+
+      Convert  tabs  in each FILE to spaces, writing to standard output.  With no FILE, or when FILE is -,
+       read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -i, --initial
+              do not convert tabs after non blanks
+
+       -t, --tabs=NUMBER
+              have tabs NUMBER characters apart, not 8
+
+       -t, --tabs=LIST
+              use comma separated list of explicit tab positions
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
 === expr ===
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Print  the  value  of EXPRESSION to standard output.  A blank line below separates increasing preceâ
+       dence groups.  EXPRESSION may be:
+
+       ARG1 | ARG2
+              ARG1 if it is neither null nor 0, otherwise ARG2
+
+       ARG1 & ARG2
+              ARG1 if neither argument is null or 0, otherwise 0
+
+       ARG1 < ARG2
+              ARG1 is less than ARG2
+
+       ARG1 <= ARG2
+              ARG1 is less than or equal to ARG2
+
+       ARG1 = ARG2
+              ARG1 is equal to ARG2
+
+       ARG1 != ARG2
+              ARG1 is unequal to ARG2
+
+       ARG1 >= ARG2
+              ARG1 is greater than or equal to ARG2
+
+       ARG1 > ARG2
+              ARG1 is greater than ARG2
+
+       ARG1 + ARG2
+              arithmetic sum of ARG1 and ARG2
+
+       ARG1 - ARG2
+              arithmetic difference of ARG1 and ARG2
+
+       ARG1 `*` ARG2
+              arithmetic product of ARG1 and ARG2
+
+       ARG1 / ARG2
+              arithmetic quotient of ARG1 divided by ARG2
+
+       ARG1 % ARG2
+              arithmetic remainder of ARG1 divided by ARG2
+
+       STRING : REGEXP
+              anchored pattern match of REGEXP in STRING
+
+       match STRING REGEXP
+              same as STRING : REGEXP
+
+       substr STRING POS LENGTH
+              substring of STRING, POS counted from 1
+
+       index STRING CHARS
+              index in STRING where any CHARS is found, or 0
+
+       length STRING
+              length of STRING
+
+       + TOKEN
+              interpret TOKEN as a string, even if it is a
+
+              keyword like âmatchâ or an operator like "/"
+
+       ( EXPRESSION )
+              value of EXPRESSION
+
+       Beware that many operators need to be escaped or quoted for shells.  Comparisons are  arithmetic  if
+       both  ARGs  are numbers, else lexicographical.  Pattern matches return the string matched between \(
+       and \) or null; if \( and \) are not used, they return the number of characters matched or 0.
+
+       Exit status is 0 if EXPRESSION is neither null nor 0, 1 if EXPRESSION is null or 0, 2 if  EXPRESSION
+       is syntactically invalid, and 3 if an error occurred.
+
 === factor ===
+
+       Print the prime factors of each NUMBER.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Print the prime factors of all specified integer NUMBERs.  If no arguments are specified on the command line, they are read from standard input.
+
 === false ===
+
+      Exit with a status code indicating failure.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       NOTE:  your  shell may have its own version of false, which usually supersedes the version described
+       here.  Please refer to your shell's documentation for details about the options it supports.
+
 === fmt ===
+
+       Reformat  each  paragraph in the FILE(s), writing to standard output.  If no FILE or if FILE is -,
+       read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -c, --crown-margin
+              preserve indentation of first two lines
+
+       -p, --prefix=STRING
+              reformat only lines beginning with STRING, reattaching the prefix to reformatted lines
+
+       -s, --split-only
+              split long lines, but do not refill
+
+       -t, --tagged-paragraph
+              indentation of first line different from second
+
+       -u, --uniform-spacing
+              one space between words, two after sentences
+
+       -w, --width=WIDTH
+              maximum line width (default of 75 columns)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       With no FILE, or when FILE is -, read standard input.
+
 === fold ===
+
+       Wrap input lines in each FILE (standard input by default), writing to standard output.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -b, --bytes
+              count bytes rather than columns
+
+       -s, --spaces
+              break at spaces
+
+       -w, --width=WIDTH
+              use WIDTH columns instead of 80
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
 === groups ===
+       print the groups a user is in
+
+      --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Same as id -Gn.  If no USERNAME, use current process.
+
 === head ===
+
+      Print  the  first  10  lines of each FILE to standard output.  With more than one FILE, precede each
+       with a header giving the file name.  With no FILE, or when FILE is -, read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -c, --bytes=[-]N
+              print the first N bytes of each file; with the leading â-â, print all but the last N bytes of
+              each file
+
+       -n, --lines=[-]N
+              print the first N lines instead of the first 10; with the leading â-â, print all but the last
+              N lines of each file
+
+       -q, --quiet, --silent
+              never print headers giving file names
+
+       -v, --verbose
+              always print headers giving file names
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       N may  have  a  multiplier  suffix:  b  512,  kB  1000,  K  1024,  MB  `1000*1000,  M  1024*1024,  GB       1000*1000*1000, G 1024*1024*1024,` and so on for T, P, E, Z, Y.
+
 === hostid ===
 === id ===
 === install ===
