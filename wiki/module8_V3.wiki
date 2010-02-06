@@ -1432,21 +1432,496 @@ Echo the STRING(s) to standard output.
        N may  have  a  multiplier  suffix:  b  512,  kB  1000,  K  1024,  MB  `1000*1000,  M  1024*1024,  GB       1000*1000*1000, G 1024*1024*1024,` and so on for T, P, E, Z, Y.
 
 === hostid ===
+
+       Print the numeric identifier (in hexadecimal) for the current host.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
 === id ===
+
+       Print information for USERNAME, or the current user.
+
+       -a     ignore, for compatibility with other versions
+
+       -Z, --context
+              print only the security context of the current user
+
+       -g, --group
+              print only the effective group ID
+
+       -G, --groups
+              print all group IDs
+
+       -n, --name
+              print a name instead of a number, for -ugG
+
+       -r, --real
+              print the real ID instead of the effective ID, with -ugG
+
+       -u, --user
+              print only the effective user ID
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Without any OPTION, print some useful set of identified information.
+
 === install ===
+
+      In the first three forms, copy SOURCE to DEST or multiple SOURCE(s) to the existing DIRECTORY, while
+       setting permission modes and owner/group.  In the 4th form,  create  all  components  of  the  given
+       DIRECTORY(ies).
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       --backup[=CONTROL]
+              make a backup of each existing destination file
+
+       -b     like --backup but does not accept an argument
+
+       -c     (ignored)
+
+       -d, --directory
+              treat all arguments as directory names; create all components of the specified directories
+
+       -D     create all leading components of DEST except the last, then copy SOURCE to DEST
+
+       -g, --group=GROUP
+              set group ownership, instead of processâ current group
+
+       -m, --mode=MODE
+              set permission mode (as in chmod), instead of rwxr-xr-x
+
+       -o, --owner=OWNER
+              set ownership (super-user only)
+
+       -p, --preserve-timestamps
+              apply access/modification times of SOURCE files to corresponding destination files
+
+       -s, --strip
+              strip symbol tables
+
+       -S, --suffix=SUFFIX
+              override the usual backup suffix
+
+       -t, --target-directory=DIRECTORY
+              copy all SOURCE arguments into DIRECTORY
+
+       -T, --no-target-directory
+              treat DEST as a normal file
+
+       -v, --verbose
+              print the name of each directory as it is created
+
+       --preserve-context
+              preserve SELinux security context
+
+       -Z, --context=CONTEXT
+              set SELinux security context of files and directories
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       The  backup  suffix  is  "~", unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version control
+       method may be selected via the --backup option or through the VERSION_CONTROL environment  variable.
+       Here are the values:
+
+       none, off
+              never make backups (even if --backup is given)
+
+       numbered, t
+              make numbered backups
+
+       existing, nil
+              numbered if numbered backups exist, simple otherwise
+
+       simple, never
+              always make simple backups
+
 === join ===
+
+      For  each  pair  of  input  lines  with identical join fields, write a line to standard output.  The
+       default join field is the first, delimited by whitespace.  When FILE1 or FILE2 (not both) is -, read
+       standard input.
+
+       -a FILENUM
+              print  unpairable  lines  coming from file FILENUM, where FILENUM is 1 or 2, corresponding to
+              FILE1 or FILE2
+
+       -e EMPTY
+              replace missing input fields with EMPTY
+
+       -i, --ignore-case
+              ignore differences in case when comparing fields
+
+       -j FIELD
+              equivalent to -1 FIELD -2 FIELD
+
+       -o FORMAT
+              obey FORMAT while constructing output line
+
+       -t CHAR
+              use CHAR as input and output field separator
+
+       -v FILENUM
+              like -a FILENUM, but suppress joined output lines
+
+       -1 FIELD
+              join on this FIELD of file 1
+
+       -2 FIELD
+              join on this FIELD of file 2
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Unless -t CHAR is given, leading blanks separate fields and are ignored, else fields  are  separated
+       by  CHAR.   Any  FIELD is a field number counted from 1.  FORMAT is one or more comma or blank separated specifications, each being "FILENUM.FIELD" or 0.  Default FORMAT outputs the join field, the
+       remaining fields from FILE1, the remaining fields from FILE2, all separated by CHAR.
+
+       Important:  FILE1  and  FILE2 must be sorted on the join fields.  E.g., use sort -k 1b,1 if join
+       has no options.
+
 === link ===
+
+      Call the link function to create a link named FILE2 to an existing FILE1.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
 === ln ===
+
+      In the 1st form, create a link to TARGET with the name LINK_NAME.  In the 2nd form, create a link to
+       TARGET in the current directory.  In the 3rd and 4th forms, create links to each  TARGET  in  DIRECTORY.  Create hard links by default, symbolic links with --symbolic.  When creating hard links, each
+       TARGET must exist.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       --backup[=CONTROL]
+              make a backup of each existing destination file
+
+       -b     like --backup but does not accept an argument
+
+       -d, -F, --directory
+              allow the superuser to attempt to hard link directories (note: will probably fail due to system restrictions, even for the superuser)
+
+       -f, --force
+              remove existing destination files
+
+       -n, --no-dereference
+              treat destination that is a symlink to a directory as if it were a normal file
+
+       -i, --interactive
+              prompt whether to remove destinations
+
+       -s, --symbolic
+              make symbolic links instead of hard links
+
+       -S, --suffix=SUFFIX
+              override the usual backup suffix
+
+       -t, --target-directory=DIRECTORY
+              specify the DIRECTORY in which to create the links
+
+       -T, --no-target-directory
+              treat LINK_NAME as a normal file
+
+       -v, --verbose
+              print name of each linked file
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       The  backup  suffix  is  ~, unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version control
+       method may be selected via the --backup option or through the VERSION_CONTROL environment  variable.
+       Here are the values:
+
+       none, off
+              never make backups (even if --backup is given)
+
+       numbered, t
+              make numbered backups
+
+       existing, nil
+              numbered if numbered backups exist, simple otherwise
+
+       simple, never
+              always make simple backups
+
 === logname ===
+
+       Print the name of the current user.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
 === ls ===
+
+Ref dir
+
 === md5sum ===
+
+       Print or check MD5 (128-bit) checksums.  With no FILE, or when FILE is -, read standard input.
+
+       -b, --binary
+              read in binary mode
+
+       -c, --check
+              read MD5 sums from the FILEs and check them
+
+       -t, --text
+              read in text mode (default)
+
+   The following two options are useful only when verifying checksums:
+       --status
+              donât output anything, status code shows success
+
+       -w, --warn
+              warn about improperly formatted checksum lines
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+       The  sums are computed as described in RFC 1321.  When checking, the input should be a former output
+       of this program.  The default mode is to print a line with checksum,  a  character  indicating  type
+       (`*` for binary, " " for text), and name for each FILE.
+
 === mkdir ===
+
+       Create the DIRECTORY(ies), if they do not already exist.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -m, --mode=MODE
+              set file mode (as in chmod), not a=rwx - umask
+
+       -p, --parents
+              no error if existing, make parent directories as needed
+
+       -v, --verbose
+              print a message for each created directory
+
+       -Z, --context=CTX
+              set the SELinux security context of each created directory to CTX
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
 === mkfifo ===
+
+       Create named pipes (FIFOs) with the given NAMEs.
+
+       -Z, --context=CTX
+              set the SELinux security context of each NAME to CTX
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -m, --mode=MODE
+              set file permission bits to MODE, not a=rw - umask
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
 === mknod ===
+
+       Create the special file NAME of the given TYPE.
+
+       -Z, --context=CTX
+              set the SELinux security context of NAME to CTX
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -m, --mode=MODE
+              set file permission bits to MODE, not a=rw - umask
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Both  MAJOR  and MINOR must be specified when TYPE is b, c, or u, and they must be omitted when TYPE
+       is p.  If MAJOR or MINOR begins with 0x or 0X, it is interpreted as hexadecimal;  otherwise,  if  it
+       begins with 0, as octal; otherwise, as decimal.  TYPE may be:
+
+       b      create a block (buffered) special file
+
+       c, u   create a character (unbuffered) special file
+
+       p      create a FIFO
+
 === mv ===
+      Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       --backup[=CONTROL]
+              make a backup of each existing destination file
+
+       -b     like --backup but does not accept an argument
+
+       -f, --force
+              do not prompt before overwriting
+
+       -i, --interactive
+              prompt before overwrite
+
+       --strip-trailing-slashes
+              remove any trailing slashes from each SOURCE argument
+
+       -S, --suffix=SUFFIX
+              override the usual backup suffix
+
+       -t, --target-directory=DIRECTORY
+       -T, --no-target-directory
+              treat DEST as a normal file
+
+       -u, --update
+              move  only  when  the  SOURCE file is newer than the destination file or when the destination
+              file is missing
+
+       -v, --verbose
+              explain what is being done
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       The backup suffix is ~, unless set with --suffix or  SIMPLE_BACKUP_SUFFIX.   The  version  control
+       method  may be selected via the --backup option or through the VERSION_CONTROL environment variable.
+       Here are the values:
+
+       none, off
+              never make backups (even if --backup is given)
+
+       numbered, t
+              make numbered backups
+
+       existing, nil
+              numbered if numbered backups exist, simple otherwise
+
+       simple, never
+              always make simple backups
+
+
 === nice ===
+
+       Run COMMAND with an adjusted niceness, which affects process scheduling.  With no COMMAND, print the
+       current niceness.  Nicenesses range from -20 (most favorable scheduling) to 19 (least favorable).
+
+       -n, --adjustment=N
+              add integer N to the niceness (default 10)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       NOTE: your shell may have its own version of nice, which usually supersedes  the  version  described
+       here.  Please refer to your shell's documentation for details about the options it supports.
+
 === nl ===
+
+       Write  each FILE to standard output, with line numbers added.  With no FILE, or when FILE is -, read
+       standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -b, --body-numbering=STYLE
+              use STYLE for numbering body lines
+
+       -d, --section-delimiter=CC
+              use CC for separating logical pages
+
+       -f, --footer-numbering=STYLE
+              use STYLE for numbering footer lines
+
+       -h, --header-numbering=STYLE
+              use STYLE for numbering header lines
+
+       -i, --page-increment=NUMBER
+              line number increment at each line
+
+       -l, --join-blank-lines=NUMBER
+              group of NUMBER empty lines counted as one
+
+       -n, --number-format=FORMAT
+              insert line numbers according to FORMAT
+
+       -p, --no-renumber
+              do not reset line numbers at logical pages
+
+       -s, --number-separator=STRING
+              add STRING after (possible) line number
+
+       -v, --first-page=NUMBER
+              first line number on each logical page
+
+       -w, --number-width=NUMBER
+              use NUMBER columns for line numbers
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       By default, selects -v1 -i1 -l1 -sTAB -w6 -nrn -hn -bt -fn.  CC are  two  delimiter  characters  for
+       separating logical pages, a missing second character implies :.  Type \\ for \.  STYLE is one of:
+
+       a      number all lines
+
+       t      number only nonempty lines
+
+       n      number no lines
+
+       pBRE   number only lines that contain a match for the basic regular expression, BRE
+
+       FORMAT is one of:
+
+       ln     left justified, no leading zeros
+
+       rn     right justified, no leading zeros
+
+       rz     right justified, leading zeros
+
+
 === nohup ===
+
+       Run COMMAND, ignoring hangup signals.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If  standard  input  is  a  terminal, redirect it from /dev/null.  If standard output is a terminal,
+       append output to "nohup.out" if possible, "$HOME/nohup.out" otherwise.  If standard error is a  terminal, redirect it to standard output.  To save output to FILE, use "nohup COMMAND > FILE".
+
+       NOTE:  your  shell may have its own version of nohup, which usually supersedes the version described
+       here.  Please refer to your shell's documentation for details about the options it supports.
+
 === od ===
 === paste ===
 === pathchk ===
