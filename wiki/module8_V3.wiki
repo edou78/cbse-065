@@ -2416,8 +2416,124 @@ Ref dir
 
 === sha1sum ===
 
+       Print or check SHA1 (160-bit) checksums.  With no FILE, or when FILE is -, read standard input.
+
+       -b, --binary
+              read in binary mode
+
+       -c, --check
+              read SHA1 sums from the FILEs and check them
+
+       -t, --text
+              read in text mode (default)
+
+   The following two options are useful only when verifying checksums:
+       --status
+              donât output anything, status code shows success
+
+       -w, --warn
+              warn about improperly formatted checksum lines
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       The  sums are computed as described in FIPS-180-1.  When checking, the input should be a former output of this program.  The default mode is to print a line with checksum, a character indicating type
+       (`*` for binary, " " for text), and name for each FILE.
+
 === seq ===
+
+       Print numbers from FIRST to LAST, in steps of INCREMENT.
+
+       -f, --format=FORMAT
+              use printf style floating-point FORMAT
+
+       -s, --separator=STRING
+              use STRING to separate numbers (default: \n)
+
+       -w, --equal-width
+              equalize width by padding with leading zeroes
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If  FIRST  or  INCREMENT  is omitted, it defaults to 1.  That is, an omitted INCREMENT defaults to 1
+       even when LAST is smaller than FIRST.  FIRST, INCREMENT, and LAST are interpreted as floating  point
+       values.  INCREMENT is usually positive if FIRST is smaller than LAST, and INCREMENT is usually negative if FIRST is greater than LAST.  FORMAT must be suitable for printing one argument of type double;  it defaults to %.PRECf if FIRST, INCREMENT, and LAST are all fixed point decimal numbers with
+       maximum precision PREC, and to %g otherwise.
+
 === shred ===
+
+       Overwrite the specified FILE(s) repeatedly, in order to make it harder for even very expensive hardâ
+       ware probing to recover the data.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -f, --force
+              change permissions to allow writing if necessary
+
+       -n, --iterations=N
+              Overwrite N times instead of the default (25)
+
+       --random-source=FILE
+              get random bytes from FILE (default /dev/urandom)
+
+       -s, --size=N
+              shred this many bytes (suffixes like K, M, G accepted)
+
+       -u, --remove
+              truncate and remove file after overwriting
+
+       -v, --verbose
+              show progress
+
+       -x, --exact
+              do not round file sizes up to the next full block;
+
+              this is the default for non-regular files
+
+       -z, --zero
+              add a final overwrite with zeros to hide shredding
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If FILE is -, shred standard output.
+
+       Delete FILE(s) if --remove (-u) is specified.  The default is not to remove the files because it  is
+       common  to  operate  on  device  files like /dev/hda, and those files usually should not be removed.
+       When operating on regular files, most people use the --remove option.
+
+       CAUTION: Note that shred relies on a very important assumption: that the file system overwrites data
+       in place.  This is the traditional way to do things, but many modern file system designs do not satisfy this assumption.  The following are examples of file systems on which shred is  not  effective,
+       or is not guaranteed to be effective in all file system modes:
+
+       `*`  log-structured  or  journaled file systems, such as those supplied with AIX and Solaris (and JFS,
+       ReiserFS, XFS, Ext3, etc.)
+
+       `*` file systems that write redundant data and carry on even if some writes fail, such  as  RAID-based
+       file systems
+
+       `*` file systems that make snapshots, such as Network Appliance's NFS server
+
+       `*` file systems that cache in temporary locations, such as NFS version 3 clients
+
+       `*` compressed file systems
+
+       In  the case of ext3 file systems, the above disclaimer applies (and shred is thus of limited effectiveness) only in data=journal mode, which journals file data in addition to just metadata.  In both
+       the  data=ordered  (default)  and data=writeback modes, shred works as usual.  Ext3 journaling modes
+       can be changed by adding the data=something option to the mount options for a particular file system
+       in the /etc/fstab file, as documented in the mount man page (man mount).
+
+       In  addition,  file  system backups and remote mirrors may contain copies of the file that cannot be
+       removed, and that will allow a shredded file to be recovered later.
+
+
 === sleep ===
 === sort ===
 === split ===
