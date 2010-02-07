@@ -2186,13 +2186,214 @@ Ref dir
               output version information and exit
 
        NOTE:  your  shell  may  have  its  own  version  of  printenv, which usually supersedes the version
-       described here.  Please refer to your shellâs documentation for details about the  options  it  supports.
+       described here.  Please refer to your shell's documentation for details about the  options  it  supports.
 
 === printf ===
+
+      Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       FORMAT controls the output as in C printf.  Interpreted sequences are:
+
+       \"     double quote
+
+       \NNN   character with octal value NNN (1 to 3 digits)
+
+       \\     backslash
+
+       \a     alert (BEL)
+
+       \b     backspace
+
+       \c     produce no further output
+
+       \f     form feed
+
+       \n     new line
+
+       \r     carriage return
+
+       \t     horizontal tab
+
+       \v     vertical tab
+
+       \xHH   byte with hexadecimal value HH (1 to 2 digits)
+
+       \uHHHH Unicode (ISO/IEC 10646) character with hex value HHHH (4 digits)
+
+       \UHHHHHHHH
+              Unicode character with hex value HHHHHHHH (8 digits)
+
+       %%     a single %
+
+       %b     ARGUMENT  as a string with \ escapes interpreted, except that octal escapes are of the form
+              \0 or \0NNN
+
+       and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs converted to proper
+       type first.  Variable widths are handled.
+
+       NOTE:  your shell may have its own version of printf, which usually supersedes the version described
+       here.  Please refer to your shell's documentation for details about the options it supports.
+
+
 === ptx ===
+
+       Output a permuted index, including context, of the words in the input files.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -A, --auto-reference
+              output automatically generated references
+
+       -G, --traditional
+              behave more like System V âptxâ
+
+       -F, --flag-truncation=STRING
+              use STRING for flagging line truncations
+
+       -M, --macro-name=STRING
+              macro name to use instead of âxxâ
+
+       -O, --format=roff
+              generate output as roff directives
+
+       -R, --right-side-refs
+              put references at right, not counted in -w
+
+       -S, --sentence-regexp=REGEXP
+
+       -T, --format=tex
+              generate output as TeX directives
+
+       -W, --word-regexp=REGEXP
+              use REGEXP to match each keyword
+
+       -b, --break-file=FILE
+              word break characters in this FILE
+
+       -f, --ignore-case
+              fold lower case to upper case for sorting
+
+       -g, --gap-size=NUMBER
+              gap size in columns between output fields
+
+       -i, --ignore-file=FILE
+              read ignore word list from FILE
+
+       -o, --only-file=FILE
+              read only word list from this FILE
+
+       -r, --references
+              first field of each line is a reference
+
+       -t, --typeset-mode               - not implemented -
+
+       -w, --width=NUMBER
+              output width in columns, reference excluded
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       With no FILE or if FILE is -, read Standard Input.  -F / by default.
+
 === pwd ===
+
+      Print the full filename of the current working directory.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       NOTE:  your  shell  may  have its own version of pwd, which usually supersedes the version described
+       here.  Please refer to your shell's documentation for details about the options it supports.
+
 === readlink ===
+
+       Display value of a symbolic link on standard output.
+
+       -f, --canonicalize
+              canonicalize by following every symlink in every component of the given name recursively; all
+              but the last component must exist
+
+       -e, --canonicalize-existing
+              canonicalize by following every symlink in every component of the given name recursively, all
+              components must exist
+
+       -m, --canonicalize-missing
+              canonicalize  by  following  every  symlink in every component of the given name recursively,
+              without requirements on components existence
+
+       -n, --no-newline
+              do not output the trailing newline
+
+       -q, --quiet,
+
+       -s, --silent
+              suppress most error messages
+
+       -v, --verbose
+              report error messages
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
 === rm ===
+
+       Remove (unlink) the FILE(s).
+
+       -f, --force
+              ignore nonexistent files, never prompt
+
+       -i     prompt before every removal
+
+       -I     prompt once before removing more than three files, or when removing recursively.  Less intrusive than -i, while still giving protection against most mistakes
+
+       --interactive[=WHEN]
+              prompt according to WHEN: never, once (-I), or always (-i).  Without WHEN, prompt always
+
+       --one-file-system
+              when  removing a hierarchy recursively, skip any directory that is on a file system different
+              from that of the corresponding command line argument
+
+       --no-preserve-root
+              do not treat / specially
+
+       --preserve-root
+              do not remove / (default)
+
+       -r, -R, --recursive
+              remove directories and their contents recursively
+
+       -v, --verbose
+              explain what is being done
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       By default, rm does not remove directories.  Use the --recursive (-r or -R) option  to  remove  each
+       listed directory, too, along with all of its contents.
+
+       To remove a file whose name starts with a -, for example -foo, use one of these commands:
+
+              rm -- -foo
+
+              rm ./-foo
+
+       Note  that  if  you  use rm to remove a file, it is usually possible to recover the contents of that
+       file.  If you want more assurance that the contents are truly unrecoverable, consider using shred.
+
 === rmdir ===
 === sha1sum ===
 === seq ===
