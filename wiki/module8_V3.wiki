@@ -2160,11 +2160,11 @@ Ref dir
        -v, --show-nonprinting
               use octal backslash notation
 
-       -w PAGE_WIDTH, --width=PAGE_WIDTH
-              set page width to PAGE_WIDTH (72) characters for multiple text-column output  only,  -s`[char]`
+       -w `PAGE_WIDTH, --width=PAGE_WIDTH`
+              set page width to `PAGE_WIDTH` (72) characters for multiple text-column output  only,  -s`[char]`
               turns off (72)
 
-       -W PAGE_WIDTH, --page-width=PAGE_WIDTH
+       -W `PAGE_WIDTH, --page-width=PAGE_WIDTH`
               set page width to PAGE_WIDTH (72) characters always, truncate lines, except -J option is set,
               no interference with -S or -s
 
@@ -2173,7 +2173,7 @@ Ref dir
        --version
               output version information and exit
 
-       -t is implied if PAGE_LENGTH <= 10.  With no FILE, or when FILE is -, read standard input.
+       -t is implied if `PAGE_LENGTH <= 10.  With no FILE, or when FILE is -, read standard input.
 
 === printenv ===
 
@@ -2186,8 +2186,7 @@ Ref dir
               output version information and exit
 
        NOTE:  your  shell  may  have  its  own  version  of  printenv, which usually supersedes the version
-       described here.  Please refer to your shellâs documentation for details about the  options  it  supâ
-       ports.
+       described here.  Please refer to your shellâs documentation for details about the  options  it  supports.
 
 === printf ===
 === ptx ===
