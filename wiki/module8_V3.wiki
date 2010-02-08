@@ -3109,16 +3109,38 @@ Ref dir
 
        sane   same as cread -ignbrk brkint -inlcr -igncr icrnl -iutf8 -ixoff -iuclc  -ixany  imaxbel  opost
               -olcuc  -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0 isig icanon iexten
-              echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke, all special  characâ
-              ters to their default values.
+              echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke, all special  characters to their default values.
 
-       Handle  the  tty line connected to standard input.  Without arguments, prints baud rate, line disciâ
-       pline, and deviations from stty sane.  In settings, CHAR is taken literally,  or  coded  as  in  ^c,
+       Handle  the  tty line connected to standard input.  Without arguments, prints baud rate, line discipline, and deviations from stty sane.  In settings, CHAR is taken literally,  or  coded  as  in  ^c,
        `0x37, 0177 or 127; special values ^- or undef used to disable special characters.`
 
 
 === sum ===
+
+       Print checksum and block counts for each FILE.
+
+       -r     defeat -s, use BSD sum algorithm, use 1K blocks
+
+       -s, --sysv
+              use System V sum algorithm, use 512 bytes blocks
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       With no FILE, or when FILE is -, read standard input.
+
+
 === sync ===
+
+      Force changed blocks to disk, update the super block.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
 === tac ===
 === tail ===
 === tee ===
