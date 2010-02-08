@@ -3142,7 +3142,80 @@ Ref dir
               output version information and exit
 
 === tac ===
+
+      Write each FILE to standard output, last line first.  With no FILE, or when FILE is -, read standard
+       input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -b, --before
+              attach the separator before instead of after
+
+       -r, --regex
+              interpret the separator as a regular expression
+
+       -s, --separator=STRING
+              use STRING as the separator instead of newline
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
 === tail ===
+
+      Print the last 10 lines of each FILE to standard output.  With more than one FILE, precede each with
+       a header giving the file name.  With no FILE, or when FILE is -, read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       --retry
+              keep trying to open a file even if it is inaccessible when tail starts or if it becomes inaccessible later; useful when following by name, i.e., with --follow=name
+
+       -c, --bytes=N
+              output  the last N bytes; alternatively, use +N to output bytes starting with the Nth of each
+              file
+
+       -f, --follow[={name|descriptor}]
+              output appended data as the file grows; -f, --follow, and --follow=descriptor are equivalent
+
+       -F     same as --follow=name --retry
+
+       -n, --lines=N
+              output the last N lines, instead of the last 10; or use +N to output lines starting with  the
+              Nth
+
+       --max-unchanged-stats=N
+              with  --follow=name,  reopen a FILE which has not changed size after N (default 5) iterations
+              to see if it has been unlinked or renamed (this is the usual case of rotated log files)
+
+       --pid=PID
+              with -f, terminate after process ID, PID dies
+
+       -q, --quiet, --silent
+              never output headers giving file names
+
+       -s, --sleep-interval=S
+              with -f, sleep for approximately S seconds (default 1.0) between iterations.
+
+       -v, --verbose
+              always output headers giving file names
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If the first character of N (the number of bytes or lines) is a â+â, print beginning  with  the  Nth
+       item  from the start of each file, otherwise, print the last N items in the file.  `N may have a multiplier suffix:  b  512,  kB  1000,  K  1024,  MB  1000*1000,  M  1024*1024,  GB  1000*1000*1000,  G 1024*1024*1024, and so on for T, P, E, Z, Y.`
+
+       With  --follow  (-f),  tail  defaults  to  following the file descriptor, which means that even if a
+       tailed file is renamed, tail will continue to track its end.  This default behavior is  not  desirable  when  you really want to track the actual name of the file, not the file descriptor (e.g., log
+       rotation).  Use --follow=name in that case.  That causes tail to track the named file  by  reopening
+       it periodically to see if it has been removed and recreated by some other program.
+
+
 === tee ===
 === test ===
 === touch ===
