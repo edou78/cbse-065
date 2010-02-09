@@ -4811,8 +4811,7 @@ KNOWN BUGS
 
        -s superblock
               Causes  the  file  system superblock to be read from the given block number, instead of using
-              the primary superblock (located at an offset of 1024 bytes from the beginning of the filesysâ
-              tem).   If  you  specify the -s option, you must also provide the blocksize of the filesystem
+              the primary superblock (located at an offset of 1024 bytes from the beginning of the filesystem).   If  you  specify the -s option, you must also provide the blocksize of the filesystem
               via the -b option.
 
        -f cmd_file
@@ -4827,11 +4826,10 @@ KNOWN BUGS
 SPECIFYING FILES
        Many  debugfs commands take a filespec as an argument to specify an inode (as opposed to a pathname)
        in the filesystem which is currently opened by debugfs.  The filespec argument may be  specified  in
-       two  forms.   The first form is an inode number surrounded by angle brackets, e.g., <2>.  The second
-       form is a pathname; if the pathname is prefixed by a forward slash (â/â),  then  it  is  interpreted
+       two  forms.   The first form is an inode number surrounded by angle brackets, e.g., `<2>`.  The second
+       form is a pathname; if the pathname is prefixed by a forward slash (/),  then  it  is  interpreted
        relative  to  the root of the filesystem which is currently opened by debugfs.  If not, the pathname
-       is interpreted relative to the current working directory as maintained by debugfs.  This may be modâ
-       ified by using the debugfs command cd.
+       is interpreted relative to the current working directory as maintained by debugfs.  This may be modified by using the debugfs command cd.
 
 COMMANDS
        This is a list of the commands which debugfs supports.
@@ -4852,7 +4850,7 @@ COMMANDS
        close  Close the currently open file system.
 
 
-       icheck block ...
+       icheck block
               Print a listing of the inodes which use the one or more blocks specified on the command line.
 
        imap filespec
@@ -4877,8 +4875,7 @@ COMMANDS
 
        logdump [-acs] [-b<block>] [-i<filespec>] [-f<journal_file>] [output_file]
               Dump  the  contents  of  the ext3 journal.  By default, the journal inode as specified in the
-              superblock.  However, this can be overridden with the -i option, which uses an  inode  speciâ
-              fier  to  specify  the  journal  to be used.  A file containing journal data can be specified
+              superblock.  However, this can be overridden with the -i option, which uses an  inode  specifier  to  specify  the  journal  to be used.  A file containing journal data can be specified
               using the -f option.   Finally,  the  -s  option  utilizes  the  backup  information  in  the
               superblock to locate the journal.
 
@@ -4961,7 +4958,7 @@ COMMANDS
        testi filespec
               Test if the inode filespec is marked as allocated in the inode bitmap.
 
-       undel <inode num> [pathname]
+       undel '<inode num>' [pathname]
               Undelete  the  specified inode number (which must be surrounded by angle brackets) so that it
               and its blocks are marked in use, and optionally link the recovered inode  to  the  specified
               pathname.   The  e2fsck command should always be run after using the undel command to recover
@@ -4995,14 +4992,157 @@ ENVIRONMENT VARIABLES
               more general PAGER environment variable.
 
 
-=== ezundo ===
+=== e2undo ===
+
+      e2undo will replay the undo log undo_log for an ext2/ext3/ext4 filesystem found on device.  This can
+       be used to undo a failed operation by an e2fsprogs program.
+
+       -f     Normally, e2undo will check the filesystem UUID and last modified time to make sure the  undo
+              log  matches  with the filesystem on the device.  If they do not match, e2undo will refuse to
+              apply the undo log as a safety mechanism.  The -f option disables this safety mechanism.
+
+
 === findfs ===
+
+     findfs will search the disks in the system looking for a filesystem which has a label matching label
+       or a UUID equal to uuid.  If the filesystem is found, the device name for  the  filesystem  will  be
+       printed on stdout.
+
+
 === chattr ===
+
+      chattr changes the file attributes on a Linux second extended file system.
+
+       The format of a symbolic mode is +-=[ASacDdIijsTtu].
+
+       The operator + causes the selected attributes to be added to the existing attributes of the files;
+       - causes them to be removed; and = causes them to be the only attributes that the files have.
+
+       The letters acdijsuADST select the new attributes for the files: append only (a), compressed  (c),
+       no  dump  (d),  immutable  (i),  data  journalling  (j),  secure  deletion (s), no tail-merging (t),
+       undeletable (u), no atime updates (A), synchronous directory updates (D), synchronous  updates  (S),
+       and top of directory hierarchy (T).
+
+       -R     Recursively change attributes of directories and their contents.
+
+       -V     Be verbose with chattr's output and print the program version.
+
+       -f     Suppress most error messages.
+
+       -v version
+              Set the file's version/generation number.
+
+ATTRIBUTES
+       When a file with the A attribute set is accessed, its atime record is not modified.  This avoids a
+       certain amount of disk I/O for laptop systems.
+
+       A file with the a attribute set can only be open in append mode for writing.  Only  the  superuser
+       or a process possessing the `CAP_LINUX_IMMUTABLE` capability can set or clear this attribute.
+
+       A  file  with  the  c attribute set is automatically compressed on the disk by the kernel.  A read
+       from this file returns uncompressed data.  A write to this file compresses data before storing  them
+       on  the  disk.   Note:  please make sure to read the bugs and limitations section at the end of this
+       document.
+
+       When a directory with the D attribute set is modified, the changes are  written  synchronously  on
+       the disk; this is equivalent to the dirsync mount option applied to a subset of the files.
+
+       A file with the d attribute set is not candidate for backup when the dump(8) program is run.
+
+       The E attribute is used by the experimental compression patches to indicate that a compressed file
+       has a compression error.  It may not be set or reset using chattr(1), although it can  be  displayed
+       by lsattr(1).
+
+       The  e  attribute indicates that the file is using extents for mapping the blocks on disk.  It may
+       not be set or reset using chattr(1), although it can be displayed by lsattr(1).
+
+       The I attribute is used by the htree code to indicate that a  directory  is  being  indexed  using
+       hashed  trees.   It  may  not  be  set  or  reset  using  chattr(1), although it can be displayed by
+       lsattr(1).
+
+       The H attribute indicates the file is storing its blocks in  units  of  the  filesystem  blocksize
+       instead of in units of sectors, and means that the file is (or at one time was) larger than 2TB.  It
+       may not be set or reset using chattr(1), although it can be displayed by lsattr(1).
+
+       A file with the i attribute cannot be modified: it cannot be deleted or renamed, no  link  can  be
+       created  to  this file and no data can be written to the file.  Only the superuser or a process possessing the CAP_LINUX_IMMUTABLE capability can set or clear this attribute.
+
+       A file with the j attribute has all of its data written to the ext3 journal before  being  written
+       to  the  file  itself,  if  the  filesystem  is  mounted with the "data=ordered" or "data=writeback"
+       options.  When the filesystem is mounted with the "data=journal" option all  file  data  is  already
+       journalled  and  this  attribute  has  no  effect.   Only  the superuser or a process possessing the
+       `CAP_SYS_RESOURCE` capability can set or clear this attribute.
+
+       When a file with the s attribute set is deleted, its blocks are zeroed and  written  back  to  the
+       disk.   Note: please make sure to read the bugs and limitations section at the end of this document.
+
+       When a file with the S attribute set is modified, the changes are  written  synchronously  on  the
+       disk; this is equivalent to the sync mount option applied to a subset of the files.
+
+       A  directory  with  the  T attribute will be deemed to be the top of directory hierarchies for the
+       purposes of the Orlov block allocator (which is used in on systems with Linux 2.5.46 or later).
+
+       A file with the t attribute will not have a partial block fragment at the end of the  file  merged
+       with other files (for those filesystems which support tail-merging).  This is necessary for applications such as LILO which read the filesystem directly, and which don't understand tail-merged files.
+       Note:  As  of  this  writing,  the ext2 or ext3 filesystems do not (yet, except in very experimental
+       patches) support tail-merging.
+
+       When a file with the u attribute set is deleted, its contents are saved.  This allows the user  to
+       ask  for its undeletion.  Note: please make sure to read the bugs and limitations section at the end
+       of this document.
+
+       The X attribute is used by the experimental compression patches to indicate that a raw contents of
+       a  compressed  file can be accessed directly.  It currently may not be set or reset using chattr(1),
+       although it can be displayed by lsattr(1).
+
+       The Z attribute is used by the experimental compression patches to indicate a compressed  file  is
+       dirty.  It may not be set or reset using chattr(1), although it can be displayed by lsattr(1).
+
+BUGS AND LIMITATIONS
+       The c, s,  and u attributes are not honored by the ext2 and ext3 filesystems as implemented in
+       the current mainline Linux kernels.    These attributes may be implemented in future versions of the
+       ext2 and ext3 filesystems.
+
+       The j option is only useful if the filesystem is mounted as ext3.
+
+       The D option is only useful on Linux kernel 2.5.19 and later.
+
+
 === lsattr ===
+
+      lsattr  lists the file attributes on a second extended file system.  See chattr(1) for a description
+       of the attributes and what they mean.
+
+      -R     Recursively list attributes of directories and their contents.
+
+       -V     Display the program version.
+
+       -a     List all files in directories, including files that start with '.".
+
+       -d     List directories like other files, rather than listing their contents.
+
+       -v     List the file's version/generation number.
+
+
 === filefrag ===
+     filefrag  reports on how badly fragmented a particular file might be.  It makes allowances for indirect blocks for ext2 and ext3 filesystems, but can be used on files for any filesystem.
+
+      -v     Be verbose when checking for file fragmentation.
+
+
 === mklost+found ===
-=== uuidgen ===
-=== uuidd ===
+
+       mklost+found  is  used  to create a lost+found directory in the current working directory on a Linux
+       second extended file system.  There is normally a lost+found directory in the root directory of each
+       filesystem.
+
+       mklost+found  pre-allocates  disk blocks to the lost+found directory so that when e2fsck(8) is being
+       run to recover a filesystem, it does not need to allocate blocks in the filesystem to store a  large
+       number  of  unlinked  files.   This ensures that e2fsck will not have to allocate data blocks in the
+       filesystem during recovery.
+
+This utility has no options
+
 
  * xfsprogs
  * jfsutils
