@@ -4233,7 +4233,7 @@ RETURN CODE
 
                    stripe-width=stripe-width
                           Configure the filesystem for a RAID array with stripe-width filesystem blocks per
-                          stripe. This is typically stride-size * N, where N is the number of  data-bearing
+                          stripe. This is typically stride-size `*` N, where N is the number of  data-bearing
                           disks  in  the  RAID  (e.g. for RAID 5 there is one parity disk, so N will be the
                           number of disks in the array minus 1).  This allows the block allocator  to  prevent  read-modify-write  of the parity in a RAID stripe if possible when the data
                           is written.
@@ -4459,6 +4459,8 @@ RETURN CODE
 
 
 === resize2fs ===
+
+
 === tune24s ===
 === debugfs ===
 === ezundo ===
