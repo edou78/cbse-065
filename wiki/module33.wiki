@@ -3,7 +3,7 @@
 || *Content* || Classification of SQL Statements  ||
 || *Team* || S. Nilesh Govindarajan (www.itech7.com)  ||
 || *Discussion* || http://groups.google.com/group/cbse065/browse_thread/thread/b24a538936a7d164 ||
-|| *Changes* || ||
+|| *Changes* || http://code.google.com/p/cbse-065/source/diff?path=/wiki/module33.wiki&format=side&r=-1 ||
 
 <hr/>
 
