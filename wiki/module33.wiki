@@ -1,15 +1,25 @@
 <hr/>
 
-|| *Content* ||  ||
-|| *Team* || [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]  ||
-|| *Discussion* ||  ||
+|| *Content* || Classification of SQL Statements  ||
+|| *Team* || S. Nilesh Govindarajan (www.itech7.com)  ||
+|| *Discussion* || http://groups.google.com/group/cbse065/browse_thread/thread/b24a538936a7d164 ||
 || *Changes* || ||
 
 <hr/>
 
 <wiki:toc max_depth="3" />
 
+=SQL Statements=
 
-This module is not yet started. You can read [http://code.google.com/p/cbse-065/wiki/FAQ?ts=1263234362&updated=FAQ#How_to_Join_this_project How to join]
+SQL contains a vast pleothra of statements or in simple language commands.
+The commands have been classified in different groups.
+Some SQL commands are server independent, some commands may exist in MySQL but not in PgSQL, etc.
 
-If you are a new member and have permission to edit, that you can click on "Edit This Page" to start editing this page !
+=SQL Command Classes=
+
+There four main categories in which SQL commands have been classified.
+
+  # DDL - Data Definition Language
+  # DML - Data Manipulation Language
+  # DCL - Data Control Language
+  # TCL - Transcation Control Language
